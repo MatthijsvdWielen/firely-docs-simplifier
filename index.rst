@@ -3,18 +3,20 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Firely Simplifier Docs's documentation!
-==================================================
+Welcome to Firely Simplifier's documentation!
+================================================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Simplifier Docs:
+   
+   api
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Projects
 
+   General Firely Docs <https://firely-docs-main.readthedocs.io>
+   Simplifier Docs <https://firely-docs-main.readthedocs.io/projects/Simplifier/en/latest>
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+.. Too bad Intersphinx doesn't work in the toctree
