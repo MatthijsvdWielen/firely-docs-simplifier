@@ -1,5 +1,5 @@
 ==============================
-A Simplifier docs page on APIs
+APIs
 ==============================
 
 This is a specific page on APIs in the Simplifier docs

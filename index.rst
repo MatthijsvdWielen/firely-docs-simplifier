@@ -8,20 +8,14 @@ Welcome to Firely Simplifier's documentation!
 
 .. toctree::
    :maxdepth: 2
-   :caption: All Firely Docs
+   :caption: Firely Docs
    :hidden:
 
-   Overview <https://firely-docs-main.readthedocs.io>
-   Simplifier.net <https://firely-docs-main.readthedocs.io/projects/Simplifier/en/latest>
-   Forge <https://firely-docs-main.readthedocs.io/projects/Simplifier/en/latest>
-   Firely Server <https://firely-docs-main.readthedocs.io/projects/Simplifier/en/latest>
-   Firely .NET SDK <https://firely-docs-main.readthedocs.io/projects/Simplifier/en/latest>
-   Firely Terminal <https://firely-docs-main.readthedocs.io/projects/Simplifier/en/latest>
+   Back to all Firely Docs <https://firely-docs-main.readthedocs.io>
 
 .. toctree::
    :maxdepth: 2
    :caption: Simplifier.net Docs:
    
+   Home <https://firely-docs-main.readthedocs.io/projects/Simplifier/en/latest>
    api
-
-.. Too bad Intersphinx doesn't work in the toctree
