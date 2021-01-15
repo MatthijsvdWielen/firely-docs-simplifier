@@ -9,7 +9,6 @@ Welcome to Firely Simplifier's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Firely Docs
-   :hidden:
 
    Back to all Firely Docs <https://firely-docs-main.readthedocs.io>
 
