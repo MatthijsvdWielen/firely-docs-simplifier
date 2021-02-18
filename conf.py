@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Firely Simplifier Docs'
+project = 'Simplifier.net'
 copyright = '2021, Firely'
 author = 'Firely'
 
@@ -31,7 +31,7 @@ extensions = [
 ]
 
 intersphinx_mapping = {
-    'main_docs': ('https://firely-docs-main.readthedocs.io/en/latest', None),
+    'main_docs': ('https://docs.fire.ly', None),
     }
 
 # Add any paths that contain templates here, relative to this directory.
