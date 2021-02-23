@@ -32,6 +32,9 @@ extensions = [
 
 intersphinx_mapping = {
     'main_docs': ('https://docs.fire.ly', None),
+    'firely_terminal_docs': ('https://docs.fire.ly/projects/Firely-Terminal/', None),
+    'forge_docs': ('https://docs.fire.ly/projects/Forge/', None),
+    'firely_net_sdk_docs': ('https://docs.fire.ly/projects/Firely-NET-SDK/', None),
     }
 
 # Add any paths that contain templates here, relative to this directory.
