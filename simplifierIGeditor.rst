@@ -194,8 +194,4 @@ An ImplementationGuide resource can be converted to a Simplifier webbased IG. Th
 
 Manage your IG using GitHub
 ---------------------------
-The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the `GitHub integration documentation`_.
-
-
-.. _GitHub integration documentation: http://docs.simplifier.net/simplifier/simplifierGithub.html#github-webhook-to-manage-an-implementation-guides 
-
+The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the :doc:`GitHub integration documentation<simplifierGithub>`.
