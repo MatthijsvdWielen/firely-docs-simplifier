@@ -61,8 +61,6 @@ Remove dependencies
 ^^^^^^^^^^^^^^^^^^^
 To remove dependencies from your project, you could either select ``Manage`` and click on the recycle bin icon next to the package you want to remove or select ``Edit`` to directly edit the JSON code.
 
-.. TODO Rename Torinox to Firely Terminal and migrate docs to that repo
-
 Firely Terminal
 -----------------------
 Firely Terminal is our (free) command line tool for FHIR. Firely Terminal allows you to communicate with any FHIR server. With simple commands you can easily download, upload, validate and transform resources, zip them, bundle them or split bundles. Firely Terminal offers many features. One of them is to install, create and manage FHIR packages.
