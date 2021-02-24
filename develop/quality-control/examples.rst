@@ -8,7 +8,7 @@ Validating resources in a single folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This example validates all resources in a single folder. It also
-suppresses all parssing errors
+suppresses all parsing errors
 
 .. code-block:: yaml
 
