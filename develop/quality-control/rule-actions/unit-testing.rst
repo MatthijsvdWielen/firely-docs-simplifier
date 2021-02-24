@@ -38,8 +38,7 @@ code is sufficient in most cases.
 .. code-block:: yaml
 
    - files: /invalid-examples/*.missingref.xml
-     assert: 4005 
-     # error code for missing references
+     assert: 4005 # error code for missing references
 
 Approach
 ~~~~~~~~

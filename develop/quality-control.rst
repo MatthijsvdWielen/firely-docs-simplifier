@@ -34,6 +34,6 @@ checks.
     :caption: More on Quality Control
 
     quality-control/structure
-    quality-control/generic-properties
-    quality-control/actions
+    quality-control/rule-properties
+    quality-control/rule-actions
     quality-control/examples

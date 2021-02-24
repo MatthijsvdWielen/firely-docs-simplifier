@@ -72,5 +72,5 @@ Running individual sets
 In Simplifier and in :doc:`Firely Terminal<firely_terminal_docs:index>`
 you can run individual rulesets, in which case the default set and 
 other sets will not be run. You can however include other rulesets
-in a Yaml Rule File. See the :doc:`include<actions/include>` action 
+in a Yaml Rule File. See the :doc:`include<rule-actions/include>` action 
 for more details.

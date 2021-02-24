@@ -3,9 +3,7 @@ Include
 
 If you run a ruleset file (a ``*.rules.yaml``), by default, no other
 rules will be run. This is done to give you maximum control, and allow
-you to run individual rule sets,
-
-There is a ‘Run all Qualiy Control checks’ command in Simplifier.
+you to run individual rulesets.
 
 But, there are situations where you would like to run an aditional set
 of rules, that you have defined elsewhere (in another file). Imagine you
@@ -13,15 +11,10 @@ have a ruleset to ‘check broken links’, but want to run all the default
 rules as a first step. You can achieve this by using the ‘include’
 action.
 
-This way you can also create a batch file, in which you include all your
-other rule set files. In most cases this is unneeded complexity, because
-your project is probably only in a good state if all the rules have
-validated. So only use this if the default setup does not work for you.
-
 Include action
 ~~~~~~~~~~~~~~
 
-You include the default rule set or any other ruleset in a , you can
+You include the default ruleset or any other ruleset in a , you can
 speficy this in a single directive.
 
 .. code-block:: yaml
