@@ -43,8 +43,3 @@ custom message:
 
 The quality control engine is always able to generate an error message.
 If no error message is provided, a standard error is generated.
-
-Place holders
-~~~~~~~~~~~~~
-
-An error can contain placeholders: custom fields - FhirPath statement?
