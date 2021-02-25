@@ -64,19 +64,19 @@ minimal rules checks are added to ensure:
 Custom rulesets
 ~~~~~~~~~~~~~~~~
 
-You can add other rule files, to your project, as long as their name
-follows this pattern: ``<name>.rules.yaml``. It does not matter where
-you place these files. They will all be discovered by the system, and
+You can add other rule files to your project, as long as their name
+follows this pattern: ``<name>.rules.yaml`` and they are placed in the root
+of your project. They will all be discovered by the system, and
 exposed in the Quality Control menu of your project, to allow you to run
 them.
 
-You can run every individual rule files in your project.
-
-Running individual sets
-~~~~~~~~~~~~~~~~~~~~~~~
+Running individual or multiple rulesets
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In Simplifier and in :doc:`Firely Terminal<firely_terminal_docs:index>`
 you can run individual rulesets, in which case the default set and 
-other sets will not be run. You can however include other rulesets
-in a Yaml Rule File. See the :doc:`include<rule-actions/include>` action 
-for more details.
+other sets will not be run.
+
+You can however *include* other rulesets in a Yaml Rule File, allowing
+you to run multiple sets at once. See the
+:doc:`include<rule-actions/include>` action for more details.
