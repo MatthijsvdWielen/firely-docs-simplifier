@@ -25,6 +25,12 @@ not part of the entry, just an description how to read it.
      second: value
      third: value
 
+.. figure:: /images/run-quality-control.png
+    :alt: Simplifier.net project drop-down for running rulesets
+    :align: right
+
+    Executing one of the rulesets on a Simplifier.net project
+
 Default rulesets
 ~~~~~~~~~~~~~~~~~
 
