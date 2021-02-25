@@ -29,7 +29,7 @@ not part of the entry, just an description how to read it.
     :alt: Simplifier.net project drop-down for running rulesets
     :align: right
 
-    Executing one of the rulesets on a Simplifier.net project
+    Executing a ruleset in Simplifier.net
 
 Default rulesets
 ~~~~~~~~~~~~~~~~~
