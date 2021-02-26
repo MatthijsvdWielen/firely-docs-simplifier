@@ -2,6 +2,8 @@ Resources
 =========
 Simplifier is a repository for FHIR resources. There are a multitude of resources that are available to the public including profiles, extensions, valuesets, dictionaries, mappings, examples and more.
 
+.. _resource-page:
+
 Resource page
 """""""""""""
 You can visit the page of a resource by selecting the resource from your search results or the ``Resources`` tab in your project, or following the direct link to the resource. While viewing resources you can display information in a few different ways.  
