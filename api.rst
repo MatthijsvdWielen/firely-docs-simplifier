@@ -6,20 +6,25 @@ API Endpoint
 Simplifier.net has multiple APIs available for interacting with the platform and your content on it:
 
 .. contents::
-  :depth: 1
+  :depth: 2
   :local:
 
 .. TODO: Add features API
 
-To test these APIs you can run the following Postman collection:
+To test these APIs you can see `our Postmand API documentation` or directly run the following Postman collection:
 
 |Run in Postman|
 
 .. |Run in Postman| image:: https://run.pstmn.io/button.svg
    :target: https://app.getpostman.com/run-collection/da066eb30fb57e2c9865
 
+.. _`our Postmand API documentation`: https://documenter.getpostman.com/view/8381182/TW6xo8Yv
+
 Authentication
 """"""""""""""
+
+JWT authentication
+==================
 
 The Simplifier API endpoints are available for Simplifier users based on JWT authentication. 
 
@@ -70,6 +75,42 @@ token and refreshToken pair. The refreshToken has a much longer expiry time.
 Your outstanding refreshTokens are visible at https://simplifier.net/myrefreshtokens,
 where you can choose to revoke them if you no longer wish them to be valid.
 
+Basic Auth
+==========
+
+The ZIP and FHIR API endpoints alternatively also support authentication with 
+Basic Auth directly. However, going forward we recommend the JWT authentication instead.
+
+Features API
+""""""""""""
+
+The Simplifier Features API allows you to retrieve feautures for your account on the
+platform, like the feautures your plan gives you access to, the projects you have 
+accesss to and the files within them.
+
+The currently supported calls include:
+
+* GET https://api.simplifier.net/myfeatures
+  
+  Return the features that this user has a right to use in their current plan.
+
+* GET https://api.simplifier.net/api/v2/myprojects
+  
+  Return the Simplifier.net projects for the user.
+  
+* GET https://api.simplifier.net/api/v3/projects/{{project_urlkey}}/Files
+  
+  Return a list of files contained in the Simplifier.net project.
+
+
+Package Server API
+""""""""""""""""""
+
+The `Package Server API`_ allows you to
+search and retrieve FHIR packages.
+
+.. _`Package Server API`: https://simplifier.net/docs/package-server
+
 Project FHIR API
 """"""""""""""""
 
@@ -98,8 +139,8 @@ update your project in zipped form.
 
 .. image:: ./images/ProjectApiLocation.png
 
-Simplifier FHIR API
-"""""""""""""""""""
+Global FHIR API
+"""""""""""""""
 
 .. TODO: Should we keep the global API?
 

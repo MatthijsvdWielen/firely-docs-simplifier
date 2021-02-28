@@ -30,7 +30,7 @@ Below you will find the documentation for the platform.
    develop/quality-control
    simplifierDocumentationRedirection
    simplifierOrganizationPortal
-   simplifierEndpoint
+   api
    simplifierPackages
    simplifierGithub
    simplifierBackupAndSynchronization
