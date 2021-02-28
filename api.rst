@@ -11,14 +11,14 @@ Simplifier.net has multiple APIs available for interacting with the platform and
 
 .. TODO: Add features API
 
-To test these APIs you can see `our Postmand API documentation` or directly run the following Postman collection:
+To test these APIs you can see `our Postman API documentation`_ or directly run the following Postman collection:
 
 |Run in Postman|
 
 .. |Run in Postman| image:: https://run.pstmn.io/button.svg
    :target: https://app.getpostman.com/run-collection/da066eb30fb57e2c9865
 
-.. _`our Postmand API documentation`: https://documenter.getpostman.com/view/8381182/TW6xo8Yv
+.. _`our Postman API documentation`: https://documenter.getpostman.com/view/8381182/TW6xo8Yv
 
 Authentication
 """"""""""""""
