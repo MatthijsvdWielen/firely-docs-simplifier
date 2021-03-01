@@ -13,10 +13,6 @@ You can access the IG editor via the ``Guides`` tab in your project. In earlier 
 
 Click on ``Browse`` or the Implementation Guide itself for a preview of the guide. Click on the ``Edit`` button to open the Implementation Guide in the IG editor. 
 
-Linking existing IG's to your project
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Existing Implementation Guides that are not yet linked to a project can be moved on request. Just contact us through the feedback button.
-
 IG Editor Settings
 ------------------
 The IG editor opens on the page of the root element. The IG Editor consist of three sections. On the left is the IG's tree table which is used to define the outline of your IG and navigate between the pages of the IG. The middle section is the actual editor. This is where you will add and edit content. The right section is where you will find a rendering of the selected page. 
@@ -47,6 +43,10 @@ To add a new menu item to your Implementation Guide, use the ``+`` icons in the 
 
 CSS-editor
 ----------
+.. important::
+
+    `This feature is available from the Enterprise plan <https://simplifier.net/pricing>`_.
+
 For our Enterprise Licenses the feature "Custom Layout" is available. Here you can create your own custom master template (HTML) and choose your own layout (CSS). When you click on the icon on the left of the Settings icon in the IG-editor, the CSS-editor will be opened. 
 
 .. image:: ./images/CSSeditor.png
@@ -173,6 +173,10 @@ To Save your IG as a Resource, click on the ``Save`` button in the left pane of 
 
 Export your IG
 --------------
+
+.. important::
+
+    `This feature is available from the Professional plan and up <https://simplifier.net/pricing>`_.
 
 To use your IG outside of Simplifier, click on the Export button next to your IG in the Guides section of your project. 
 

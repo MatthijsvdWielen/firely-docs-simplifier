@@ -2,6 +2,10 @@
 Quality Control: Validating FHIR Projects
 =========================================
 
+.. important::
+
+    `This feature is available from the Professional plan and up <https://simplifier.net/pricing>`_.
+
 This specification describes how to write (and read) rules for the
 Simplifier Quality Control Engine.
 
