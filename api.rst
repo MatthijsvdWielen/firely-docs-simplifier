@@ -9,14 +9,13 @@ Simplifier.net has multiple APIs available for interacting with the platform and
   :depth: 2
   :local:
 
-To test these APIs you can see `our Postman API documentation`_ or directly run the following Postman collection:
+To test these APIs you can see `our Postman API documentation <https://documenter.getpostman.com/view/8381182/TW6xo8Yv>`_ 
+or directly run the following Postman collection:
 
 |Run in Postman|
 
 .. |Run in Postman| image:: https://run.pstmn.io/button.svg
    :target: https://app.getpostman.com/run-collection/da066eb30fb57e2c9865
-
-.. _`our Postman API documentation`: https://documenter.getpostman.com/view/8381182/TW6xo8Yv
 
 Authentication
 """"""""""""""
@@ -104,10 +103,8 @@ The currently supported calls include:
 Package Server API
 """"""""""""""""""
 
-The `Package Server API`_ allows you to
+The `Package Server API <https://simplifier.net/docs/package-server>`_ allows you to
 search and retrieve FHIR packages.
-
-.. _`Package Server API`: https://simplifier.net/docs/package-server
 
 Project FHIR API
 """"""""""""""""
