@@ -5,22 +5,18 @@ Please note that this is for emergency situations, and you should not require to
 
 Customers may want to have a possibility to backup whatever content they have on Simplifier (or more generally in the cloud for that matter). Here are some ways to make sure your data is regularly backed up:
 
-FHIR endpoint
+API endpoint
 -------------
-Each Simplifier project has a :ref:`FHIR endpoint<simpl_endpoint>`. With this, you can get a specific resource from your project using any FHIR client. You can also get all resources from a specific resource type.
+Each Simplifier project has a :ref:`FHIR endpoint and Zip endpoint<simpl_endpoint>`:
 
-*Future plans:* |br|
-We have plans to implement the FHIR “global search” endpoint where you can get all resources from all types.
+* With the FHIR endpoint, you can get (or restore) a specific resource from your project using any FHIR client. You can also get all resources from a specific resource type.
+* With the Zip endpoint you can download or upload a zip folder containing all resources from a project.
 
-
-Zip Endpoint
-------------
-Simplifier has a ZIP API for every project. With an HTTP tool you can use ``GET`` or ``PUT https://simplifier.net/yourproject/api/zip`` to retrieve or update your project in zipped form.
 
 Download
 --------
-You can always download the current versions of all resources, including or excluding texts and images.
-Filepaths are preserved from GitHub and the regular upload. Resources that are initially uploaded through the fhir endpoint will have a persistent filename, but no absolute path.
+You can always download the current versions of all resources, including or excluding texts and images, from the Download drop-down on your project page.
+Filepaths are preserved from GitHub and the regular upload. Resources that are initially uploaded through the FHIR endpoint will have a persistent filename, but no absolute path.
 
 Client tool
 -----------

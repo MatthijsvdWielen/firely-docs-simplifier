@@ -9,8 +9,6 @@ Simplifier.net has multiple APIs available for interacting with the platform and
   :depth: 2
   :local:
 
-.. TODO: Add features API
-
 To test these APIs you can see `our Postman API documentation`_ or directly run the following Postman collection:
 
 |Run in Postman|
