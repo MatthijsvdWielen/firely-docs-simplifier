@@ -59,7 +59,13 @@ Through your  `personal menu <simplifierPersonalContent.html#users>`_ (click on 
 
 Metadata Expressions
 """"""""""""""""""""
-The metadata expressions editor enables you to define what Simplifier should display as Title, Description, UrlKey, Workflow or FilePath for your resources. To start editing the metadata expressions of your project, select ``Settings`` and click on ``Metadata Expressions``.
+
+The metadata expressions editor enables you to define what Simplifier should display as Title, Description, UrlKey, Workflow or FilePath for your resources. To start editing the metadata expressions of your project, select ``Manage`` and click on ``Metadata Expressions``.
+
+.. figure:: /images/Simplifier-metadata-fields.png
+    :alt: Overview of the most important metadata fields in Simplifier.net
+
+    The most important metadata fields for a resource you can set with metadata expressions: (1) the UrlKey, (2) the Title and (3) the Description.
 
 When editing the metadata expressions you will have access to the default expressions used by Simplifier. If your FhirPath expressions are missing, are not correct or the value extracted is empty, Simplifier will fall back to the default expressions. If a default expression is not able to provide a value, a generic text based on the resource type will be used. Workflow and FilePath don't have a default expression. For FilePath in this case, if the extracted value is empty or missing, the fallback will be the original/generated filepath of the uploaded file.
 
