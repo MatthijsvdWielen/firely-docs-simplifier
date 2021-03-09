@@ -56,20 +56,6 @@ The ``error`` and ``error-message`` properties allow you to customize
 error messages. For every issue encountered by this rule, the error will
 be defined by these two properties.
 
-Error
-=====
-
-The ``error`` property allows you to set the error code or system - and
-- code, separated with a vertical bar ``|``:
-
-.. code-block:: yaml
-
-   - error: https://mysystem.org/errors|ERROR1
-     ..
-
-   - error: ERROR1
-     ..
-
 Error-message
 =============
 
@@ -95,94 +81,48 @@ custom message:
 The quality control engine is always able to generate an error message.
 If no error message is provided, a standard error is generated.
 
-Filters
-~~~~~~~
+Error
+=====
 
-There are several filters that you can use to select to which files in
-your project a rule should apply. These filter properties are applicable
-to most rules, but not all.
-
-File filters
-============
-
-.. warning::
-
-   This feature will be released around end of feb. 2021
-
-You can filter any file bassed on a globbing pattern as you may now from
-your own computer file system.
-
-A specific file:
+The ``error`` property allows you to set the error code or system - and
+- code, separated with a vertical bar ``|``:
 
 .. code-block:: yaml
 
-   # this rule applies to exactly one file:
-   - action: validate
-   - file: example-patient.json
+   - error: https://mysystem.org/errors|ERROR1
+     ..
 
-All xml files; make sure that all xml examples have a profile field:
+   - error: ERROR1
+     ..
 
-.. code-block:: yaml
+.. _qc_properties_suppress:
 
-   - predicate: meta.profile.exists()
-     files: example-*.xml
+Suppress
+========
 
-FHIRPath Filters
-================
-
-This filter allows you to filter a resource on a FHIRPath predicate.
-That means that only files for which the FHIRPath statement is true,
-remain in your selection.
-
-The filter property understands several types of values:
-
-- Any Resource Category (Resource, Example Profile, etc) [NOT IMPLEMENTED YET]
-- Any Resource Type (Patient, Organization)
-- Any FHIRPath statement that results in an unambiguous true or false
-- Any FHIRPath statement that results in a single value (if the value is there, it’s a match)
-
-For more information about FHIRPath, see the `FHIRPath standard`_.
-
-An example true/false expression.
+With ``suppress`` you can tell the rule not to see certain error codes as a
+failure.
 
 .. code-block:: yaml
 
-   # This will select all files that have an id.
-   - filter: id.exists()
+   - suppress: https://mysystem.org/errors #Suppress an entire error code system
+   - suppress: https://mysystem.org/errors|ERROR1 #Suppress a specific error code
+   - suppress: ERROR1 #Suppress an error code, regardless of code system
+   - suppress: #Suppress multiple error codes
+      - ERROR1
+      - ERROR2
 
-An example of a existence match:
-
-.. code-block:: yaml
-
-   # Resources that have a meta.profile field:
-   - filter: meta.profile
-
-Resource types are a valid FHIRPath expression. So This wil select all
-Patient resources.
+Examples of suppressing `errors from the Firely .NET SDK <https://simplifier.net/docs/firely-net-sdk>`_:
 
 .. code-block:: yaml
 
-   - filter: Patient
+   - suppress:
+      - http://hl7.org/fhir/dotnet-api-operation-outcome:6005 #Or just 6005, since the code system is optional
+      - eld-16
 
-Filtering on broader categories is planned, but not yet implemented:
+Even codes from Simplifier.net Quality Control itself can be suppressed. Their code systems are: 
 
-.. code-block:: yaml
-
-   - filter: Profile 
-   - filter: Extension
-
-Applying multiple filters
-=========================
-
-You can specify more than one filter, per rule. Only files (resources)
-that fall in both filters will be part of the rule evaluation.
-
-This example will filter in all examples that have a profile:
-
-.. code-block:: yaml
-
-   - action: validate
-     files: examples/*-example.xml
-     filter: meta.profile
-
-.. _FHIRPath standard: http://hl7.org/FHIRPath/
+- Generic errors: https://simplifier.net/qc/errors/generic
+- Default user generated errors (unless they specify their own system): https://simplifier.net/qc/errors/custom
+- Rule errors (invalid rules): https://simplifier.net/qc/errors/rules
+- Evaluation errors (outcomes of rules): https://simplifier.net/qc/errors/evaluation
