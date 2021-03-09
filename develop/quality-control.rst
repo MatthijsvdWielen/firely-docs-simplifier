@@ -35,5 +35,6 @@ any number of **custom business rules** to enforce your own custom profiling sta
 
     quality-control/structure
     quality-control/rule-properties
+    quality-control/rule-filters
     quality-control/rule-actions
     quality-control/examples
