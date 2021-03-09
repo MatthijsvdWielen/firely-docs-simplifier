@@ -37,7 +37,7 @@ Below you will find the documentation for the platform.
    simplifierConnectors
    simplifierEmbeddedRendering
    simplifierIGeditor
-   simplifierVonk
+   firely-server
    FHIRRegistry
    accessibility
    simplifierContact
