@@ -19,7 +19,8 @@ speficy this in a single directive.
 
 .. code-block:: yaml
 
-   - include: <name>
+   - #action: include # Can be added for consistency, but not necessary
+     include: <name>
 
 For example, this will include the default ruleset:
 

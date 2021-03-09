@@ -1,3 +1,5 @@
+.. _qc_actions_validate:
+
 Validate
 ~~~~~~~~
 
@@ -11,4 +13,4 @@ and their stated base claims, set in ``meta.profile``.
 
 .. code-block:: yaml
 
-   - action: validate
+   - action: validate # Since validate has no parameters the action parameter is always needed

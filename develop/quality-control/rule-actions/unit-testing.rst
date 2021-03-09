@@ -1,16 +1,22 @@
-Unit Testing
-------------
+.. _qc_actions_assert:
+
+Assert: Unit testing
+--------------------
 
 .. warning::
 
    This feature will be released around end of feb. 2021
 
 Unit testing is a strategy from software engineering to make sure some
-errors do not occur and other errors do occur. Some errors are good. For
-errros that you do not want to occur, you can use regular validation.
-But lets say you have a profile that makes sure that any patient
-resource has not more than two identifiers. If you want to make sure
-that you properly implemented, you should be able to create an example
+errors do not occur and other errors do occur.
+
+For errors that you do not want to occur, you can use regular validation.
+But some errors are good. Assert is basically the opposite of :ref:`qc_actions_validate`,
+where you explicitly specify which errors you want to occur, like with :ref:`qc_properties_suppress`.
+
+Lets say you have a profile that makes sure that any patient
+resource has no more than two identifiers. If you want to make sure
+that you properly implemented this, you can create an example
 Patient that has 3 identifiers, and then you want that example to fail
 on your profile. If you used regular validaton on that, you will always
 get errors returned that are actually good. And even more: it would be
@@ -38,6 +44,7 @@ code is sufficient in most cases.
 .. code-block:: yaml
 
    - files: /invalid-examples/*.missingref.xml
+     # action: assert # Can be added for consistency, but not necessary
      assert: 4005 # error code for missing references
 
 Approach
@@ -51,11 +58,11 @@ of the validator. This is an example of that approach:
 
 .. code-block:: yaml
 
-   - action: validate
-     files: /conformance-resources/*.*
+   - files: /conformance-resources/*.*
+     assert: ...
 
-   - action: validate
-     files: /good-examples/*.json
+   - files: /good-examples/*.json
+     assert: ...
        
-   - assert: 
-     files: /failing-examples/*-cardinality.json
+   - files: /failing-examples/*-cardinality.json
+     assert: ...

@@ -22,4 +22,5 @@ Example
 .. code-block:: yaml
 
    - files: /resources/*.xml
+     # action: same # Can be added for consistency, but not necessary
      same: id

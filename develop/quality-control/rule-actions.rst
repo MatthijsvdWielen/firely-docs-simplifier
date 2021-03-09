@@ -16,7 +16,7 @@ example, the action is implied by the ‘predicate’ property,
    - predicate: id.exists()
 
 So, the line with ``action: predicate`` provides no new information and
-can be left out:
+can be left out anytime you are using command specific parameters:
 
 .. code-block:: yaml
 

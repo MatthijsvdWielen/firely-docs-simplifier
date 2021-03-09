@@ -7,8 +7,7 @@ unique compared to the same value of all the other resources.
 
 .. code-block:: yaml
 
-   # unique - compares a specific fhirpath expression against all resources and reports duplicates.
-   - action: unique
+   - # action: unique # Can be added for consistency, but not necessary
      status: Testing if all canonicals are unique
      filter: StructureDefinition
      unique: url 
