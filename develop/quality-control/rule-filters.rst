@@ -5,6 +5,10 @@ There are several filters that you can use to select to which files in
 your project a rule should apply. These filter properties are applicable
 to most rules, but not all.
 
+.. contents::
+  :depth: 2
+  :local:
+
 .. _qc_filters_fhirpath:
 
 FHIRPath Filters
