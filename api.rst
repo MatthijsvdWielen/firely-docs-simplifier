@@ -124,17 +124,17 @@ Endpoints
 
 See documentation for the available API endpoints:
 
-  `Home <https://simplifier.net/docs/package-server/Home>`_
-       * `Download <https://simplifier.net/docs/package-server/Dowload>`_
-       * `Version Listing <https://simplifier.net/docs/package-server/VersionListing>`_
-       * `Search <https://simplifier.net/docs/package-server/Search>`_
+`Home <https://simplifier.net/docs/package-server/Home>`_
+    * `Download <https://simplifier.net/docs/package-server/Dowload>`_
+    * `Version Listing <https://simplifier.net/docs/package-server/VersionListing>`_
+    * `Search <https://simplifier.net/docs/package-server/Search>`_
 
 Open API / Swagger documentation
 ================================
 
 Try the Simplifier.net FHIR Package API `live from the SwaggerHub documentation. <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API/1.0.1>`_
 
-Note: It is not possible to create a package using the API. For creating a package please look at our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on that. 
+**Note**: It is not possible to create a package using the API. For creating a package please look at our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on that. 
 
 Project FHIR API
 """"""""""""""""
