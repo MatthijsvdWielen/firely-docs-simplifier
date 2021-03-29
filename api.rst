@@ -103,8 +103,38 @@ The currently supported calls include:
 Package Server API
 """"""""""""""""""
 
-The `Package Server API <https://simplifier.net/docs/package-server>`_ allows you to
-search and retrieve FHIR packages.
+Simplifier has an package server API, that is compliant to the FHIR NPM package standard. It serves all FHIR packages created in Simplifier. 
+
+API Endpoint
+============
+
+The api endpoint of the Simplifier FHIR package Server is:
+
+https://packages.simplifier.net/
+
+HL7 FHIR Package Server
+=======================
+
+Simplifier also hosts the same package API for the FHIR package server. The root URL for this server is:
+
+https://packages.fhir.org/
+
+Endpoints
+=========
+
+See documentation for the available API endpoints:
+
+  `Home <https://simplifier.net/docs/package-server/Home>`_
+       * `Download <https://simplifier.net/docs/package-server/Dowload>`_
+       * `Version Listing <https://simplifier.net/docs/package-server/VersionListing>`_
+       * `Search <https://simplifier.net/docs/package-server/Search>`_
+
+Open API / Swagger documentation
+================================
+
+Try the Simplifier.net FHIR Package API `live from the SwaggerHub documentation. <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API/1.0.1>`_
+
+Note: It is not possible to create a package using the API. For creating a package please look at our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on that. 
 
 Project FHIR API
 """"""""""""""""
