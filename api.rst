@@ -125,7 +125,7 @@ Endpoints
 See documentation for the available API endpoints:
 
 `Home <https://simplifier.net/docs/package-server/Home>`_
-    * `Download <https://simplifier.net/docs/package-server/Dowload>`_
+    * `Download <https://simplifier.net/docs/package-server/Download>`_
     * `Version Listing <https://simplifier.net/docs/package-server/VersionListing>`_
     * `Search <https://simplifier.net/docs/package-server/Search>`_
 
