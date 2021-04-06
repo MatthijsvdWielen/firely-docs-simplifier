@@ -126,7 +126,10 @@ Download Packages
 =================
 The Simplifier FHIR Package server allows you to download a specific version of a package. You can download any FHIR package by directly accessing this URL in your browser:
 
-https://packages.simplifier.net/<package-name>/<package-version>
+::
+  
+  https://packages.simplifier.net/<package-name>/<package-version>
+  
 
 For example:
 
@@ -180,7 +183,8 @@ Here is an example output when requesting https://packages.simplifier.net/simpli
             "url": "https://packages.simplifier.net/Simplifier.Core.STU3/3.0.3"
         }
     }
-}
+ }
+
 
 
 Package Search
