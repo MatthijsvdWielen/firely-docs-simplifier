@@ -132,24 +132,34 @@ The Simplifier FHIR Package server allows you to download a specific version of 
   
 
 For example:
-
-https://packages.simplifier.net/hl7.fhir.r3.core/3.0.2
+::
+  
+  https://packages.simplifier.net/hl7.fhir.r3.core/3.0.2
+  
 
 NPM compatible endpoint:
 
 There is also an NPM compatible endpoint, which allows sligtly less trivial, but allows you to install FHIR package using any NPM client.
 
-https://packages.simplifier.net/<name>/-/<package-name>-<package-version>.tgz
+::
+  
+  https://packages.simplifier.net/<name>/-/<package-name>-<package-version>.tgz
+
 
 The above example, then becomes:
+::
+  
+  https://packages.simplifier.net/hl7.fhir.r3.core/-/hl7.fhir.r3.core-3.0.2.tgz
 
-https://packages.simplifier.net/hl7.fhir.r3.core/-/hl7.fhir.r3.core-3.0.2.tgz
 
 Version Listing
 ===============
 In order to discover the available versions of a package, you can do a GET on this endpoint.
 
-https://packages.simplifier.net/<package-name>
+::
+  
+  https://packages.simplifier.net/<package-name>
+
 
 The payload is compliant with the NPM package version listing.
 
@@ -195,7 +205,10 @@ Query
 -----
 The implementation is this:
 
-https://packages.simplifier.net/catalog?<parameters>
+::
+  
+  https://packages.simplifier.net/catalog?<parameters>
+
 
 We currently support these four parameters:
 Name
@@ -221,7 +234,9 @@ The response of this API call is a JSON array that contains the following values
 
 Example output for the search https://simplifier.net/catalog?name=core:
 
-[
+::
+  
+  [
     {
         "Name": "Simplifier.Core.STU3.Resources",
         "Description": "These are the STU3 Core Profile StructureDefini...",
@@ -240,6 +255,7 @@ Example output for the search https://simplifier.net/catalog?name=core:
     ...
 ]
 
+
 Package version Response
 ------------------------
 **PROPOSAL - Not implemented yet**
@@ -252,7 +268,9 @@ Example output:
 
 https://simplifier.net/catalog?name=core:
 
-[
+::
+  
+  [
     {
         "Name": "hl7.fhir.r3.core",
         "Description": "These are the STU3 Core Profile StructureDefini...",
