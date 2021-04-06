@@ -125,22 +125,30 @@ Available API Endpoints
 Download Packages
 =================
 The Simplifier FHIR Package server allows you to download a specific version of a package. You can download any FHIR package by directly accessing this URL in your browser:
+
 ::
+
 https://packages.simplifier.net/<package-name>/<package-version>
 
 For example:
+
 ::
+
 https://packages.simplifier.net/hl7.fhir.r3.core/3.0.2
+
 NPM compatible endpoint:
 
 There is also an NPM compatible endpoint, which allows sligtly less trivial, but allows you to install FHIR package using any NPM client.
+
 ::
+
 https://packages.simplifier.net/<name>/-/<package-name>-<package-version>.tgz
 
 The above example, then becomes:
-::
-https://packages.simplifier.net/hl7.fhir.r3.core/-/hl7.fhir.r3.core-3.0.2.tgz
 
+::
+
+https://packages.simplifier.net/hl7.fhir.r3.core/-/hl7.fhir.r3.core-3.0.2.tgz
 
 Version Listing
 ===============
@@ -154,6 +162,8 @@ The dist-tags element will provide tags on certain versions, like the label of w
 Example payload
 
 Here is an example output when requesting https://packages.simplifier.net/simplifier.core.stu3
+
+::
 
 {
     "_id":"Simplifier.Core.STU3",
@@ -179,6 +189,7 @@ Here is an example output when requesting https://packages.simplifier.net/simpli
         }
     }
 }
+..
 
 Package Search
 ==============
