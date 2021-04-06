@@ -154,7 +154,7 @@ The above example, then becomes:
 
 Version Listing
 ===============
-In order to discover the available versions of a package, you can do a GET on this endpoint.
+In order to discover the available versions of a package, you can do a ``GET`` on this endpoint.
 
 ::
   
@@ -163,10 +163,10 @@ In order to discover the available versions of a package, you can do a GET on th
 
 The payload is compliant with the NPM package version listing.
 
-The dist-tags element will provide tags on certain versions, like the label of which version is the latest. Note: In calculating latest the highest stable semver version is used, not the most recently published version.
+The ``dist-tags`` element will provide tags on certain versions, like the label of which version is the ``latest``. Note: In calculating ``latest`` the highest stable semver version is used, not the most recently published version.
 Example payload
 
-Here is an example output when requesting https://packages.simplifier.net/simplifier.core.stu3
+Here is an example output when requesting ``https://packages.simplifier.net/simplifier.core.stu3``:
 
 ::
   
@@ -211,18 +211,21 @@ The implementation is this:
 
 
 We currently support these four parameters:
-Name
 
-With the name= parameter, you can search for any package where the name contains the given value. The match is anywhere in the string, so searching for name=r3 will match hl7.fhir.r3.core.
-Canonical
+**Name*
 
-With the canonical= parameter, you can search for any package that contains a resource that has the canonical url of the given value. The canonical needs to be an exact match. The search does not support partial matching.
-Fhir Version
+With the ``name=`` parameter, you can search for any package where the name contains the given value. The match is anywhere in the string, so searching for ``name=r3`` will match ``hl7.fhir.r3.core``.
 
-The fhirversion= parameter, filters your search results for the given FHIR version. This value can be of format strict Rx format: R3, R4, but also understands common monikers like stu3, dstu2.
+**Canonical*
+
+With the ``canonical=`` parameter, you can search for any package that contains a resource that has the canonical url of the given value. The canonical needs to be an exact match. The search does not support partial matching.
+
+**Fhir Version*
+
+The ``fhirversion=`` parameter, filters your search results for the given FHIR version. This value can be of format strict Rx format: ``R3``, ``R4``, but also understands common monikers like ``stu3``, ``dstu2``.
 Prerelease
 
-The prerelease= parameter allows you to include non-official package releases in your search results. The parameter allows two values: true and false. The default value is false.
+The ``prerelease=`` parameter allows you to include non-official package releases in your search results. The parameter allows two values: ``true`` and ``false``. The default value is ``false``.
 
 Response
 --------
@@ -232,7 +235,7 @@ The response of this API call is a JSON array that contains the following values
   *  package description
   *  FHIR version.
 
-Example output for the search https://simplifier.net/catalog?name=core:
+Example output for the search ``https://simplifier.net/catalog?name=core``:
 
 ::
   
@@ -261,13 +264,13 @@ Package version Response
 ------------------------
 **PROPOSAL - Not implemented yet**
 
-A version= parameter that accepts a boolean true or false. The default is false.
+A ``version=`` parameter that accepts a boolean ``true`` or ``false``. The default is ``false``.
 
-When set to true, the search will return all versions of packages that match the criteria.
+When set to ``true``, the search will return all versions of packages that match the criteria.
 
 Example output:
 
-https://simplifier.net/catalog?name=core:
+``https://simplifier.net/catalog?name=core``:
 
 ::
   
