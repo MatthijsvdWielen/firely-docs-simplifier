@@ -228,9 +228,9 @@ Response
 --------
 The response of this API call is a JSON array that contains the following values:
 
-    package name,
-    package description
-    FHIR version.
+  *  package name,
+  *  package description
+  *  FHIR version.
 
 Example output for the search https://simplifier.net/catalog?name=core:
 
@@ -253,7 +253,8 @@ Example output for the search https://simplifier.net/catalog?name=core:
         "FhirVersion": "DSTU2" 
     },
     ...
-]
+  ]
+
 
 
 Package version Response
@@ -290,7 +291,8 @@ https://simplifier.net/catalog?name=core:
         "Version": "4.0.1"
     },
     ...
-]
+  ]
+
 
 
 Open API / Swagger documentation
