@@ -212,18 +212,19 @@ The implementation is this:
 
 We currently support these four parameters:
 
-**Name*
+**Name**
 
 With the ``name=`` parameter, you can search for any package where the name contains the given value. The match is anywhere in the string, so searching for ``name=r3`` will match ``hl7.fhir.r3.core``.
 
-**Canonical*
+**Canonical**
 
 With the ``canonical=`` parameter, you can search for any package that contains a resource that has the canonical url of the given value. The canonical needs to be an exact match. The search does not support partial matching.
 
-**Fhir Version*
+**Fhir Version**
 
 The ``fhirversion=`` parameter, filters your search results for the given FHIR version. This value can be of format strict Rx format: ``R3``, ``R4``, but also understands common monikers like ``stu3``, ``dstu2``.
-Prerelease
+
+**Prerelease**
 
 The ``prerelease=`` parameter allows you to include non-official package releases in your search results. The parameter allows two values: ``true`` and ``false``. The default value is ``false``.
 
