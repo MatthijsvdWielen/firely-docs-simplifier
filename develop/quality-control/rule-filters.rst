@@ -25,7 +25,7 @@ The filter property understands several types of values:
 - Any FHIRPath statement that results in an unambiguous true or false
 - Any FHIRPath statement that results in a single value (if the value is there, it’s a match)
 
-For more information about FHIRPath, see the `FHIRPath standard`_.
+QC supports FHIRPath normative v2.0.0. For more information about FHIRPath, see the `FHIRPath standard`_.
 
 An example true/false expression.
 
