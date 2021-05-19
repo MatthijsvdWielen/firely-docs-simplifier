@@ -1,40 +1,31 @@
 Introduction to Simplifier.net
 ==============================
 
-Simplifier.net is a FHIR registry. Within this registry you can
-create, upload, download, find and view FHIR Conformance Resources.
-Simplifier.net offers functionality for management of FHIR Resources
-and collaboration in teams. 
-
-FHIR (Fast Health Interoperability Resources) is an HL7 standard for information exchange in health care. It is based on Internet
-technology. More information about FHIR can be found at `HL7 FHIR <http://www.hl7.org/fhir/>`_.
-
-FHIR Profiling
---------------
-
-The FHIR Profiling tool `Forge (https://fire.ly/forge) <https://fire.ly/forge>`_ can be
-used off-line and independently from Simplifier.net.
+.. image:: ./images/Illustrations_Firely-03.png
+  :align: right
+  :width: 250px
+  :alt: Collaborating on a FHIR project
+  
+Simplifier is a FHIR registry, where you can create, upload, download, find an view FHIR resources. Simplifier is the best place to collaborate on FHIR projects with your team. 
 
 Simplifier accounts
 -------------------
 
-Simplifier.net distinguishes between free (personal) plans and paid
-plans. Anyone can find and download Resources in this Registry, with
-or without an account. Creating Resources requires an account. Paid
-plans are targeted at professional users and organizations.
+Simplifier offers everyone a free plan which allows you to find and download resources from the Simplifier FHIR registry. Each user can add one public project for free, making the user the owner of the project. For professional users and organizations we offer several paid plans which come with `additional functionality and benefits <https://simplifier.net/features/>`_ . Paid accounts are able to create more and private projects depending on the account level. 
+
+-	`Create your Simplifier account here <https://simplifier.net/signup/>`_.
+
+FHIR Profiling
+--------------
+
+With your Simplifier account on Simplifier you also get access to our FHIR profiling tool `Forge <https://fire.ly/products/forge/>`_. Forge allows you to build your FHIR Data Model and tailor-fit it to your specific needs. Forge can be used offline and independently from Simplifier.net. 
+
+- `Download Forge here <https://simplifier.net/downloads/forge/>`_.
 
 Simplifier content
 ------------------
 
-Simplifier content is organized at four levels: Users, Resources, Projects and Organizations.
-
-Users have access to a personal environment as well as free or paid features depending on their account level. 
-
-Simplifier is a repository for FHIR resources. There are a multitude of resources that are available to the public including profiles, extensions, valuesets, dictionaries, mappings, examples and more. 
-
-All FHIR resources are organized in projects, which can be either public or private. Each user can add one public project for free (paid accounts allow for adding more or private projects), making him/her the owner of the project. Depending on the account level more projects can be added. The features available in the project depend on the project settings as well as the account level.
-
-Organizations only exist for the highest account plan. One or more projects and users can be added to an organization.
+Simplifier is specially created for Data Modelers, Developers and Clinical Informatics Specialists. The available FHIR content is organized at four levels: Users, Resources, Projects and Organizations. You can import your FHIR resources and make use of the seamless integration between Forge and Simplifier.  
 
 Firely
 --------
