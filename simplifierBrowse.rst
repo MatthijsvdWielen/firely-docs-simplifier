@@ -11,7 +11,7 @@ Your search results are RESTful, meaning that you can send your search results e
 
 Search for organizations
 ------------------------
- Once you have found the organization you are interested in, you can select it to navigate to the `Organization page <simplifierOrganizationPortal.html#organization-portal>`_. Here you will find additional information about the organization as well as a list of public projects and available Implementation Guides that are linked to this organization.
+Once you have found the organization you are interested in, you can select it to navigate to the `Organization page <simplifierOrganizationPortal.html#organization-portal>`_. Here you will find additional information about the organization as well as a list of public projects and available Implementation Guides that are linked to this organization.
 
 Search for projects
 -------------------
