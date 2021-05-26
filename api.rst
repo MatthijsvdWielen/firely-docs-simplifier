@@ -105,22 +105,11 @@ Package Server API
 
 Simplifier has an package server API, that is compliant to the FHIR NPM package standard. It serves all FHIR packages created in Simplifier. 
 
-API Endpoint
-============
+The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. Simplifier also hosts the same package API for the FHIR package server. The root URL for this server is: https://packages.fhir.org.
 
-The api endpoint of the Simplifier FHIR package Server is:
+Try the Simplifier.net FHIR Package API `live from the SwaggerHub documentation. <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API/1.0.1>`_
 
-https://packages.simplifier.net/
-
-HL7 FHIR Package Server
-=======================
-
-Simplifier also hosts the same package API for the FHIR package server. The root URL for this server is:
-
-https://packages.fhir.org/
-
-Available API Endpoints
-"""""""""""""""""""""""
+**Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on packages. 
 
 Download Packages
 =================
@@ -132,12 +121,14 @@ The Simplifier FHIR Package server allows you to download a specific version of 
   
 
 For example:
+
 ::
   
   https://packages.simplifier.net/hl7.fhir.r3.core/3.0.2
   
 
-NPM compatible endpoint:
+NPM compatible endpoint
+-----------------------
 
 There is also an NPM compatible endpoint, which allows sligtly less trivial, but allows you to install FHIR package using any NPM client.
 
@@ -147,10 +138,10 @@ There is also an NPM compatible endpoint, which allows sligtly less trivial, but
 
 
 The above example, then becomes:
+
 ::
   
   https://packages.simplifier.net/hl7.fhir.r3.core/-/hl7.fhir.r3.core-3.0.2.tgz
-
 
 Version Listing
 ===============
@@ -212,21 +203,10 @@ The implementation is this:
 
 We currently support these four parameters:
 
-**Name**
-
-With the ``name=`` parameter, you can search for any package where the name contains the given value. The match is anywhere in the string, so searching for ``name=r3`` will match ``hl7.fhir.r3.core``.
-
-**Canonical**
-
-With the ``canonical=`` parameter, you can search for any package that contains a resource that has the canonical url of the given value. The canonical needs to be an exact match. The search does not support partial matching.
-
-**Fhir Version**
-
-The ``fhirversion=`` parameter, filters your search results for the given FHIR version. This value can be of format strict Rx format: ``R3``, ``R4``, but also understands common monikers like ``stu3``, ``dstu2``.
-
-**Prerelease**
-
-The ``prerelease=`` parameter allows you to include non-official package releases in your search results. The parameter allows two values: ``true`` and ``false``. The default value is ``false``.
+* With the ``name`` parameter, you can search for any package where the name contains the given value. The match is anywhere in the string, so searching for ``name=r3`` will match ``hl7.fhir.r3.core``.
+* With the ``canonical`` parameter, you can search for any package that contains a resource that has the canonical url of the given value. The canonical needs to be an exact match. The search does not support partial matching.
+* The ``fhirversion`` parameter, filters your search results for the given FHIR version. This value can be of format strict Rx format: ``R3``, ``R4``, but also understands common monikers like ``stu3``, ``dstu2``.
+* The ``prerelease`` parameter allows you to include non-official package releases in your search results. The parameter allows two values: ``true`` and ``false``. The default value is ``false``.
 
 Response
 --------
@@ -261,7 +241,7 @@ Example output for the search ``https://simplifier.net/catalog?name=core``:
 
 
 
-Package version Response
+Package version response
 ------------------------
 **PROPOSAL - Not implemented yet**
 
@@ -296,15 +276,6 @@ Example output:
     },
     ...
   ]
-
-
-
-Open API / Swagger documentation
-================================
-
-Try the Simplifier.net FHIR Package API `live from the SwaggerHub documentation. <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API/1.0.1>`_
-
-**Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on packages. 
 
 Project FHIR API
 """"""""""""""""
