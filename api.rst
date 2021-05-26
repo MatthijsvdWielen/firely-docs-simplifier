@@ -107,7 +107,7 @@ Simplifier has an package server API, that is compliant to the FHIR NPM package 
 
 The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. Simplifier also hosts the same package API for the FHIR package server. The root URL for this server is: https://packages.fhir.org.
 
-Try the Simplifier.net FHIR Package API `live from the SwaggerHub documentation. <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API/1.0.1>`_
+Try the Simplifier.net FHIR Package API `live from the SwaggerHub documentation. <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_
 
 **Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on packages. 
 
