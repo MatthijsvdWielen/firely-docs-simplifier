@@ -6,19 +6,19 @@ Introduction to Simplifier.net
   :width: 250px
   :alt: Collaborating on a FHIR project
   
-Simplifier is a FHIR registry, where you can create, upload, download, find an view FHIR resources. Simplifier is the best place to collaborate on FHIR projects with your team. 
+Simplifier is a FHIR collaboration and publishing platform, where you can create, upload, download, find an view FHIR resources. Simplifier is the best place to collaborate on FHIR projects with your team. 
 
 Simplifier accounts
 -------------------
 
-Simplifier offers everyone a free plan which allows you to find and download resources from the Simplifier FHIR registry. Each user can add one public project for free, making the user the owner of the project. For professional users and organizations we offer several paid plans which come with `additional functionality and benefits <https://simplifier.net/features/>`_ . Paid accounts are able to create more and private projects depending on the account level. 
+Simplifier offers everyone a free plan which allows you to find and download resources from the Simplifier FHIR registry. Each user can add one public project for free, making the user the owner of the project. For professional users and organizations we offer several paid plans which come with `additional functionality and benefits <https://simplifier.net/pricing/>`_ . Paid accounts are able to create more and private projects depending on the account level. 
 
--	`Create your Simplifier account here <https://simplifier.net/signup/>`_.
+-	`Create your free Simplifier account here <https://simplifier.net/signup/>`_.
 
 FHIR Profiling
 --------------
 
-With your Simplifier account on Simplifier you also get access to our FHIR profiling tool `Forge <https://fire.ly/products/forge/>`_. Forge allows you to build your FHIR Data Model and tailor-fit it to your specific needs. Forge can be used offline and independently from Simplifier.net. 
+With your Simplifier account you also get access to our FHIR profiling tool `Forge <https://fire.ly/products/forge/>`_. Forge allows you to build your FHIR Data Model and tailor-fit it to your specific needs. 
 
 - `Download Forge here <https://simplifier.net/downloads/forge/>`_.
 

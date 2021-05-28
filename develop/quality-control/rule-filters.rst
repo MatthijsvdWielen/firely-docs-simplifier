@@ -25,7 +25,7 @@ The filter property understands several types of values:
 - Any FHIRPath statement that results in an unambiguous true or false
 - Any FHIRPath statement that results in a single value (if the value is there, it’s a match)
 
-QC supports FHIRPath normative v2.0.0. For more information about FHIRPath, see the `FHIRPath standard`_.
+QC supports FHIRPath STU1. For more information about FHIRPath, see the `FHIRPath standard`_.
 
 An example true/false expression.
 
@@ -41,7 +41,7 @@ An example of a existence match:
    # Resources that have a meta.profile field:
    - filter: meta.profile
 
-See :ref:`predicate <qc_filters_fhirpath>` for using the same type of FHIRPath statements
+See :ref:`predicate <qc_actions_predicate>` for using the same type of FHIRPath statements
 to check if selected resources are correct according to your rules.
 
 
