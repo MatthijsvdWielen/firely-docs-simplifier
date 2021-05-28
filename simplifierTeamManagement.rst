@@ -1,7 +1,10 @@
+.. _Team_Management:
 Team Management
 ^^^^^^^^^^^^^^^
 
-From the Team license and up you can work with multiple project members. 
+.. important::
+
+  `This feature is available from the Team plan and up <https://simplifier.net/pricing>`_
 
 In your project, the license holder and Admin users can add more Team members. Under the ``Team`` tab you can add more Team members by inviting them by entering a valid emailaddress. 
 
@@ -27,7 +30,7 @@ When adding new team members to your project you have the option to assign "Admi
 
   * - Rights
     - View
-    - CRUD 
+    - Edit  
      
       resources
     - Team 
@@ -78,7 +81,7 @@ Create Teams
    :align: right
    :width: 350px
 
-In the Teams section Multiple teams can be created and managed. There are two types of teams available, the managing team and project teams. The managing team members are given the same rights as the license owner. They will be allowed to create projects under the Organization and manage the Organizations project teams. 
+In the Teams section Multiple teams can be created and managed. There are two types of teams available, the managing team and project teams. You can create multiple project teams, but only one managment team. The managing team members with Admin rights are given the same rights as the license owner. They will be allowed to create projects under the Organization and manage the Organizations project teams. One more benefit of adding people to the Managing team is that you can easily add them to other teams in the Organization. They are shown in the dropdown for adding members and don't even need to accept the invite anymore.
 
 Team projects
 `````````````

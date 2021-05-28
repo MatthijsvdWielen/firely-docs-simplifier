@@ -1,23 +1,24 @@
 Searching on Simplifier
 ========================
-Simplifier allows you to access FHIR data models from all around the world. You can search for Organizations and access their publicly available projects. It shows you how the best Health Organizations use FHIR and you can save time reinventing the wheel. 
+Simplifier allows you to access FHIR data models from all around the world. You can search for Organizations and access their publicly available projects. It shows you how the best Health Organizations use FHIR and how you can save time reinventing the wheel. 
 Simplifier content is organized at four levels: Organizations, Projects, Resources and Users. When you scroll down on the `Simplifier.net homepage <https://simplifier.net>`_  you can see showcase projects and the most popular projects available on Simplifier. 
 
 Search existing content
 -----------------------
 To explore existing organizations, projects and resources simply type a search phrase into the ``Search`` field at the top of the Simplifier homepage. Once you reach the page with your search results you will notice that you have a few options to further specify your results. In the left hand menu you will find options to limit the results to Organizations, Projects or Resources. You can further specify Resource Categories, FHIR version, FHIR status, Project Scope and Nationality. 
 
-Your search results are RESTful, meaning that you can send your search results exactly as you have edited them to another using the URL. The person that you are sending the results to will receive the search results just as you have filtered them.
+Your search results are RESTful, meaning that you can send your search results exactly as you have edited them to someone else using the URL. The person that you are sending the results to will receive the search results just as you have filtered them.
 
 Search for organizations
 ------------------------
-Once you have found the organization you are interested in, you can select it to navigate to the `Organization page <simplifierOrganizationPortal.html#organization-portal>`_. Here you will find additional information about the organization as well as a list of public projects and available Implementation Guides that are linked to this organization.
+For more information on Organizations please take a look at the :ref:`Organization documentation <Organization_page>` Once you have found the organization you are interested in, you can select it to navigate to the :ref:`Organization page <Organization_Portal>`. Here you will find additional information about the organization as well as a list of public projects and available Implementation Guides that are linked to this organization. 
+More information on how Organizations work can be found here. 
 
 Search for projects
 -------------------
 All content in Simplifier (e.g. resources and Implementation Guides) is organized in projects. Projects may be linked to an organization (depending on the account level) or stand alone. To search for projects, select the option Projects under Search Type. You can use additional filters to search for more specific projects. For example you can filter based on Project Scope. This allows you to make a distinction between Core, International, National, Local, and Regional projects. If you select the National Project Scope, the Nationality filter option will open. Here you can select one or more nationalities.
 
-Once you have found the project you are interested in, you can select it to navigate to the `Project page <simplifierProjects.html#project-page>`_ where all content of the project is organized. Here you will find a summary of the project, a list of the project's resources, Implementation Guides, project team members. log information, dependencies and published packages.
+Once you have found the project you are interested in, you can select it to navigate to the Project page and inspect the content. For more information on projects, please take a look at our :ref:`Projects pages <Project_Page>` where all the content is explained. 
 
 Search for FHIR resources
 -------------------------
