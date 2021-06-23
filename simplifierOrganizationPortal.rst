@@ -1,3 +1,5 @@
+.. _Organization_page:
+
 Organizations
 ^^^^^^^^^^^^^
 .. important::
@@ -15,7 +17,8 @@ Once you have made your account you can create and organize organizational proje
     :align: center
     :scale: 50 %
     
-Organization Portal
+.. _Organization_Portal:
+    Organization Portal
 -------------------
 Your organization portal is a landing page for your organization that is visible to the outside world. On your portal you can add a logo, information about your organization and news feeds. Your organization portal also shows a list of your organization's projects.
 

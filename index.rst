@@ -27,6 +27,7 @@ Below you will find the documentation for the platform.
    simplifierPersonalContent
    simplifierResources
    simplifierProjects
+   simplifierTeamManagement
    develop/quality-control
    simplifierDocumentationRedirection
    simplifierOrganizationPortal
