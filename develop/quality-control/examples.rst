@@ -42,11 +42,11 @@ match each other.
 .. code-block:: yaml
 
   - name: publisher-filled
-  filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
-  # Excluding IGs for now, since they don't have a way to set metadata
-  status: "Checking if all resources have publisher filled"
-  predicate: publisher.exists() and (publisher in ('HL7 UK' | 'NHS Digital'))
-  error-message: "Publisher not filled (correctly)"
+    filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
+    # Excluding IGs for now, since they don't have a way to set metadata
+    status: "Checking if all resources have publisher filled"
+    predicate: publisher.exists() and (publisher in ('HL7 UK' | 'NHS Digital'))
+    error-message: "Publisher not filled (correctly)"
 
   - name: contact-filled
     filter: (StructureDefinition or ValueSet or CodeSystem or CapabilityStatement or SearchParameter or NamingSystem or ConceptMap).exists()
