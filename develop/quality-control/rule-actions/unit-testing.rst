@@ -3,10 +3,6 @@
 Assert: Unit testing
 --------------------
 
-.. warning::
-
-   This feature will be released around end of feb. 2021
-
 Unit testing is a strategy from software engineering to make sure some
 errors do not occur and other errors do occur.
 

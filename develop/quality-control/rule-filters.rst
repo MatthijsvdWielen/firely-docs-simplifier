@@ -50,7 +50,7 @@ Resource filters
 
 .. warning::
 
-   This feature will be released around end of feb. 2021
+   This feature will be released around end of July 2021
 
 Resource types are a valid FHIRPath expression. So, this wil select all
 Patient resources.
@@ -72,10 +72,6 @@ Filtering on broader categories is planned, but not yet implemented:
 
 File filters
 ============
-
-.. warning::
-
-   This feature will be released around end of feb. 2021
 
 You can filter any file with the ``file`` or ``files`` filter, based on a globbing
 pattern as you may now from your own computer file system.

@@ -73,7 +73,11 @@ When adding new team members to your project you have the option to assign "Admi
 Enterprise license
 ------------------
 
-Project teams can be managed the same as for the Team license, adding individual members to the projects. Additionaly, for Enterprise licenses the Team managament feature is available. You can acces this through the ``Teams`` tab in your Organization portal. 
+Enterprise licenses allow you to create an :ref:`Organization <Organization_page>`. Inside your Organization project teams can be managed the same as with the Team license. 
+
+.. image:: ./images/teams-simplifier-overview.png
+
+Additionaly, for Enterprise licenses the Team managament feature is available. You can acces this through the ``Teams`` tab in your Organization portal. 
 
 Create Teams
 ````````````
