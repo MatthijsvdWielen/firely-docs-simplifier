@@ -31,6 +31,10 @@ GitHub Sync
 -----------
 GitHub Sync enables you to synchronize your Simplifier project with the linked GitHub repository. Images or css files that up until recently were not supported by Simplifier are now available. If you decided to skip the initial import after linking or you have old markdown, you are now able to access them in Simplifier by using the sync process. 
 
+GitHub UpSync
+-------------
+Although this is not natively supported through Simplifier.net it is possible to synchronize the changes made on Simplifier with you Github Repository. For more information on how to do this please see our documentation on Firely Terminal Github UpSync. 
+
 
 GitHub Include/Exclude
 ----------------------
@@ -101,3 +105,28 @@ To get started, you create a project and `establish a webhook <#github-linking>`
 -	The Implementation Guide editor will now open with your IG - leave it as-is. You will also find the IG in the Guides tab of your project.
 
 From now on, you can edit the ImplementationGuide resource and its pages from within your GitHub repository. Your changes will be automatically pushed to Simplifier and your online Implementation Guide.
+
+Github Rights explanation
+
+An overview of the process:
+
+  - When connecting a Simplifier user connects his GitHub account, we ask for the "write:repo_hook" (to create a webhook to get notified on changes) and "repo" permission (to be able to read the latest version of the files from the public or private repo).
+  - Next the user can connect a branch from one of the repositories they have access to, to a Simplifier project. We generate a secret token when we link a project to a GitHub repository and use that to verify that the request to the web hook endpoint is indeed coming from GitHub.
+  - When GitHub sends a request to Simplifier (on the push trigger on the connected branch) it creates a signature (hash) based on the secret we generated and the payload itself. When we receive the request, we use the same secret (stored in our database) to create a hash based on the payload. If the hash sent from GitHub and the one, we create match then the request is valid (coming from GitHub).
+  - In our database we store information about the GitHub relations when they are created: RepositoryId, SecretToken, WebhookId and this is bound to the foreign key of the project in Simplifier. When a GitHub webhook comes in we use this to match which Simplifier project to update.
+
+We would strongly prefer to only ask for read-only access on the specific repository you have connected, but this has not been possible with the GitHub API.
+
+The only available Oauth scope to be able to read a private GitHub repository is repo, which indeed also grants us write rights: Scopes for OAuth Apps - GitHub Docs. This is a current limitation.
+
+  - One way to limit the scope of access:
+      - Create a GitHub user account that only has rights on the GitHub repos and branches that you want Simplifier to be able to access. While we currently only need read access on your repository's files, given the need to be able to create webhooks this likely still is of the access level admin​.
+      - Use this user to set up the GitHub connection between Simplifier and GitHub. In this way the impact of the GitHub apps access is limited to the necessary repository.
+
+
+Another way to synchronize Simplifier and GitHub, eliminating the need to give our GitHub app access, would be to create a GitHub actions pipeline that uses the ``fhir project push``​ command to send the contents from a FHIR project to Simplifier.net project. (Or even ``fhir project sync``​ + a commit for also synching the files down from Simplifier to GitHub). Please see our :doc:`Firely Terminal documentation<firely_terminal_docs:Github-Upsync>` on how to set up GitHub UpSync.
+
+
+
+
+
