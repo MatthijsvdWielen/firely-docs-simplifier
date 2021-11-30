@@ -10,7 +10,7 @@ On a project level you can claim a canonical under the ``Canonical claims`` opti
 
 .. image:: ./images/ClaimedBaseUrl.png
 
-If a canonical is claimed you declare ownership of this canonical claim. If another user disputes your claim, and has the legitimate claim, a site admin can set your canonical claim as invalid. 
+If a canonical is claimed you declare ownership of this canonical claim. If another user disputes your claim, and has the legitimate claim, a site admin can set your canonical claim as invalid. Please reach out to us if you want to open a dispute about invalid Canonical Claims. 
 
 .. image:: ./images/InvalidClaim.png
 
