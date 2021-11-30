@@ -37,6 +37,7 @@ Below you will find the documentation for the platform.
    simplifierBackupAndSynchronization
    simplifierConnectors
    simplifierEmbeddedRendering
+   simplifierCanonicalClaims
    simplifierIGeditor
    firely-server
    FHIRRegistry
