@@ -127,7 +127,7 @@ Here you can select one of the custom workflows of your organization to use it i
 
 Canonical base urls
 -------------------
-Project owners can customize their base canonical URLs to brand their projects. Canonical URLs of resources will only be valid if they match the canonical base URL of their project. Make note that by choosing a canonical URL you are also certifying that it is within your rights to do so. 
+Project owners can customize their base canonical URLs to brand their projects. Canonical URLs of resources will only be valid if they match the canonical base URL of their project. For more information see our documentation on :ref:`Canonical Claims. <Canonical_Claims>` 
 
 Import log
 ----------
