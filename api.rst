@@ -103,18 +103,16 @@ The currently supported calls include:
 Package Server API
 """"""""""""""""""
 
-Simplifier has an package server API, that is compliant to the FHIR NPM package standard. It serves all FHIR packages created in Simplifier. 
+Simplifier has an package server API, that is compliant to the FHIR NPM package standard. It serves all publicly published FHIR packages, both those created in Simplifier and beyond. The API is documented and can be tested directly on `SwaggerHub <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_.
 
 The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
-
-The API is documented and can be tested directly on `SwaggerHub <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_.
 
 **Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on packages. 
 
 NPM compatible endpoint
 =======================
 
-There is also an NPM compatible endpoint, which allows you to install FHIR package using any NPM client. Keep in mind that this will mix the FHIR packages with your regular NPM packages and does not support FHIR-specific features, like searching on canonicals or FHIR versions.
+Besides the regular package endpoint, there is also a more limited NPM compatible endpoint, which allows you to install FHIR package using any NPM client. Keep in mind that this will mix the FHIR packages with your regular NPM packages and does not support FHIR-specific features, like searching on canonicals or FHIR versions.
 
 ::
   
