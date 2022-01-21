@@ -17,12 +17,12 @@ The ``Introduction`` page will give you an overview of the package:
 * History; shows the previous versions of the package, click on a version name to see the details.
 * Info; shows information about when the package was created, a link to the project it is part of and a download button to download the package.
 
-.. image:: ./images/PackageView.PNG
+.. image:: ./images/PackageView.png
   :align: center
 
 Switch to the ``Files`` tab to see the content of the package. 
 
-.. image:: ./images/PackageFiles.PNG
+.. image:: ./images/PackageFiles.png
   :align: center
 
 Publish packages
@@ -33,6 +33,20 @@ To create a new version of an existing package, click on ``Create`` and select `
 .. image:: ./images/PackageRelease.png
   :align: center
   
+Unlist Packages
+^^^^^^^^^^^^^^^
+Once a package is created it can be used by other implementers to build their project on top of. For this reason we do not delete packages from the Registry. Once a package is created it is there to stay. Implementers can depend on the availability of published packaged. 
+
+In some cases you might want new implementers to no longer find a specific version of a package. For these cases you can ``unlist`` a package. This can be done by the package owner in the package Administration. 
+
+.. image:: ./images/UnlistPackage.png
+  :align: center
+
+When a package is unlisted, it will no longer show up for implementers on the Registry or on Simplifier. As a creator of the package you will still be able to see the package with an unlisted label added.  
+
+.. image:: ./images/UnlistedPackage.png
+  :align: center
+
 Dependencies
 -----------------------
 

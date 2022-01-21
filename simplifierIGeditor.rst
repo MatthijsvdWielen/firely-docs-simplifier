@@ -1,33 +1,35 @@
 Implementation Guide Editor
 ===========================
-The Implementation Guide Editor enables you to make implementation guides (IG) using the resources available in Simplifier. You can include your own project's Resources or those from others in your IG. 
+The Implementation Guide Editor on Simplifier enables you to make implementation guides (IGs) using the resources available in Simplifier. You can include your own project's Resources, package resources or those from others in your IG. 
 With the help of this Markdown based editor you can easily construct an organized and practical IG that is both easy to read and navigate. This IG editor is available in all Simplifier account plans. Visit https://simplifier.net/pricing for more details.
 
 This page will elaborate further on getting started and how you can use the IG editor.
 
 Create your first IG
 --------------------
-You can access the IG editor via the ``Guides`` tab in your project. In earlier versions of Simplifier, Implementation Guides were created from a user's portal, but this is no longer possible as Implementation Guides are linked to a specific project. Use the ``Create`` button to create a new Implementation Guide and provide a title for the IG. 
+You can access the IG editor via the ``Guides`` tab in your project. Use the ``Create`` button to create a new Implementation Guide and provide a title for the IG. Simplifier will automatically generate a URL Key, but you can choose your own URL Key.
 
-.. image:: ./images/ImplementationGuides.PNG  
+.. image:: ./images/ImplementationGuideCreate.png  
 
 Click on ``Browse`` or the Implementation Guide itself for a preview of the guide. Click on the ``Edit`` button to open the Implementation Guide in the IG editor. 
 
 IG Editor Settings
 ------------------
-The IG editor opens on the page of the root element. The IG Editor consist of three sections. On the left is the IG's tree table which is used to define the outline of your IG and navigate between the pages of the IG. The middle section is the actual editor. This is where you will add and edit content. The right section is where you will find a rendering of the selected page. 
+The IG editor opens on the page of the root folder. Simplifier stores newly created IGs in a folder based structure allowing users to easily ``copy`` guides and maintain multiple versions of their guides. 
+
+The IG Editor consist of three sections. On the left is the IG's tree table which is used to define the outline of your IG and navigate between the pages of the IG. The middle section is the actual editor. This is where you will add and edit content. The right section is where you will find a rendering of the selected page. 
 
 By way of dragging the section bars you can adjust the size of each section to customize your view.
 
-To adjust the settings of your IG click on the Settings icon (the rightmost icon representing a gear wheel). This brings you to a section that allows you to adjust the title and privacy on the Settings tab, or select an IG rendering format and Stylesheet file on the Style tab. 
+To adjust the settings of your IG click on the Settings icon (the middle icon representing a gear wheel). This brings you to a section that allows you to adjust the title and privacy on the Settings tab, or select an IG rendering format and Stylesheet file on the Style tab. In the settings you are also able to select a ``scope`` for your guide. The scope determines where the rendered resources in your guide come from. You can set the scope to released packages or you live development project. 
 
-.. image:: ./images/IGeditor.PNG   
+.. image:: ./images/IGEditor.PNG   
 
 
 Formatting style
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
 
-An IG can be rendered in one of three formats: a Tree table, Two Level Menu or HL7 Ballot format.
+An IG can be rendered in one of three formats: a Tree table, Two Level Menu or HL7 format(work in progress).
 
 A Tree table rendering will display your IG with the elements in a format similar to the tree table with the elements and their hierarchy along the left side of the page.
 
@@ -37,9 +39,12 @@ A Two Level Menu rendering will display your IG with the elements in tabs along 
 
 .. image:: ./images/IGHorizontalNavigation.png
 
-A HL7 Ballot rendering will display your IG with the elements in tabs along the top of the page similar to the Two Level Menu rendering, but in the style of a HL7 Ballot IG.
+A HL7 format rendering will display your IG with the elements in tabs along the top of the page similar to the Two Level Menu rendering, but in the style of a HL7 IG.
 
-To add a new menu item to your Implementation Guide, use the ``+`` icons in the upper left corner of the IG editor. Click on either the ``add Child guide item`` icon to add a sub menu or on the ``add Sibling guide item`` icon to add a menu at the same level as the one you have selected. You can rename the items by either double clicking them or use the pencil icon in the icon bar. To delete a menu item, select it and click on the recycle bin icon. 
+Every folder contains an index file which will be displayed as the folders homepage. Every folder can have child pages which can be added with the ``+`` icon. In the image below you can see the folder structure on the left and on the right de rendering of the Implementation Guide: 
+
+.. image:: ./images/FolderStructure.png
+
 
 CSS-editor
 ----------
@@ -158,18 +163,37 @@ The following statements add an index within the IG.
 - ``{{index:root}}``	- gives an index of the entire IG 
 - ``{{index:current}}`` - gives an index of the current selected element
 
+With the introduction of FQL  it is now possible to create dynamic tables in your IG. FQL tables retrieve information from the resources in the select scope. Below is an example of the syntax. For more information and examples please look at our `documentation <https://simplifier.net/docs/fql>`_.
+
+.. code-block:: SQL
+
+    
+    @```
+
+    from <your recources>
+    where <option>
+    select <what you want in the table>
+    
+    ```
+    
+    
+
+
+
+
+
 IG Storage
 ----------
-Since release 16.5 IG's are stored as separate mark down files in your project. This means that you can access them as separate resources, add issues to them and check version history. In addition, your IG’s will be downloaded in a ZIP file together with the other files of your project.
+Since release 28.0 IG's all files belonging to an IG are saved in the same folder. No longer in the root of the project and not in different folders. The folder name will be the same as the IG name. 
 
-To illustrate how this works, see the screen picture of an example IG containing two chapters called ‘First part’ and  ‘Second part’. The First part also contains a child called ‘Child of first part’. The different parts of the IG are now accessible from the Resources tab in your project as well as from the search engine. To search for IG parts, just check the Texts box.
+To illustrate how this works, see the screen picture of an example IG containing three topics with one or more pages for each topic. In the project's filemanager you can see the different folder structures for each guide. 
 
-.. image:: ./images/ig-tree-example.png
-.. image:: ./images/new-test-resources.png
+.. image:: ./images/IGEditorStructure.png
+.. image:: ./images/IGFileStorage.png
 
-To Save your IG as a Resource, click on the ``Save`` button in the left pane of the IG-editor. Note that it is the tree structure that is saved. Textual changes are save automatically.
+To Save your IG as a Resource, click on the ``Generate IG resource`` button in the left pane of the IG-editor. Note that it is the tree structure that is saved. Textual changes are save automatically.
 
-.. image:: ./images/SaveIG.PNG
+.. image:: ./images/CreateIGResource.png
 
 Export your IG
 --------------
@@ -180,7 +204,7 @@ Export your IG
 
 To use your IG outside of Simplifier, click on the Export button next to your IG in the Guides section of your project. 
 
-.. image:: ./images/igExport.png
+.. image:: ./images/ExportIG.png
 
 Convert ImplementationGuide resource to a Simplifier webbased IG
 ----------------------------------------------------------------
@@ -195,6 +219,26 @@ An ImplementationGuide resource can be converted to a Simplifier webbased IG. Th
 - Follow the configuration steps and locate the IG in the Guides tab.
 
 **Note**: If you want to export and import a project through a .zip you have to make sure that the folder structure is the same as in the project, to make sure links between IG resources are still in tact. Zipping a containing folder will include the folder in the zip-file. To make sure no extra layer of folders is added, directly zip the resources within a folder instead.
+
+Create a copy of your IG
+------------------------
+Since the release of Simplifier 28.0 it is possible to create a copy of your Implementation guide. Due to the complexity of the feature it is currently (21-01-2022) a beta release. 
+
+.. image:: ./images/CopyGuide.png
+
+A guide can be copied to the same project or to another project. The ``Target project:`` dropdown provides an list of all of your projects where you can create a copy of your IG. 
+
+.. image:: ./images/TargetProject.png
+
+You can now have multiple version of your Implementation Guide live in the same project (or different projects). You could have one IG use a release package as the scope while the development version uses the live developement version of your project. 
+
+Guides created before Simplifier 28.0 are still stored in the legacy way as separate markdown files. These guides first have to be migrated to the new way of storing guides. 
+
+.. image:: ./images/LegacyGuides.png
+
+This functionality is also a beta release so please follow the warning and migration steps in the Migrate Guide window. In the Migrate Guide window a different target project can also be selected. Migrating a guide **does not** delete the legacy guide. 
+
+After a guide is migrated or copied, please make sure all your internal page links and references are still working. 
 
 Manage your IG using GitHub
 ---------------------------

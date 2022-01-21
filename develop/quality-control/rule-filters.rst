@@ -48,10 +48,6 @@ to check if selected resources are correct according to your rules.
 Resource filters
 ================
 
-.. warning::
-
-   This feature will be released around end of July 2021
-
 Resource types are a valid FHIRPath expression. So, this wil select all
 Patient resources.
 

@@ -1,10 +1,6 @@
 Same
 ====
 
-.. warning::
-
-   This feature will be released in Simplifier version 27.1, est. end of
-   feb. 2021
 
 The ``same`` rule makes sure all values at a specific location in a
 resource are the same. You can provide any FhirPath expression, as long
