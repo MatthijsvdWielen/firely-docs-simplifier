@@ -105,32 +105,16 @@ Package Server API
 
 Simplifier has an package server API, that is compliant to the FHIR NPM package standard. It serves all FHIR packages created in Simplifier. 
 
-The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. Simplifier also hosts the same package API for the FHIR package server. The root URL for this server is: https://packages.fhir.org.
+The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
 
-Try the Simplifier.net FHIR Package API `live from the SwaggerHub documentation. <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_
+The API is documented and can be tested directly on `SwaggerHub <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_.
 
 **Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on packages. 
 
-Download Packages
-=================
-The Simplifier FHIR Package server allows you to download a specific version of a package. You can download any FHIR package by directly accessing this URL in your browser:
-
-::
-  
-  https://packages.simplifier.net/<package-name>/<package-version>
-  
-
-For example:
-
-::
-  
-  https://packages.simplifier.net/hl7.fhir.r3.core/3.0.2
-  
-
 NPM compatible endpoint
------------------------
+=======================
 
-There is also an NPM compatible endpoint, which allows sligtly less trivial, but allows you to install FHIR package using any NPM client.
+There is also an NPM compatible endpoint, which allows you to install FHIR package using any NPM client. Keep in mind that this will mix the FHIR packages with your regular NPM packages and does not support FHIR-specific features, like searching on canonicals or FHIR versions.
 
 ::
   
@@ -143,139 +127,6 @@ The above example, then becomes:
   
   https://packages.simplifier.net/hl7.fhir.r3.core/-/hl7.fhir.r3.core-3.0.2.tgz
 
-Version Listing
-===============
-In order to discover the available versions of a package, you can do a ``GET`` on this endpoint.
-
-::
-  
-  https://packages.simplifier.net/<package-name>
-
-
-The payload is compliant with the NPM package version listing.
-
-The ``dist-tags`` element will provide tags on certain versions, like the label of which version is the ``latest``. Note: In calculating ``latest`` the highest stable semver version is used, not the most recently published version.
-Example payload
-
-Here is an example output when requesting ``https://packages.simplifier.net/simplifier.core.stu3``:
-
-::
-  
-  {
-    "_id":"Simplifier.Core.STU3",
-    "name":"Simplifier.Core.STU3",
-    "description":"This is a meta package that contains the FHIR Core STU3 Spec...",
-    "dist-tags": {"latest":"3.0.3"},
-    "versions": { 
-        "3.0.1": {
-            "name": "Simplifier.Core.STU3",
-            "version": "3.0.1",
-            "description":"None.",
-            "url":"https://packages.simplifier.net/Simplifier.Core.STU3/3.0.1"},
-        "3.0.2": {
-            "name": "Simplifier.Core.STU3",
-            "version": "3.0.2", 
-            "description": "Contains a fix for invariant sdf-20 (no slici...",        
-            "url": "https://packages.simplifier.net/Simplifier.Core.STU3/3.0.2"},
-        "3.0.3": {
-            "name":"Simplifier.Core.STU3", 
-            "version":"3.0.3",
-            "description": "None.",
-            "url": "https://packages.simplifier.net/Simplifier.Core.STU3/3.0.3"
-        }
-    }
- }
-
-
-
-Package Search
-==============
-Because we want to make package search as useful as possible for the FHIR usecase, we are not following the NPM standard, but we implement a lean endpoint that can be used for intellisense (dropdown) and a search that can deal with the most important FHIR relevant search queries: canonicals and FHIR versions.
-
-Query
------
-The implementation is this:
-
-::
-  
-  https://packages.simplifier.net/catalog?<parameters>
-
-
-We currently support these four parameters:
-
-* With the ``name`` parameter, you can search for any package where the name contains the given value. The match is anywhere in the string, so searching for ``name=r3`` will match ``hl7.fhir.r3.core``.
-* With the ``canonical`` parameter, you can search for any package that contains a resource that has the canonical url of the given value. The canonical needs to be an exact match. The search does not support partial matching.
-* The ``fhirversion`` parameter, filters your search results for the given FHIR version. This value can be of format strict Rx format: ``R3``, ``R4``, but also understands common monikers like ``stu3``, ``dstu2``.
-* The ``prerelease`` parameter allows you to include non-official package releases in your search results. The parameter allows two values: ``true`` and ``false``. The default value is ``false``.
-
-Response
---------
-The response of this API call is a JSON array that contains the following values:
-
-  *  package name,
-  *  package description
-  *  FHIR version.
-
-Example output for the search ``https://simplifier.net/catalog?name=core``:
-
-::
-  
-  [
-    {
-        "Name": "Simplifier.Core.STU3.Resources",
-        "Description": "These are the STU3 Core Profile StructureDefini...",
-        "FhirVersion": "STU3"
-    },
-    {
-        "Name": "simplifier.core.r4.resources",
-        "Description": "The HL7 FHIR core R4 Specification Base Resources",
-        "FhirVersion": "R4"
-    },
-    {
-        "Name": "hl7.fhir.r2.core",
-        "Description": "Definitions (API, structures and terminologies ...",
-        "FhirVersion": "DSTU2" 
-    },
-    ...
-  ]
-
-
-
-Package version response
-------------------------
-**PROPOSAL - Not implemented yet**
-
-A ``version=`` parameter that accepts a boolean ``true`` or ``false``. The default is ``false``.
-
-When set to ``true``, the search will return all versions of packages that match the criteria.
-
-Example output:
-
-``https://simplifier.net/catalog?name=core``:
-
-::
-  
-  [
-    {
-        "Name": "hl7.fhir.r3.core",
-        "Description": "These are the STU3 Core Profile StructureDefini...",
-        "FhirVersion": "STU3"
-        "Version": "3.0.1"
-    },
-    {
-        "Name": "hl7.fhir.r3.core",
-        "Description": "These are the STU3 Core Profile StructureDefini...",
-        "FhirVersion": "STU3"
-        "Version": "3.0.2"
-    },
-    {
-        "Name": "hl7.fhir.r4.core",
-        "Description": "These are the R4 Core Profile StructureDefini...",
-        "FhirVersion": "STU3"
-        "Version": "4.0.1"
-    },
-    ...
-  ]
 
 Project FHIR API
 """"""""""""""""
