@@ -39,6 +39,7 @@ Below you will find the documentation for the platform.
    simplifierEmbeddedRendering
    simplifierCanonicalClaims
    simplifierIGeditor
+   simplifierFQL
    firely-server
    FHIRRegistry
    accessibility
