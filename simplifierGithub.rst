@@ -107,6 +107,7 @@ To get started, you create a project and `establish a webhook <#github-linking>`
 From now on, you can edit the ImplementationGuide resource and its pages from within your GitHub repository. Your changes will be automatically pushed to Simplifier and your online Implementation Guide.
 
 Github Rights explanation
+-------------------------
 
 An overview of the process:
 

@@ -1,8 +1,15 @@
 Documentation Redirection
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 Each project and resource in Simplifier has a Documentation URL. 
-If set, users that go to https://simplifier.net/resolve and enter a canonical URL will get automatically
-directed to that documentation url. The default (fallback) will be the resource page on Simplifier itself. 
+If set, users that go to https://simplifier.net/resolve and enter a canonical URL will get automatically directed to that documentation url. The default (fallback) will be the resource page on Simplifier itself. 
+
+Although for STU3 the scope ``All of Simplifier`` does work, it is best practice to select a package or a project as the scope. This ensures that the user is redirected to the intended location. 
+
+Resolving canonicals in FHIR R4 requires the use of a package (or project) scope and setting the FHIR version to R4. By default Simplifier will select the package ``hl7.fhir.r4.core 4.0.1``. 
+
+.. image:: ./images/CanonicalScope.PNG
+  :align: center
+
 
 You can set the documentation URL of a single resource, but you can also set the the documentation URLs of all 
 resources in the project, because Simplifier works with templates for the documentation URL.  
