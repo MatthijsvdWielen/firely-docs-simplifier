@@ -7,7 +7,7 @@ Although for STU3 the scope ``All of Simplifier`` does work, it is best practice
 
 Resolving canonicals in FHIR R4 requires the use of a package (or project) scope and setting the FHIR version to R4. By default Simplifier will select the package ``hl7.fhir.r4.core 4.0.1``. 
 
-.. image:: ./images/CanonicalScope.PNG
+.. image:: ./images/CanonicalScope.png
   :align: center
 
 
