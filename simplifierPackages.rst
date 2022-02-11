@@ -69,7 +69,6 @@ Click ``Manage`` to search for existing dependencies. Type a search string in th
 Click ``Edit`` to directly edit the JSON code and add the packages and their version to ``dependencies``.
 
 .. image:: ./images/PackageEdit.png
-  :align: center
 
 Remove dependencies
 ^^^^^^^^^^^^^^^^^^^
