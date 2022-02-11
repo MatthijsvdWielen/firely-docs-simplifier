@@ -54,7 +54,7 @@ View dependencies
 ^^^^^^^^^^^^^^^^^
 Visit the ``Dependencies`` tab of any Simplifier project to see a list of its package dependencies as well as indirect dependencies. Click on the name of one of the listed packages to see the details of this package. This will show the information as explained in the View Packages section.
 
-.. image:: ./images/PackageAddDependencies.PNG
+.. image:: ./images/PackageAddDependencies.png
   :align: center
 
 Add dependencies
@@ -63,12 +63,12 @@ Visit the ``Dependencies`` tab to add dependencies to your project. There are tw
 
 Click ``Manage`` to search for existing dependencies. Type a search string in the search box and select a package and its version from the search results. Click ``Add`` to add the package to your project. When you are finished adding packages click ``Save`` to save the changes to your project.
 
-.. image:: ./images/PackageDependenciesTab.PNG
+.. image:: ./images/PackageDependenciesTab.png
   :align: center
 
 Click ``Edit`` to directly edit the JSON code and add the packages and their version to ``dependencies``.
 
-.. image:: ./images/PackageEdit.PNG
+.. image:: ./images/PackageEdit.png
   :align: center
 
 Remove dependencies
