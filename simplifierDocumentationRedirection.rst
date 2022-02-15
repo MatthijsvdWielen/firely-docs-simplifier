@@ -27,7 +27,7 @@ Creating your own resolve URL
 -----------------------------
 Besides using the resolve page on Simplifier, it is also possible to make a URL directly. Each resolve URL consitst of 4 parts, the base, FHIR version, scope and version. In the image below you can see a breakdown of an example url when the scope is set to the package ``hl7.fhir.r4.core 4.0.1``.
 
-.. image:: ./images/ResolveURL.PNG
+.. image:: ./images/ResolveURL.png
   :align: center
 
 * The base for every resolve URL is ``https://simplifier.net/resolve?``. 
