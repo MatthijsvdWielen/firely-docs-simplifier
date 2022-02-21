@@ -23,7 +23,7 @@ By way of dragging the section bars you can adjust the size of each section to c
 
 To adjust the settings of your IG click on the Settings icon (the middle icon representing a gear wheel). This brings you to a section that allows you to adjust the title and privacy on the Settings tab, or select an IG rendering format and Stylesheet file on the Style tab. In the settings you are also able to select a ``scope`` for your guide. The scope determines where the rendered resources in your guide come from. You can set the scope to released packages or you live development project. 
 
-.. image:: ./images/IGEditor.png   
+.. image:: ./images/IGeditor.PNG   
 
 
 Formatting style
