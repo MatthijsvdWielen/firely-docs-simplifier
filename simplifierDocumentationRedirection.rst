@@ -32,7 +32,7 @@ Besides using the resolve page on Simplifier, it is also possible to make a URL 
 
 * The base for every resolve URL is ``https://simplifier.net/resolve?``. 
    
-* FHIR version in the example is set to ``R4`` for ``STU3`` you add ``fhirVersion=STU3`` after the base.
+* FHIR version in the example is set to ``R4``. For ``STU3`` you add ``fhirVersion=STU3`` after the base.
    
 * The scope of the resolve is set by using the package name or project URL Key.
    
