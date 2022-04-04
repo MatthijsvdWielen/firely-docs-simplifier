@@ -11,7 +11,7 @@ resources from the repository are fetched and added to your Simplifier project. 
 GitHub Linking
 --------------
 In order to perfom the inital setup link of a GitHub repository to a Simplifier project, the user needs to have admin rights in GitHub and Simplifier.
-You can link a repository in GitHub to your Simplifier project by going to your project and selecting the ``Link repository`` button under the ``Options`` menu. 
+You can link a repository in GitHub to your Simplifier project by going to your project and selecting the ``Link repository`` button under the ``GitHub`` menu. 
 
 You will be redirected to the GitHub login or, if you are already logged in to GitHub, straight to the page where you will be asked to authorize that Simplifier can access your repository.
 
