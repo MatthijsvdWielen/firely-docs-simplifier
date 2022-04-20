@@ -27,7 +27,7 @@ To adjust the settings of your IG click on the Settings icon (the middle icon re
 
 
 Formatting style
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+----------------
 
 An IG can be rendered in one of three formats: a Tree table, Two Level Menu or HL7 format(work in progress).
 
@@ -44,6 +44,51 @@ A HL7 format rendering will display your IG with the elements in tabs along the 
 Every folder contains an index file which will be displayed as the folders homepage. Every folder can have child pages which can be added with the ``+`` icon. In the image below you can see the folder structure on the left and on the right de rendering of the Implementation Guide: 
 
 .. image:: ./images/FolderStructure.png
+
+
+Placeholders
+------------
+From the Team plan and up, users are allowed to customize their stylesheet and edit the master HTML template. For the HTML templates we have created placeholders that will help you customize your Implementation Guide. 
+
+We have different types of placeholders. The first kind is informational placholders, they retrieve information from the Implementation Guide and render that for you. 
+
+Information retrieved from the IG settings:
+
+* **guide-title** - Renders the guide title.
+* **guide-version** - Renders the guide version.
+* **guide-fhir-version** - Renders the FHIR version of the IG.
+
+
+Internal IG content placholders:
+
+* **page-title** - Renders page title as specified in the IG's tree table. 
+* **page** - Renders the navigation index on the right side.
+* **page-withe-children** - Renders the index tree on the left side. 
+* **footer** - Renders the Simplifier footer at the bottom of your IG pages. 
+  
+Style specific placeholders:
+In your Implementation guide you can select three differerent templates: the Ballotable(work in progress), TreeTable and Two Level Menu. If you have a Team plan and up you can customize these as you see fit. It will be worth noting that there a several placeholders specifically made for these templates. 
+When using the TreeTable:
+
+* **tree-navigation** - Adds a rendering of the tree to the left side of the IG page. 
+
+.. image:: ./images/TreeIg.png
+
+When using the Two Level Menu:
+
+* **dropdown-navigation** - Creates a navigation bar with all folders added as items. When a folder has a child page it will render as a dropdown menu. 
+* **dropdown-navigation-with-title** - Creates a navigation bar similar to **dropdown-navigation** and adds the IG title as a 'home' button to the left of the navigation bar as seen in the image below. 
+
+.. image:: ./images/TwoLevelIg.png
+
+Stylesheet specific placeholders: 
+We do not recommend you alter these unless you have a specific desire to use an older style sheet for a specific version of your guide. 
+
+* **content** - Provides the api for where we resolve the static files. Default templates are resolved from the webserver file server, if a CSS is available we resolve from there. 
+* **style-folder** - Provides the folder of your custom style sheet.
+* **version** - Specifies the specific version of you style sheet. By default it will select the latest version. 
+
+
 
 
 CSS-editor
@@ -250,3 +295,13 @@ After a guide is migrated or copied, please make sure all your internal page lin
 Manage your IG using GitHub
 ---------------------------
 The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the :doc:`GitHub integration documentation<simplifierGithub>`.
+
+
+Pagelink using page topic
+-------------------------
+
+With the `pagelink` command you can create a link to a different page in your Implementation Guide: `{{pagelink:<url key for the markdown resource describing the page>} }` (without the space). You can find the url key for the markdown resource describing the page you want to link to with the help from the pagelink autocomplete, or by looking at the address bar when opening the resource describing the page from your project's Resources tab.
+
+When a URLkey for a page that is referred to or one of the folders it is in changes, the pagelink might break. For that reason, we created a more robust way of linking to pages within a guide with the use of ``topic``. 
+
+In an Implementation Guide page you can set the ``topic`` by starting the page with ``topic: yourpagename`` and using the topic in you pagelink ``{{page:yourpagename}}``. This will prevent the links from breaking. 
