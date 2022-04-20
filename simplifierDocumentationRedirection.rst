@@ -25,18 +25,17 @@ If no documentation URL is provided, Simplifier will default to the page on Simp
 
 Creating your own resolve URL
 -----------------------------
-Besides using the resolve page on Simplifier, it is also possible to make a URL directly. Each resolve URL consitst of 4 parts, the base, FHIR version, scope and version. In the image below you can see a breakdown of an example url when the scope is set to the package ``hl7.fhir.r4.core 4.0.1``.
+Besides using the resolve page on Simplifier, it is also possible to make a URL directly. Each resolve URL consitst of 5 parts, the base, FHIR version, scope and version and the canonical of the resource. Below is an example of a URL:
 
-.. image:: ./images/ResolveURL.png
-  :align: center
+``https://simplifier.net/resolve`` ? ``fhirVersion=R4`` & ``scope=hl7.fhir.r4.core`` @ ``4.0.1``  & ``canonical=``
 
 * The base for every resolve URL is ``https://simplifier.net/resolve?``. 
    
-* FHIR version in the example is set to ``R4``. For ``STU3`` you add ``fhirVersion=STU3`` after the base.
+* FHIR version in the example is set to ``R4``. For ``STU3`` you add ``fhirVersion=STU3`` after the base. If a scope is added the FHIR version is derived from there. 
    
 * The scope of the resolve is set by using the package name or project URL Key.
    
 * The version is set by ``@versionnumber``, if you always want to resolve to the latest version of a package you can use ``@latest`` for the version. If the scope is set to a live project the scope will always be ``@current``. 
 
-
+* Last you add the resource canonical of the resource you want to resolve to. 
 
