@@ -46,7 +46,10 @@ If the canonical claim of the resource is already claimed by another organizatio
 
 .. image:: ./images/ResourceInvalid.png
 
-
+Canonical claims best-practice
+------------------------------
+When adding canonical claims to your project or package we recommend using the longest common denominator. 
+For users who generated Implementation Guide resources from our IG editor, the default canonical base for those IG resources is ``https://simplifier.net/guide``. Everyone is allowed to claim this canonical in their project and packages. 
 
 
 
