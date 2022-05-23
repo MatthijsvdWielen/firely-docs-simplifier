@@ -251,8 +251,35 @@ To use your IG outside of Simplifier, click on the Export button next to your IG
 
 .. image:: ./images/ExportIG.png
 
+
+Convert guide.yaml to a Simplifier webbased IG.
+-----------------------------------------------
+
+Sometimes you see an implementation guide on Simplifier that just simply blows you away and you want to see how this has been created. Luckily, you can create a copy of those guides in a project of your own and take a look at their IG editor content. 
+
+Guides created after August 2021 are stored in the new folder based storing way. These implementation guides can still be converted to a Simplifier webbased IG in a (private) project using the guide.yaml file. 
+
+Please follow these steps to create your own edition of a Simplifier IG. 
+
+1. Download the project containing the desired guide as a .zip file.
+   
+2. Upload the .zip to (preferably private) project.
+   
+3. Go to ``manage`` > ``File manager``. 
+   
+4. Search for guide.yaml. 
+   
+5. Open desired guide.yaml for the guide you want to create. 
+   
+6. Click on ``Update`` followed by ``Edit: Create IG and start updating in IG Editor``.
+
+7. Wait for the IG to be created and you are good to go. 
+
 Convert ImplementationGuide resource to a Simplifier webbased IG
 ----------------------------------------------------------------
+
+
+
 .. important::
 
     This feature only works for Legacy guides in order to ensure backwards compabibility and will therefore create a guide in the legacy way of Markdown files.
