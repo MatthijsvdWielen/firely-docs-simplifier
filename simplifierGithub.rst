@@ -33,8 +33,7 @@ GitHub Sync enables you to synchronize your Simplifier project with the linked G
 
 GitHub UpSync
 -------------
-Although this is not natively supported through Simplifier.net it is possible to synchronize the changes made on Simplifier with you Github Repository. For more information on how to do this please see our documentation on Firely Terminal Github UpSync. 
-
+It is not possible to upsync to Github directly. A workaround would be to sync your Simplifier work with your local folder using Forge or Firely Terminal and then commit that to Github. 
 
 GitHub Include/Exclude
 ----------------------
