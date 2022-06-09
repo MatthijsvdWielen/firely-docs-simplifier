@@ -195,7 +195,19 @@ This functionality is also a beta release so please follow the warning and migra
 After a guide is migrated or copied, please make sure all your internal page links and references are still working. 
 
 
+Manage your IG using GitHub
+---------------------------
+The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the :doc:`GitHub integration documentation<simplifierGithub>`.
 
+
+Pagelink using page topic
+-------------------------
+
+With the `pagelink` command you can create a link to a different page in your Implementation Guide: `{{pagelink:<url key for the markdown resource describing the page>} }` (without the space). You can find the url key for the markdown resource describing the page you want to link to with the help from the pagelink autocomplete, or by looking at the address bar when opening the resource describing the page from your project's Resources tab.
+
+When a URLkey for a page that is referred to or one of the folders it is in changes, the pagelink might break. For that reason, we created a more robust way of linking to pages within a guide with the use of ``topic``. 
+
+In an Implementation Guide page you can set the ``topic`` by starting the page with ``topic: yourpagename`` and using the topic in you pagelink ``{{page:yourpagename}}``. This will prevent the links from breaking. 
 
 
 Customizable IG design 
@@ -262,9 +274,9 @@ We do not recommend you alter these unless you have a specific desire to use an 
 CSS-editor
 ^^^^^^^^^^
 
-For our Enterprise Licenses the feature "Custom Layout" is available. Here you can create your own custom master template (HTML) and choose your own layout (CSS). When you click on the icon on the left of the Settings icon in the IG-editor, the CSS-editor will be opened. 
+For our Enterprise Licenses the feature "Custom Layout" is available. Here you can create your own custom master template (HTML) and choose your own layout (CSS). When you click on the dorpdown icon in the IG-editor, the CSS-editor will be opened. 
 
-.. image:: ./images/CSSeditor.png
+.. image:: ./images/IGEditorSettings.png   
 
 With this editor you can edit your Style Sheet to make overall changes in the overall look and feel of your IG. For example, you may change the color of the navigation bar to blue or add your own logo to it. It is also possible to reset your changes by going back to the original CSS or download the original CSS as a seperate file, so you can compare the differences with your own code.
 
@@ -338,16 +350,3 @@ Here below are a couple of examples that you can use to configure the lay-out of
 
 
 
-Manage your IG using GitHub
----------------------------
-The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the :doc:`GitHub integration documentation<simplifierGithub>`.
-
-
-Pagelink using page topic
--------------------------
-
-With the `pagelink` command you can create a link to a different page in your Implementation Guide: `{{pagelink:<url key for the markdown resource describing the page>} }` (without the space). You can find the url key for the markdown resource describing the page you want to link to with the help from the pagelink autocomplete, or by looking at the address bar when opening the resource describing the page from your project's Resources tab.
-
-When a URLkey for a page that is referred to or one of the folders it is in changes, the pagelink might break. For that reason, we created a more robust way of linking to pages within a guide with the use of ``topic``. 
-
-In an Implementation Guide page you can set the ``topic`` by starting the page with ``topic: yourpagename`` and using the topic in you pagelink ``{{page:yourpagename}}``. This will prevent the links from breaking. 
