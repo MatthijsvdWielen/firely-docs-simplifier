@@ -25,6 +25,26 @@ The IG Editor consist of three sections. On the left is the IG's tree table whic
 
 By way of dragging the section bars you can adjust the size of each section to customize your view.
 
+The IG folders work as follows:
+
+
+- Home folder (1)
+- Subsections folders (2)
+- Subsection pages (3)
+- Subsection page paragraphs (4)
+
+
+
+In the IG Editor this looks like this: 
+.. image:: ./images/IGeditorTreeHierarchy.png
+
+
+
+In the IG rendering, when using a custom balottable IG design, it looks like this:
+.. image:: ./images/IGPageHierarchy.png
+
+The information on the ``index`` node is rendered on the Home, Subsections folder or Subsection pages. When more pages are added below the index file, these will be rendered as paragraphs for that page. If you want to use this, make sure the first page in a folder is named ``index``.
+
 Markdown 
 ^^^^^^^^
 In the middle section is a Markdown based editor used to compose your IG content. 
