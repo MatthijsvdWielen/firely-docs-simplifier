@@ -82,7 +82,7 @@ Below you can find an example of how to use the package.bake.yaml file in your o
     - target: bucket1
 
   # Move all conformance resources to the /package folder (Mandatory according to the specification)
-    move-conformance-resources:
+  move-conformance-resources:
     - source: bucket1
     - category: Conformance
     - move: /package/
