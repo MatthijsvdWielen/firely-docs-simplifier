@@ -25,14 +25,86 @@ Switch to the ``Files`` tab to see the content of the package.
 .. image:: ./images/PackageFiles.png
   :align: center
 
-Publish packages
+Create packages
 ^^^^^^^^^^^^^^^^
+
 Visit the ``Packages`` tab of your project and click on ``Create`` > ``Create new package`` to create a new package. Provide a name, version number, description and release notes for your package. Note that the name of your package should include at least one dot. Indicate if your package is a prelease package or not and click ``Create`` to publish your package. 
 To create a new version of an existing package, click on ``Create`` and select ``Create new version for..`` followed by the name of your package. Add the required information and click ``Create`` to publish the new version of your package.
+
+Packages can be created as private packages or public packages. Private packages are only visible for the team members inside the project from where the package is created and public packages will be visible to all of Simplifier. 
 
 .. image:: ./images/PackageRelease.png
   :align: center
   
+
+
+Bake Pipeline
+^^^^^^^^^^^^^
+Licensed Simplifier users are able to use our Bake Pipeline. The Bake pipeline is an important part of making high quality packages, but also other types of publications.
+
+With a bake script you can define the internal structure and content of your package publication. See the FHIR Package Specification for the valid format of a FHIR package: https://confluence.hl7.org/display/FHIR/NPM+Package+Specification
+
+On Simplifier you can start by creating your own package.bake.yaml file. 
+
+
+.. image:: ./images/BakeYaml.png
+
+In that yaml file you can specify if you want snapshots included for all you resources, or if you only want a specific selection of resources and example instances added to your package. You can even transform FSH files in your project into resources when creating your package!
+
+
+`Find our full documentation and examples on the Bake Pipeline on Simplifier. <https://simplifier.net/docs/bake>`_
+
+
+.. image:: ./images/BakeYamlFile.png
+
+When a package.bake.yaml file is available, Simplifier will use that file to determine the content of the package you are creating. 
+
+Below you can find an example of how to use the package.bake.yaml file in your own project. 
+
+.. code-block:: yaml
+ # Transform all resources to JSON (Mandatory according to the specification)
+ transform-to-json:
+  - source: input
+  - category: Resource
+  - transform: json
+  - target: bucket1
+ 
+ # Generate snapshots for all StructureDefinitions (Optional)
+ # Note, since the file names stay the same the files will be overwritten and we do not need an extra bucket.
+ generate-snapshots:
+  - source: bucket1
+  - category: Profile
+  - action: snapshot
+  - target: bucket1
+ 
+ # Move all conformance resources to the /package folder (Mandatory according to the specification)
+ move-conformance-resources:
+  - source: bucket1
+  - category: Conformance
+  - move: /package/
+  - target: output
+ 
+ # Move all examples to the /package/examples folder (Optional)
+ move-examples:
+  - source: bucket1
+  - category: Instance
+  - move: /package/examples
+  - target: output
+ 
+ # Move the Package Manifest to the /package folder (Mandatory according to the specification)
+ manifest:
+  - source: input
+  - files: package.json
+  - move: /package
+ 
+ # Generate an .index.json file with all files in the package (Optional)
+ index-file:
+  - source: output
+  - files: /package/**/*.json
+  - action: create-package-index
+  - move: /package
+
+
 Unlist Packages
 ^^^^^^^^^^^^^^^
 Once a package is created it can be used by other implementers to build their project on top of. For this reason we do not delete packages from the Registry. Once a package is created it is there to stay. Implementers can depend on the availability of published packaged. 
