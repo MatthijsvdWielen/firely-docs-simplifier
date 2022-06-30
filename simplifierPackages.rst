@@ -25,6 +25,8 @@ Switch to the ``Files`` tab to see the content of the package.
 .. image:: ./images/PackageFiles.png
   :align: center
 
+
+
 Create packages
 ^^^^^^^^^^^^^^^^
 
@@ -36,6 +38,8 @@ Packages can be created as private packages or public packages. Private packages
 .. image:: ./images/PackageRelease.png
   :align: center
   
+
+
 
 
 Bake Pipeline
@@ -121,6 +125,8 @@ When a package is unlisted, it will no longer show up for implementers on the Re
 
 .. image:: ./images/UnlistedPackage.png
   :align: center
+
+
 
 Dependencies
 -----------------------
