@@ -66,6 +66,7 @@ When a package.bake.yaml file is available, Simplifier will use that file to det
 Below you can find an example of how to use the package.bake.yaml file in your own project. 
 
 .. code-block:: yaml
+
   # Transform all resources to JSON (Mandatory according to the specification)
   tranform-to-json:
     - source: input
