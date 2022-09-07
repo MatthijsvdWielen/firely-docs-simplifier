@@ -41,9 +41,27 @@ Packages can be created as private packages or public packages. Private packages
 
 
 
+The package created with the highest semver will get the tag ``latest`` added to the package. Please `see how semver works with <https://semver.org>`_ regards to versioning and pre-release tags. 
+
+Unlist Packages
+^^^^^^^^^^^^^^^
+Once a package is created it can be used by other implementers to build their project on top of. For this reason we do not delete packages from the Registry. Once a package is created it is there to stay. Implementers can depend on the availability of published packaged. 
+
+In some cases you might want new implementers to no longer find a specific version of a package. For these cases you can ``unlist`` a package. This can be done by the package owner in the package Administration. 
+
+.. image:: ./images/UnlistPackage.png
+  :align: center
+
+When a package is unlisted, it will no longer show up for implementers on the Registry or on Simplifier. As a creator of the package you will still be able to see the package with an unlisted label added.  
+
+.. image:: ./images/UnlistedPackage.png
+  :align: center
+
+
+
 
 Bake Pipeline
-^^^^^^^^^^^^^
+-------------
 Licensed Simplifier users are able to use our Bake Pipeline. The Bake pipeline is an important part of making high quality packages, but also other types of publications.
 
 With a bake script you can define the internal structure and content of your package publication. See the FHIR Package Specification for the valid format of a FHIR package: https://confluence.hl7.org/display/FHIR/NPM+Package+Specification
@@ -66,6 +84,7 @@ When a package.bake.yaml file is available, Simplifier will use that file to det
 Below you can find an example of how to use the package.bake.yaml file in your own project. 
 
 .. code-block:: yaml
+
   # Transform all resources to JSON (Mandatory according to the specification)
   tranform-to-json:
     - source: input
@@ -82,7 +101,7 @@ Below you can find an example of how to use the package.bake.yaml file in your o
     - target: bucket1
 
   # Move all conformance resources to the /package folder (Mandatory according to the specification)
-    move-conformance-resources:
+  move-conformance-resources:
     - source: bucket1
     - category: Conformance
     - move: /package/
@@ -110,21 +129,6 @@ Below you can find an example of how to use the package.bake.yaml file in your o
 
 
 
-
-
-Unlist Packages
-^^^^^^^^^^^^^^^
-Once a package is created it can be used by other implementers to build their project on top of. For this reason we do not delete packages from the Registry. Once a package is created it is there to stay. Implementers can depend on the availability of published packaged. 
-
-In some cases you might want new implementers to no longer find a specific version of a package. For these cases you can ``unlist`` a package. This can be done by the package owner in the package Administration. 
-
-.. image:: ./images/UnlistPackage.png
-  :align: center
-
-When a package is unlisted, it will no longer show up for implementers on the Registry or on Simplifier. As a creator of the package you will still be able to see the package with an unlisted label added.  
-
-.. image:: ./images/UnlistedPackage.png
-  :align: center
 
 
 

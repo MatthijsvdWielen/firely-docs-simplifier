@@ -118,6 +118,13 @@ With the introduction of FQL  it is now possible to create dynamic tables in you
     
     ```
 
+You can also save your FQL statements in order to re-use them on different pages and even in different projects. In the IG editor, the option for saving your custom snippets is available. This will save your statements in a .snippet.md file which is than usable within every IG page in that specific project. The .snippet.md file(s) can be downloaded and uploaded in different projects to use them across your organization. 
+
+ .. image:: ./images/IGEditorSnippets.png
+
+
+
+
 
 IG Storage
 ----------
@@ -231,7 +238,17 @@ With the `pagelink` command you can create a link to a different page in your Im
 
 When a URLkey for a page that is referred to or one of the folders it is in changes, the pagelink might break. For that reason, we created a more robust way of linking to pages within a guide with the use of ``topic``. 
 
-In an Implementation Guide page you can set the ``topic`` by starting the page with ``topic: yourpagename`` and using the topic in you pagelink ``{{page:yourpagename}}``. This will prevent the links from breaking. 
+In an Implementation Guide page you can set the ``topic`` by starting the page with a topic header:
+.. code-block:: yaml
+
+    ---
+    topic: yourpagename
+    ---
+
+
+
+
+Using the topic in you pagelink ``{{pagelink:yourpagename}}``, this will prevent the links from breaking even when creating copies of your guide. 
 
 
 Customizable IG design 
