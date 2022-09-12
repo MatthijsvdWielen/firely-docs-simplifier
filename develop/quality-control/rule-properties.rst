@@ -118,7 +118,7 @@ Examples of suppressing `errors from the Firely .NET SDK <https://simplifier.net
 .. code-block:: yaml
 
    - suppress:
-      - http://hl7.org/fhir/dotnet-api-operation-outcome:6005 #Or just 6005, since the code system is optional
+      - http://hl7.org/fhir/dotnet-api-operation-outcome|6005 #Or just 6005, since the code system is optional
       - eld-16
 
 Even codes from Simplifier.net Quality Control itself can be suppressed. Their code systems are: 
