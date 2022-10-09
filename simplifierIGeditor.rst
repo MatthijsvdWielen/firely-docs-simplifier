@@ -239,6 +239,8 @@ With the `pagelink` command you can create a link to a different page in your Im
 When a URLkey for a page that is referred to or one of the folders it is in changes, the pagelink might break. For that reason, we created a more robust way of linking to pages within a guide with the use of ``topic``. 
 
 In an Implementation Guide page you can set the ``topic`` by starting the page with a topic header:
+
+
 .. code-block:: yaml
 
     ---
