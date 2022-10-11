@@ -22,7 +22,7 @@ Under the ``Canonical claims`` option Simplifier will show you wich canonical cl
 
 .. image:: ./images/SuggestedClaims.png
 
-Of course this could indicate that some of your resources have an unintended canonical (base) url. You can create custom bulk validation rules to validate your entire project using our :ref:`Quality Control <Quality_Control>` feature. 
+Of course this could indicate that some of your resources have an unintended canonical (base) url. You can create custom bulk validation rules to validate your entire project using our :ref:`Quality Control <QC>` feature. 
 
 Canonical claims in packages
 ----------------------------
