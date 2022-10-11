@@ -1,3 +1,5 @@
+.. _QC:
+
 Quality Control: Validating FHIR Projects
 =========================================
 
