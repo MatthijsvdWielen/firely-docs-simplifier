@@ -18,6 +18,12 @@ Welcome to Simplifier's documentation!
 `Simplifier.net <https://simplifier.net>`_ is a FHIR specification development, collaboration and publishing platform.
 Below you will find the documentation for the platform.
 
+Release notes
+-------------
+The release notes for Simplifier can be found `here. <https://simplifier.net/organization/firely/~news>`_
+
+
+
 .. toctree::
    :maxdepth: 1
    :caption: Simplifier.net Docs:
