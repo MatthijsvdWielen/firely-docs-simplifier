@@ -15,7 +15,7 @@ or directly run the following Postman collection:
 |Run in Postman|
 
 .. |Run in Postman| image:: https://run.pstmn.io/button.svg
-   :target: https://app.getpostman.com/run-collection/da066eb30fb57e2c9865
+   :target: https://god.gw.postman.com/run-collection/19815841-0104b4f2-2cde-463c-b6c4-da3154458d41?action=collection%2Ffork&collection-url=entityId%3D19815841-0104b4f2-2cde-463c-b6c4-da3154458d41%26entityType%3Dcollection%26workspaceId%3D822b68d8-7e7d-4b09-b8f1-68362070f0bd
 
 Authentication
 """"""""""""""

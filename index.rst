@@ -38,6 +38,7 @@ The release notes for Simplifier can be found `here. <https://simplifier.net/org
    simplifierDocumentationRedirection
    simplifierOrganizationPortal
    api
+   simplifierForgeIntegration
    simplifierPackages
    simplifierGithub
    simplifierBackupAndSynchronization
@@ -47,7 +48,7 @@ The release notes for Simplifier can be found `here. <https://simplifier.net/org
    simplifierIGeditor
    simplifierPublishedGuides
    simplifierFQL
-   firely-server
+   simplifierFirely-server
    FHIRRegistry
    accessibility
    simplifierContact
