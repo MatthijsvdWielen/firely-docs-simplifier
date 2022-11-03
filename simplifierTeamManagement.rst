@@ -25,29 +25,39 @@ Team license
 When adding new team members to your project you have the option to assign "Admin", "Writer" or "Reader" rights to the users. You can change these rights at any time should someone's function change. In the table below the difference between these rights is explained. 
 
 .. list-table:: Team member rights (Team license)
-  :widths: 20, 10, 10, 10, 10
+  :widths: 20, 10, 10, 10, 10, 10, 10
   :header-rows: 1
 
   * - Rights
     - View
     - Edit  
      
-      resources
-    - Team 
+      resource
+    - Access 
      
-      management
+      IG Editor
+    - Forge 
+     
+      Sync
+    - Manage 
+     
+      Team
     - Change Project 
      
       ownership
+    
 
   * - Reader
     - ✔️
     - 
     - 
     - 
-
+    -   
+    - 
 
   * - Writer
+    - ✔️
+    - ✔️
     - ✔️
     - ✔️
     - 
@@ -58,10 +68,14 @@ When adding new team members to your project you have the option to assign "Admi
     - ✔️
     - ✔️
     - ✔️
+    - ✔️
+    - ✔️
     - 
 
 
   * - Project owner
+    - ✔️
+    - ✔️
     - ✔️
     - ✔️
     - ✔️
