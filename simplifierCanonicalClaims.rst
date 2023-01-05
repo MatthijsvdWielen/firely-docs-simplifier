@@ -1,11 +1,12 @@
 .. _Canonical_Claims:
+
 Canonical Claims
 ^^^^^^^^^^^^^^^^
 
 Canonical Claims are used and recognized as a certificate or a proof of origine for your resources. You can claim canonicals on a package and project level. 
 
 Canonical claims on Project level
-----------------
+---------------------------------
 On a project level you can claim a canonical under the ``Canonical claims`` option in the project Manage dropdown. On the Canonical claims page you can see the claimed canonicals and the status of the claims made in the project. 
 
 .. image:: ./images/ClaimedBaseUrl.png

@@ -18,7 +18,8 @@ Once you have made your account you can create and organize organizational proje
     :scale: 50 %
     
 .. _Organization_Portal:
-    Organization Portal
+
+Organization Portal
 -------------------
 Your organization portal is a landing page for your organization that is visible to the outside world. On your portal you can add a logo, information about your organization and news feeds. Your organization portal also shows a list of your organization's projects.
 
@@ -26,7 +27,7 @@ Your organization portal is a landing page for your organization that is visible
     :align: center
 
 Custom Workflow
------------------
+---------------
 Custom workflows allows you to create statuses for your resources that fit your needs. You can use this to communicate to your organization team, in your own language, the progress of any given resource. This is in addition to the standard FHIR workflows of “Draft”, “Active”, and “Retired”. The FHIR workflows cover the following statues:
 
 * Draft: This resource is still under development.
