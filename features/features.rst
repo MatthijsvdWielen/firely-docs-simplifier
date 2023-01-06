@@ -9,7 +9,6 @@ Here you will find the documentation of Simplifier's features.
   :maxdepth: 1
   :titlesonly:
   
-  simplifierBrowse
   simplifierForgeIntegration
   simplifierPackages
   simplifierQualityControl

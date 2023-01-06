@@ -12,6 +12,7 @@ Here you will find some stepping stones in getting familiar with Simplifier. If 
    simplifierIntro
    simplifierProjects
    simplifierResources
+   simplifierBrowse
    simplifierCanonicalClaims
    simplifierDocumentationRedirection
    FHIRRegistry
