@@ -20,36 +20,18 @@ Below you will find the documentation for the platform.
 
 Release notes
 -------------
-The release notes for Simplifier can be found `here. <https://simplifier.net/organization/firely/~news>`_
+The release notes for Simplifier can also be found `here. <https://simplifier.net/organization/firely/~news>`_
 
 
 
 .. toctree::
-   :maxdepth: 1
-   :caption: Simplifier.net Docs:
-
-   simplifierIntro
-   simplifierBrowse
-   simplifierPersonalContent
-   simplifierResources
-   simplifierProjects
-   simplifierTeamManagement
-   simplifierQualityControl
-   simplifierDocumentationRedirection
-   simplifierOrganizationPortal
-   api
-   simplifierForgeIntegration
-   simplifierPackages
-   simplifierGithub
-   simplifierBackupAndSynchronization
-   simplifierConnectors
-   simplifierEmbeddedRendering
-   simplifierCanonicalClaims
-   simplifierIGeditor
-   simplifierPublishedGuides
-   simplifierFQL
-   simplifierFirely-server
-   FHIRRegistry
-   accessibility
-   simplifierContact
-   Knownissues
+  :maxdepth: 1
+  :caption: Simplifier.net Docs:
+  
+  Getting started <getting_started/getting_started>
+  Administration <administration/administration>
+  Features <features/features>
+  Accessibility <accessibility>
+  Contact <simplifierContact>
+  Known issues <Knownissues>
+  Release notes <simplifierReleaseNotes>

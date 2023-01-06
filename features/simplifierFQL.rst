@@ -10,13 +10,13 @@ FQL Playground
 
 On Simplifier we have the `FQL playground<https://simplifier.net/fql>` available where you can try running your own queries in a scope of your choice. 
 
-.. image:: ./images/FQLPlayground.png
+.. image:: ../images/FQLPlayground.png
 
 As a scope you can select any publicly available package or project. You can run one of our example queries to get a quick understanding of all the possibilities with FQL. 
 
-.. image:: ./images/FQLExamples.png
+.. image:: ../images/FQLExamples.png
 
 You can also share the query you made with other Simplifier users or embed your query output in another website. 
 
-.. image:: ./images/FQLShare.png
+.. image:: ../images/FQLShare.png
 

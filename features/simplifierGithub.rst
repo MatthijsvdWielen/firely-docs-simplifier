@@ -98,7 +98,7 @@ To get started, you create a project and `establish a webhook <#github-linking>`
 
 -	Click on ``Update`` followed by ``Edit: Update by editing in IG editor``. This will convert the ImplementationGuide resource to a Simplifier IG.
 
- .. image:: ./images/ConvertIG.png
+ .. image:: ../images/ConvertIG.png
  
 -	Choose the desired conversion settings of your IG.
 -	The Implementation Guide editor will now open with your IG - leave it as-is. You will also find the IG in the Guides tab of your project.
@@ -120,11 +120,11 @@ We would strongly prefer to only ask for read-only access on the specific reposi
 The only available Oauth scope to be able to read a private GitHub repository is repo, which indeed also grants us write rights: Scopes for OAuth Apps - GitHub Docs. This is a current limitation.
 
   - One way to limit the scope of access:
-      - Create a GitHub user account that only has rights on the GitHub repos and branches that you want Simplifier to be able to access. While we currently only need read access on your repository's files, given the need to be able to create webhooks this likely still is of the access level admin​.
+      - Create a GitHub user account that only has rights on the GitHub repos and branches that you want Simplifier to be able to access. While we currently only need read access on your repository's files, given the need to be able to create webhooks this likely still is of the access level admin.
       - Use this user to set up the GitHub connection between Simplifier and GitHub. In this way the impact of the GitHub apps access is limited to the necessary repository.
 
 
-Another way to synchronize Simplifier and GitHub, eliminating the need to give our GitHub app access, would be to create a GitHub actions pipeline that uses the ``fhir project push``​ command to send the contents from a FHIR project to Simplifier.net project. (Or even ``fhir project sync``​ + a commit for also synching the files down from Simplifier to GitHub). Please see our :doc:`Firely Terminal documentation<firely_terminal_docs:Github-Upsync>` on how to set up GitHub UpSync.
+Another way to synchronize Simplifier and GitHub, eliminating the need to give our GitHub app access, would be to create a GitHub actions pipeline that uses the ``fhir project push`` command to send the contents from a FHIR project to Simplifier.net project. (Or even ``fhir project sync`` + a commit for also synching the files down from Simplifier to GitHub). Please see our :doc:`Firely Terminal documentation<firely_terminal_docs:Github-Upsync>` on how to set up GitHub UpSync.
 
 
 

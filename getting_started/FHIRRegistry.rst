@@ -7,4 +7,4 @@ The `FHIR registry <https://registry.fhir.org>`_ enables you to search for publi
 
 Below you can download a quick guide to the FHIR registry, which was made for the HL7 Working Group Meeting in New Orleans (Jan, 2018).
 
-:download:`Quick guide to the FHIR registry (pdf) <QuickGuideFHIRregistry.pdf>`
+:download:`Quick guide to the FHIR registry (pdf) <../QuickGuideFHIRregistry.pdf>`

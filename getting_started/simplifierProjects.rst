@@ -1,4 +1,5 @@
 .. _Project_Page:
+
 Projects
 ^^^^^^^^
 
@@ -10,13 +11,13 @@ Simplifier organizes all content (e.g. resources and Implementation Guides) in p
 
 Open your project
 """""""""""""""""
-For an overview of your projects, go to your `personal portal <simplifierPersonalContent.html>`_ by clicking on your avatar in the top right corner.
+For an overview of your projects, go to your `personal portal <../administration/simplifierPersonalContent.html>`_ by clicking on your avatar in the top right corner.
 
-.. image:: ./images/UserMenu.PNG 
+.. image::../images/UserMenu.PNG 
 
 The Projects tabs lists all projects you are involved in, either because you created the project yourself (making you the owner of the project) or because you are invited to the project as a project member.
 
-.. image:: ./images/PersonalPortal.PNG
+.. image::../images/PersonalPortal.PNG
 
 Click on the title of a project to open its project page.
 
@@ -50,7 +51,7 @@ This tab also offers a search and filter option. You can filter your results to 
  
 Guides
 ------
-The ``Guides`` tab shows all Implementation Guides for this project built in Simplifier. Click on the Guide or hit the ``Browse`` button to go to the Implementation Guide. Use the `IG-editor <simplifierIGeditor.html#implementation-guide-editor>`_ to create and edit Implementation Guides.
+The ``Guides`` tab shows all Implementation Guides for this project built in Simplifier. Click on the Guide or hit the ``Browse`` button to go to the Implementation Guide. Use the `IG-editor <../features/simplifierIGeditor.html#implementation-guide-editor>`_ to create and edit Implementation Guides.
  
 Members
 -------
@@ -73,7 +74,7 @@ Currently this only works for downloaded packages. In the next release it will w
 Packages
 ----------
 The ``Packages`` tab shows all released versions of a project. Project members may use this beta functionality to release project versions containing (a selection of) resources as a package. 
-`Packages <simplifierPackages.html#package-management>`_  are now public BETA. We encourage you to try them out. But you should not use them for production environments yet. 
+`Packages <../features/simplifierPackages.html#package-management>`_  are now public BETA. We encourage you to try them out. But you should not use them for production environments yet. 
 
 
 Bookmarks
@@ -84,17 +85,17 @@ Create a project
 """"""""""""""""
 In the Projects tabs on your Portal page you can find the button labeled ``Create``. 
 
-.. image:: ./images/PersonalPortal.PNG
+.. image::../images/PersonalPortal.PNG
 
 Clicking this button will allow you to create a new project by entering a Display Name, Description, and Scope. Once the project has been created you can then customize project information, add resources, add members, and follow changes that are occurring in that project.
 
-.. image:: ./images/CreateProject.PNG 
+.. image::../images/CreateProject.PNG 
 
 Project Settings
 """"""""""""""""
 You can always change your project settings by clicking on the ``Settings`` button in the right upper corner. There are a couple of options in the Settings menu, which will be explained below.
 
-.. image:: ./images/ProjectSettings.PNG
+.. image::../images/ProjectSettings.PNG
 
 Properties
 ----------
@@ -107,7 +108,7 @@ Here you can edit the following properties:
 	- Turn issues on or off for this project (when activated the issues tab will be visible on the project page depending on the user's role)
 	- With the issues visibility setting you can chose whether issues are visible to all Simplifier users or project members only. 
 	- With the community issues setting you can chose whether all Simplifier users or only project members can create or respond to issues.
-- Publishing project resources to the `FHIR registry <FHIRRegistry.html#fhir-registry>`_ (registry.fhir.org). Note that this setting is only available in public projects. Private projects and test projects are excluded from the registry.
+- Publishing project resources to the `FHIR registry <../FHIRRegistry.html#fhir-registry>`_ (registry.fhir.org). Note that this setting is only available in public projects. Private projects and test projects are excluded from the registry.
 
 Project url
 -----------
@@ -189,7 +190,7 @@ The ``Members`` tab displays a list of all the members with rights to that proje
 
 Along the top of the ``Members`` tab you will find a summary of User information for your project. The number of users, the max users allowed for this project (in accordance with the type of plan you have), and the number of invitations you have pending (the number of users who have a not yet accepted an invitation).  
 
-.. image:: ./images/Numberofmembers.png
+.. image::../images/Numberofmembers.png
 
 Track Project Changes
 """""""""""""""""""""
@@ -197,7 +198,7 @@ On the ``Log`` tab you will find event tracking of a project. This log keeps a l
 
 At the top of the screen you will find the Atom feed button. This allows you to subscribe to stay informed about any changes being made within your projects. To utilize this feature, navigate to a project on Simplifier.net that you are interested in following. Once there click on the ``Subscribe`` button in the upper right hand corner and copy the link into a feed reader of your choice. You are then ready to start receiving updates. 
 
-.. image:: ./images/SimplifierProjectLog.png
+.. image::../images/SimplifierProjectLog.png
 
 Issue Tracker
 """""""""""""
@@ -208,7 +209,7 @@ Issue Tracker
 
 Would you like to capture feedback about your resources from users? The Issue tracker option is a great way to do this. If you go to the ``Settings`` dropdown menu and then select ``Properties``. You will see the option to Enable Issues at the bottom of your screen. By selecting the On option, you enable the issue tracking feature of your project.
 
-.. image:: ./images/SimplifierIssueTracker.png
+.. image::../images/SimplifierIssueTracker.png
 
 There are two additional options that display once you have turned Issue tracking on. You have the option to limit Issue visibility to project members only or make them publicly visible. The issues that are reported by the community can also be limited to be visable to your project members only or visible to the public.
 

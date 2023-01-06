@@ -1,4 +1,5 @@
 .. _Team_Management:
+
 Team Management
 ^^^^^^^^^^^^^^^
 
@@ -8,10 +9,10 @@ Team Management
 
 In your project, the license holder and Admin users can add more Team members. Under the ``Team`` tab you can add more Team members by inviting them by entering a valid emailaddress. 
 
-.. image:: ./images/addTeamMembers.png
+.. image:: ../images/addTeamMembers.png
 
 
-.. image:: ./images/Invites.png
+.. image:: ../images/Invites.png
    :align: right
    :width: 200px
     
@@ -89,13 +90,13 @@ Enterprise license
 
 Enterprise licenses allow you to create an :ref:`Organization <Organization_page>`. Inside your Organization project teams can be managed the same as with the Team license. 
 
-.. image:: ./images/teams-simplifier-overview.png
+.. image:: ../images/teams-simplifier-overview.png
 
 Additionaly, for Enterprise licenses the Team managament feature is available. You can acces this through the ``Teams`` tab in your Organization portal. 
 
 Create Teams
 ````````````
-.. image:: ./images/OrganizationTeams.png
+.. image:: ../images/OrganizationTeams.png
    :align: right
    :width: 350px
 
@@ -104,13 +105,13 @@ In the Teams section Multiple teams can be created and managed. There are two ty
 Team projects
 `````````````
 
-.. image:: ./images/createProjectFromTeam.png
+.. image:: ../images/createProjectFromTeam.png
    :align: right
    :width: 350px
 
 If you click on a create Team you will see the team portal. This gives an overview of the projects the Team is working on as well as the created packages and Implementation Guides. From this portal new projects can be created for that team to work on. 
 
-.. image:: ./images/changeTeams.png
+.. image:: ../images/changeTeams.png
    :align: right
    :width: 250px 
 

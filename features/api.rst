@@ -107,7 +107,7 @@ Simplifier has an package server API, that is compliant to the FHIR NPM package 
 
 The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
 
-**Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <https://docs.fire.ly/projects/Simplifier/simplifierPackages.html#publish-packages>`_ on packages. 
+**Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <../features/simplifierPackages.html#publish-packages>`_ on packages. 
 
 NPM compatible endpoint
 =======================
@@ -136,7 +136,7 @@ click on ``API`` in the top right menu when visiting either the
 :ref:`project <project-page>` or :ref:`resource <resource-page>` page. 
 The below image shows the location.
 
-.. image:: ./images/ProjectApiLocation.png
+.. image:: ../images/ProjectApiLocation.png
 
 It supports all the API operations like reading, creating or deleting a resource and search.
 
@@ -152,7 +152,7 @@ for synchronization of a complete project. With an HTTP tool you can use
 GET or PUT on https://api.simplifier.net/<yourproject>/zip to retrieve or
 update your project in zipped form.
 
-.. image:: ./images/ProjectApiLocation.png
+.. image:: ../images/ProjectApiLocation.png
 
 Global FHIR API
 """""""""""""""
@@ -161,7 +161,7 @@ Global FHIR API
 
 Using the global Simplifier FHIR API, users can search for all resources in Simplifier. For example, the request ``GET https://stu3.simplifier.net/open/Patient`` can be used to retrieve all (STU3) Patient resources from Simplifier. The global Simplifier endpoint of your resource is available at the resource page beneath the API icon. All resources have a globally unique GUID.
 
-.. image:: ./images/ResourceGlobalEndpoint.PNG
+.. image:: ../images/ResourceGlobalEndpoint.PNG
 
 
 Search Parameters 

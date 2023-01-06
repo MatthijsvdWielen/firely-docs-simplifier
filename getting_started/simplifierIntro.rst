@@ -1,7 +1,7 @@
 Introduction to Simplifier.net
 ==============================
 
-.. image:: ./images/Illustrations_Firely-03.png
+.. image:: ../images/Illustrations_Firely-03.png
   :align: right
   :width: 250px
   :alt: Collaborating on a FHIR project

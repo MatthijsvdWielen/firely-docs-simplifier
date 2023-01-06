@@ -9,7 +9,7 @@ Create your first IG
 --------------------
 You can access the IG editor via the ``Guides`` tab in your project. Use the ``Create`` button to create a new Implementation Guide and provide a title for the IG. Simplifier will automatically generate a URL Key, but you can choose your own URL Key.
 
-.. image:: ./images/ImplementationGuideCreate.png  
+.. image:: ../images/ImplementationGuideCreate.png  
 
 Click on ``Browse`` or the Implementation Guide itself for a preview of the guide. Click on the ``Edit`` button to open the Implementation Guide in the IG editor. In the left bottom a help section is available to get started with adding images and tree renderings etc.
 
@@ -19,7 +19,7 @@ The IG editor opens on the page of the root folder. Simplifier stores newly crea
 
 To adjust the settings of your IG click on the Settings icon (the middle icon representing a gear wheel). This brings you to a section that allows you to adjust the title and privacy on the Settings tab, or select an IG rendering format and Stylesheet file on the Style tab. In the settings you are also able to select a ``scope`` for your guide. The scope determines where the rendered resources in your guide come from. You can set the scope to released packages or you live development project. 
 
-.. image:: ./images/IGEditorSettings.png   
+.. image:: ../images/IGEditorSettings.png   
 
 The IG Editor consist of three sections. On the left is the IG's tree table which is used to define the outline of your IG and navigate between the pages of the IG. The middle section is the actual editor. The right section provides a preview of the actual IG page.   
 
@@ -38,14 +38,14 @@ The IG folders work as follows:
 In the IG Editor this looks like this: 
 
 
-.. image:: ./images/IGeditorTreeHierarchy.png
+.. image:: ../images/IGeditorTreeHierarchy.png
 
 
 
 In the IG rendering, when using a custom balottable IG design, it looks like this:
 
 
-.. image:: ./images/IGPageHierarchy.png
+.. image:: ../images/IGPageHierarchy.png
 
 The information on the ``index`` node is rendered on the Home, Subsections folder or Subsection pages. When more pages are added below the index file, these will be rendered as paragraphs for that page. If you want to use this, make sure the first page in a folder is named ``index``.
 
@@ -91,17 +91,17 @@ An IG can be rendered in one of three formats: a Tree table, Two Level Menu or H
 
 A Tree table rendering will display your IG with the elements in a format similar to the tree table with the elements and their hierarchy along the left side of the page.
 
-.. image:: ./images/IGTreeNavigation.png
+.. image:: ../images/IGTreeNavigation.png
 
 A Two Level Menu rendering will display your IG with the elements in tabs along the top of the page.
 
-.. image:: ./images/IGHorizontalNavigation.png
+.. image:: ../images/IGHorizontalNavigation.png
 
 A HL7 format rendering will display your IG with the elements in tabs along the top of the page similar to the Two Level Menu rendering, but in the style of a HL7 IG.
 
 Every folder contains an index file which will be displayed as the folders homepage. Every folder can have child pages which can be added with the ``+`` icon. In the image below you can see the folder structure on the left and on the right de rendering of the Implementation Guide: 
 
-.. image:: ./images/FolderStructure.png
+.. image:: ../images/FolderStructure.png
 
 FQL table generation
 ^^^^^^^^^^^^^^^^^^^^
@@ -120,7 +120,7 @@ With the introduction of FQL  it is now possible to create dynamic tables in you
 
 You can also save your FQL statements in order to re-use them on different pages and even in different projects. In the IG editor, the option for saving your custom snippets is available. This will save your statements in a .snippet.md file which is than usable within every IG page in that specific project. The .snippet.md file(s) can be downloaded and uploaded in different projects to use them across your organization. 
 
- .. image:: ./images/IGEditorSnippets.png
+ .. image:: ../images/IGEditorSnippets.png
 
 
 
@@ -132,12 +132,12 @@ Since release 28.0 IG's all files belonging to an IG are saved in the same folde
 
 To illustrate how this works, see the screen picture of an example IG containing three topics with one or more pages for each topic. In the project's filemanager you can see the different folder structures for each guide. 
 
-.. image:: ./images/IGEditorStructure.png
-.. image:: ./images/IGFileStorage.png
+.. image:: ../images/IGEditorStructure.png
+.. image:: ../images/IGFileStorage.png
 
 To Save your IG as a Resource, click on the ``Generate IG resource`` button in the left pane of the IG-editor. Note that it is the tree structure that is saved. Textual changes are save automatically.
 
-.. image:: ./images/CreateIGResource.png
+.. image:: ../images/CreateIGResource.png
 
 
 
@@ -150,7 +150,7 @@ Export your IG
 
 To use your IG outside of Simplifier, click on the Export button next to your IG in the Guides section of your project. 
 
-.. image:: ./images/ExportIG.png
+.. image:: ../images/ExportIG.png
 
 
 
@@ -204,11 +204,11 @@ Create a copy of your IG
 ------------------------
 Since the release of Simplifier 28.0 it is possible to create a copy of your Implementation guide. Due to the complexity of the feature it is currently (21-01-2022) a beta release. 
 
-.. image:: ./images/CopyGuide.png
+.. image:: ../images/CopyGuide.png
 
 A guide can be copied to the same project or to another project. The ``Target project:`` dropdown provides an list of all of your projects where you can create a copy of your IG. 
 
-.. image:: ./images/TargetProject.png
+.. image:: ../images/TargetProject.png
 
 You can now have multiple version of your Implementation Guide live in the same project (or different projects). You could have one IG use a release package as the scope while the development version uses the live developement version of your project. 
 
@@ -219,7 +219,7 @@ Migrating your legacy Guide
 
 Guides created before Simplifier 28.0 are still stored in the legacy way as separate markdown files. These guides first have to be migrated to the new way of storing guides. 
 
-.. image:: ./images/LegacyGuides.png
+.. image:: ../images/LegacyGuides.png
 
 This functionality is also a beta release so please follow the warning and migration steps in the Migrate Guide window. In the Migrate Guide window a different target project can also be selected. Migrating a guide **does not** delete the legacy guide. 
 
@@ -293,7 +293,7 @@ When using the TreeTable:
 
 * **tree-navigation** - Adds a rendering of the tree to the left side of the IG page. 
 
-.. image:: ./images/TreeIg.png
+.. image:: ../images/TreeIg.png
 
 When using the Two Level Menu:
 """"""""""""""""""""""""""""""
@@ -301,7 +301,7 @@ When using the Two Level Menu:
 * **dropdown-navigation** - Creates a navigation bar with all folders added as items. When a folder has a child page it will render as a dropdown menu. 
 * **dropdown-navigation-with-title** - Creates a navigation bar similar to **dropdown-navigation** and adds the IG title as a 'home' button to the left of the navigation bar as seen in the image below. 
 
-.. image:: ./images/TwoLevelIg.png
+.. image:: ../images/TwoLevelIg.png
 
 Stylesheet specific placeholders: 
 """"""""""""""""""""""""""""""""""
@@ -319,7 +319,7 @@ CSS-editor
 
 For our Enterprise Licenses the feature "Custom Layout" is available. Here you can create your own custom master template (HTML) and choose your own layout (CSS). When you click on the dorpdown icon in the IG-editor, the CSS-editor will be opened. 
 
-.. image:: ./images/IGEditorSettings.png   
+.. image:: ../images/IGEditorSettings.png   
 
 With this editor you can edit your Style Sheet to make overall changes in the overall look and feel of your IG. For example, you may change the color of the navigation bar to blue or add your own logo to it. It is also possible to reset your changes by going back to the original CSS or download the original CSS as a seperate file, so you can compare the differences with your own code.
 
