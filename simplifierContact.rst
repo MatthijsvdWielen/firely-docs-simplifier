@@ -3,8 +3,10 @@
 Contact
 ========
 
+If you run into any issues or have questions, you can reach us by mailing at
+simplifier@fire.ly or (for customers) `our premium support desk`_.
 
-There are two ways to contact Simplifier.net:
+You can also contact us via Simplifier.net, there are two options:
 
 1.	The `Contact <https://www.simplifier.net/ui/Info/Contact>`_ link in the lower left. This link offers an area to fill in more specific information about the user or company associated with the contact. Use this link for all inquiries about setting up new accounts and services.
 
