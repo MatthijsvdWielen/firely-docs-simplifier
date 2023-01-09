@@ -1,23 +1,17 @@
 .. _features:
 
-Features
-========
+Aditional features
+==================
 
-Here you will find the documentation of Simplifier's features.
+Here you will find the documentation of Simplifier's additional features.
 
 .. toctree::
   :maxdepth: 1
   :titlesonly:
   
-  simplifierForgeIntegration
-  simplifierPackages
-  simplifierQualityControl
-  simplifierIGeditor
-  simplifierPublishedGuides
-  api
+  simplifierFirely-server
   simplifierBackupAndSynchronization
-  simplifierGithub
+  api
   simplifierConnectors
   simplifierEmbeddedRendering
-  simplifierFQL
-  simplifierFirely-server
+  simplifierDocumentationRedirection

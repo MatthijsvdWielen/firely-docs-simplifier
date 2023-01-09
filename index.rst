@@ -28,9 +28,11 @@ The release notes for Simplifier can also be found `here. <https://simplifier.ne
   :maxdepth: 1
   :caption: Simplifier.net Docs:
   
-  Getting started <getting_started/getting_started>
-  Administration <administration/administration>
-  Features <features/features>
+  Starting with Simplifier <getting_started/getting_started>
+  Team management <administration/administration>
+  Data Governance and Quality Control <data _governance_and_quality_control/data_governance_and_quality_control>
+  Implementation Guide <implementation_guide/implementation_guide>
+  Additional features <features/features>
   Release notes <simplifierReleaseNotes>
   Contact <simplifierContact>  
   Accessibility <accessibility>

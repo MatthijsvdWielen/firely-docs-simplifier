@@ -1,15 +1,14 @@
 .. _administration:
 
-Administration
-==============
+Team management
+===============
 
-On the pages below you will find information on the user portal, as well as handy information for team and organization admins.
+On the pages below you will find handy information for team and organization admins.
 
 .. toctree::
    :maxdepth: 1
    :titlesonly:
    
-   simplifierPersonalContent
    simplifierTeamManagement
    simplifierOrganizationPortal
 

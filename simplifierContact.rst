@@ -1,7 +1,7 @@
 .. _simpl_contact:
 
 Contact
-========
+=======
 
 If you run into any issues or have questions, you can reach us by mailing at
 simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_.
