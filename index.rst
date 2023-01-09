@@ -53,3 +53,4 @@ The release notes for Simplifier can be found `here. <https://simplifier.net/org
    accessibility
    simplifierContact
    Knownissues
+   simplifierReleaseNotes
