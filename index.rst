@@ -31,7 +31,6 @@ The release notes for Simplifier can also be found `here. <https://simplifier.ne
   Getting started <getting_started/getting_started>
   Administration <administration/administration>
   Features <features/features>
-  Accessibility <accessibility>
-  Contact <simplifierContact>
-  Known issues <Knownissues>
   Release notes <simplifierReleaseNotes>
+  Contact <simplifierContact>  
+  Accessibility <accessibility>
