@@ -3,7 +3,7 @@
 Data Governance and Quality Control
 ===================================
 
-Here you will find the documentation of Simplifier's features.
+Here you will find the documentation of Simplifier's Data Governance and Quality Control tooling.
 
 .. toctree::
    :maxdepth: 1
