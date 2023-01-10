@@ -15,6 +15,4 @@ This pages below will elaborate further on getting started and how you can use t
   create_your_first_ig
   customize_your_ig
   ig_management
-  converting_to_ig
-  simplifierFQL
   simplifierPublishedGuides

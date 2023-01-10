@@ -140,7 +140,7 @@ The below image shows the location.
 
 It supports all the API operations like reading, creating or deleting a resource and search.
 
-You can also use this to point :ref:`Firely Server<main_docs:vonk_index>` 
+You can also use this to point `Firely Server <https://docs.fire.ly/projects/Firely-Server/en/latest/>`_ 
 to a Simplifier.net project via the FHIR API to import the conformance resources. 
 Either via a (manual) import operation or by configuration
 of the project's endpoint and authentication in the appsettings.

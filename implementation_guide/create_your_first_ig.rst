@@ -119,7 +119,7 @@ You can also save your FQL statements in order to re-use them on different pages
  .. image:: ../images/IGEditorSnippets.png
 
 Pagelink using page topic
--------------------------
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 With the `pagelink` command you can create a link to a different page in your Implementation Guide: `{{pagelink:<url key for the markdown resource describing the page>} }` (without the space). You can find the url key for the markdown resource describing the page you want to link to with the help from the pagelink autocomplete, or by looking at the address bar when opening the resource describing the page from your project's Resources tab.
 

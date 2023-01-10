@@ -169,5 +169,5 @@ Firely Terminal
 -----------------------
 Firely Terminal is our (free) command line tool for FHIR. Firely Terminal allows you to communicate with any FHIR server. With simple commands you can easily download, upload, validate and transform resources, zip them, bundle them or split bundles. Firely Terminal offers many features. One of them is to install, create and manage FHIR packages.
 
-Learn :doc:`more about Firely Terminal<firely_terminal_docs:index>` and :doc:`managing FHIR packages on the command line in particular<firely_terminal_docs:Managing_Packages>`.
+Learn `more about Firely Terminal <https://docs.fire.ly/projects/Firely-Terminal/index.html>`_ and `managing FHIR packages on the command line in particular <https://docs.fire.ly/projects/Firely-Terminal/Managing-Packages.html>`_.
 

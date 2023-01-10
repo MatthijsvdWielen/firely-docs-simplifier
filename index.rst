@@ -20,7 +20,7 @@ Below you will find the documentation for the platform.
 
 Release notes
 -------------
-The release notes for Simplifier can also be found `here. <https://simplifier.net/organization/firely/~news>`_
+In addition to the release notes on `the Release notes page <https://docs.fire.ly/projects/Simplifier/simplifierReleaseNotes.html>`_ the release notes for Simplifier can also be found `here. <https://simplifier.net/organization/firely/~news>`_
 
 
 
@@ -32,7 +32,7 @@ The release notes for Simplifier can also be found `here. <https://simplifier.ne
   Team management <administration/administration>
   Data Governance and Quality Control <data _governance_and_quality_control/data_governance_and_quality_control>
   Implementation Guide <implementation_guide/implementation_guide>
-  Additional features <features/features>
+  Additional features and playgrounds<features/features>
   Release notes <simplifierReleaseNotes>
   Contact <simplifierContact>  
   Accessibility <accessibility>

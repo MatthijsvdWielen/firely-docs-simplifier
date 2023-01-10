@@ -29,10 +29,10 @@ Known issues
 ^^^^^^^^^^^^
 
 As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
-simplifier@fire.ly or (for customers) `our premium support desk`_.
+simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_.
 
 All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
-and maintained on Github`_ and `issues are publicly tracked there`_.
+and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
 
 HL7 is maintaining a `known issue list for the FHIR specifications on
-their Confluence`_.
+their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.

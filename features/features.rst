@@ -1,7 +1,7 @@
 .. _features:
 
-Aditional features
-==================
+Aditional features and playgrounds
+==================================
 
 Here you will find the documentation of Simplifier's additional features.
 
@@ -15,3 +15,4 @@ Here you will find the documentation of Simplifier's additional features.
   simplifierConnectors
   simplifierEmbeddedRendering
   simplifierDocumentationRedirection
+  FQL Playground <simplifierFQL>
