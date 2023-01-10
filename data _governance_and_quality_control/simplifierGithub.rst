@@ -41,22 +41,20 @@ The include/exclude feature allows users to specify the folders or file types th
 By default, everything is included. If include statements are added then everything else (not included in your include statement) will be excluded by default. Simplifier only imports xml, json, images, and markdown file types. Comments are also supported using the "#" character.
 The syntax is the following:
 
-Examples: 
-
-  **#Include examples**
+  **Include examples**::
   
-   **FHIR/IG/****
+    FHIR/IG/*
    
-   ***.xml**
+    *.xml
 
 
-  **#Exclude examples**
+  **Exclude examples**::
   
-   **!FHIR/*.img**
+    !FHIR/*.img
    
-   **!*.cs**
+    !*.cs
    
-   **!FHIR/examples/***
+    !FHIR/examples/*
 
 
 
@@ -64,17 +62,21 @@ Gitwebhook per Branch
 ---------------------
 For our Team and Enterprise account users, we added the ability to filter files that are synced from GitHub. We followed the .gitignore logic, but expanded it slightly to work from a include perspective as well. After you've set up a GitHub link, you can specify rules to include or exclude certain files or folders from your GitHub repository.
 
-  **# Include all files under examples folder:**
-  **resources/examples/***
+  **Include all files under examples folder**::
+  
+    resources/examples/*
 
-  **# Include all files and folders under staging:**
-  **project/staging/****
+  **Include all files and folders under staging**::
+  
+    project/staging/*
 
-  **# Include all xml files:**
-  ***.xml**
+  **Include all xml files**::
 
-  **# Exclude all json files under temp folder:**
-  **!temp/*.json**
+    *.xml
+
+  **Exclude all json files under temp folder**::
+
+    !temp/*.json
 
 Note that if you only use exclude patterns (starting with a exclamation mark !), Simplifier will assume you want to include everything but those filters.
 
@@ -123,8 +125,6 @@ The only available Oauth scope to be able to read a private GitHub repository is
       - Create a GitHub user account that only has rights on the GitHub repos and branches that you want Simplifier to be able to access. While we currently only need read access on your repository's files, given the need to be able to create webhooks this likely still is of the access level admin.
       - Use this user to set up the GitHub connection between Simplifier and GitHub. In this way the impact of the GitHub apps access is limited to the necessary repository.
 
-
-Another way to synchronize Simplifier and GitHub, eliminating the need to give our GitHub app access, would be to create a GitHub actions pipeline that uses the ``fhir project push`` command to send the contents from a FHIR project to Simplifier.net project. (Or even ``fhir project sync`` + a commit for also synching the files down from Simplifier to GitHub). Please see our :doc:`Firely Terminal documentation<firely_terminal_docs:Github-Upsync>` on how to set up GitHub UpSync.
 
 
 
