@@ -12,7 +12,7 @@ Quality Control: Validating FHIR Projects
 This specification describes how to write (and read) rules for the
 Simplifier Quality Control Engine.
 
-.. figure:: /images/simplifier-quality-control.gif
+.. figure:: ../images/simplifier-quality-control.gif
     :alt: Simplifier.net Quality Control progress bar
 
     Example of Quality Control being executed on a project
@@ -27,7 +27,7 @@ There are **two default rulesets** available, which run FHIR validation on all F
 resources and a set of rules we at Firely recommend. Additionally, you can define
 any number of **custom business rules** to enforce your own custom profiling standards.
 
-.. figure:: /images/Simplifier-rules-results.png
+.. figure:: ../images/Simplifier-rules-results.png
     :alt: The results of running a ruleset
 
     The results of running a ruleset in a Simplifier.net project
@@ -60,7 +60,7 @@ not part of the entry, just an description how to read it.
      second: value
      third: value
 
-.. figure:: /images/run-quality-control.png
+.. figure:: ../images/run-quality-control.png
     :alt: Simplifier.net project drop-down for running rulesets
     :align: right
 
