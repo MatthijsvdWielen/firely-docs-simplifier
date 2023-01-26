@@ -38,11 +38,3 @@ Simplifier content
 ------------------
 
 Simplifier is specially created for Data Modelers, Developers and Clinical Informatics Specialists. The available FHIR content is organized at four levels: Users, Resources, Projects and Organizations. You can import your FHIR resources and make use of the seamless integration between Forge and Simplifier.  
-
-Firely
---------
-
-Simplifier.net is created and managed by Firely, formerly known as Furore Health Informatics.
-We are a group of software engineers, support engineers and FHIR consultants, based in Amsterdam,
-the Netherlands. We have been involved in HL7 FHIR since day one and have been contributing to the
-standard ever since. For more information about our company, please visit `fire.ly <https://fire.ly/>`_.

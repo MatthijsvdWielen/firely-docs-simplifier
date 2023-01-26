@@ -1,9 +1,10 @@
 Searching on Simplifier
 ========================
 
-Simplifier's search has now been superchared on Elastic! Elastic gives Simplifier almost endless options in searching so let's explain how this works. You can press the down arrow on your keyboard of click in the searchbar when you are in the search UI and Simplifier will show all the categories you can search for and within. 
-
-With the new search you can search for and within entities and specify specific attributes you want to find. Pressing the down arrow while in the searchbar or clicking the looking glass icon will give you an overview of all the search and filter options.
+One of the core pillars of Simplifier is providing the users with the best governance possible. 
+The search bar allows users to search withing jurisdictions and organizations for resources to help prevent unnecessary duplication. 
+Users can easily search within organiations or nationalities for already existing profiles and specify specific attributes they want to find. 
+Pressing the down arrow while in the searchbar or clicking the looking glass icon will give you an overview of all the search and filter options. 
 
 Let's start off with an example of how you can search for the latest publication of the UK core profiles. 
 
@@ -16,8 +17,6 @@ This gives you a list form all the available organizations in the UK. In the UI 
 
 .. image:: ../images/SearchExample2.png
 
-
-One of the core pillars of Simplifier, is providing the users with the best governance possible. With our new and improved search users can now search withing jurisdictions and organizations for resources to help prevent unnecessary duplication. The Elastic search allows for easy searching within organiations or nationalities for already existing profile.
 
 Lets give another example: 
 

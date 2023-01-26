@@ -3,6 +3,8 @@ Simplifier Forge Integration
 
 Simplifier and our datamodelling tool Forge work hand in hand. With our new project synchronization feature this has become even easier. For more information on this feature please see our Forge documentation `here. <https://docs.fire.ly/projects/Forge/features/IntegrationwithSimplifier.html>`_
 
+.. image:: ../images/Forge.png
+
 When uploading resources from Forge to your Simplifier project directly we have limited collision detection. If the resource is changed both locally and on Simplifier since last synchronisation, we will ask you to resolve the conflict.
 But there are certainly cases where you can accidentally overwrite each other’s work if you are really working on the same page in the IG editor at the same time or upload a new version of a resource directly.
 

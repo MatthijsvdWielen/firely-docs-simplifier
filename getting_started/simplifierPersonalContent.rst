@@ -1,7 +1,8 @@
 .. _User_portal:
 
-Users
+User Portal
 ^^^^^^^^^^^^^
+Your user portal provides you with an overview of your work in Simplifier.net and allows you to manage your content. 
 Click on your avatar in the top right corner to access your personal menu. From here you can access your personal portal, invites page, user profile, snippets page, organization portal(s) and account settings.
 
 .. image:: ../images/UserMenu.PNG 

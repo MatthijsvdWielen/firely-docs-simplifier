@@ -107,7 +107,7 @@ Simplifier has an package server API, that is compliant to the FHIR NPM package 
 
 The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
 
-**Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <../features/simplifierPackages.html#publish-packages>`_ on packages. 
+**Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <../data_governance_and_quality_control/simplifierPackages.html#publish-packages>`_ on packages. 
 
 NPM compatible endpoint
 =======================

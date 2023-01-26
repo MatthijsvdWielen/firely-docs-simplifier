@@ -1,7 +1,7 @@
 .. _administration:
 
-Team management
-===============
+Team and Organization management
+================================
 
 On the pages below you will find handy information for team and organization admins.
 
