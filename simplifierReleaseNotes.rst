@@ -104,6 +104,7 @@ Release 29.2.0, June 17th, 2022
 
 Features
 ^^^^^^^^
+
 #. Bake: The first true beta release of Bake. When you have package.bake.yaml in your project, it will be used to create your package. If you don't have it, simplifier uses the existing configuration system. This is as of yet a Beta release.
 #. YAML gen: We have made our example generator agnostic, by moving it into the generator engine that we build for YamlGen. You can now define examples that are fully defined by you, or partially or completely generated. Some parts of the extended syntax are still in beta. You can use YamlGen in Bake. You can try out YamlGen here: https://simplifier.net/yamlgen
 #. Plant UML: We now have a solid and stable Plant UML (micro) service in Simplifier, that you can run in our playground: https://simplifier.net/plantuml.
@@ -133,6 +134,7 @@ Release 28.6.0, April 29th, 2022
 
 Features
 ^^^^^^^^
+
 #. .NET 6: Simplifier.net was upgraded to .NET 6.
 #. Rendering: Simplifier's rendering machine has been improved and the rendering library has been made fully asynchronous for better performance.
 #. New placeholders: For a long time we've had a ``{{render}}`` placeholder in the guide editor, that chooses the most typical style of rendering given a resource. 
