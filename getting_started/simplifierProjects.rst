@@ -85,7 +85,7 @@ To stay informed in real time click the ``Subscribe`` button in the top right. Y
 
 .. image:: ../images/Subscribe.PNG
 
-You can fin dyour current subscriptions in your user portal under the ``Subscriptions`` tab:
+You can find your current subscriptions in your user portal under the ``Subscriptions`` tab:
 
 .. image:: ../images/Subscriptions.PNG
 
