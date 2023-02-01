@@ -16,3 +16,5 @@ Here you will find the documentation of Simplifier's additional features.
   simplifierEmbeddedRendering
   simplifierDocumentationRedirection
   FQL Playground <simplifierFQL>
+  YAML Gen Playground <YAMLGen>
+  
