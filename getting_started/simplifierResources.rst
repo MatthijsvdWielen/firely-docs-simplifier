@@ -59,6 +59,8 @@ Through your  `personal menu <../administration/simplifierPersonalContent.html#u
 
 .. image:: ../images/MySnippets.PNG
 
+.. _Metadata_Expressions:
+
 Metadata Expressions
 """"""""""""""""""""
 

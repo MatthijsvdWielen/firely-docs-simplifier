@@ -8,6 +8,62 @@ This page contains the release notes of the current major version of simplifier.
 Current release
 ~~~~~~~~~~~~~~~
 
+Release 30.1.0, February 28th, 2023
+-----------------------------------
+
+Features
+^^^^^^^^
+
+#. Java validator: We can now run the Java Validator from HL7 as a service in Simplifier, and have the output be part of the results of Quality Control. This release of the Java-validator is released as beta-on-request. You can contact simplifier@fire.ly if you want to try it out. After initial feedback we plan to release it for all users.
+#. Bulk Java validation: Using rule files, one can validate files in bulk:
+
+      ::
+
+            - action: java-validate
+            files: 
+            - /**/*.json
+            - /**/*.xml
+  
+#. QC: The results from Quality Control are now saved to the Issue Tracking system of projects. For this we have now opened up Issue Tracking by default for all projects. This makes both Issue Tracking and Quality Control more discoverable for users.
+#. Issue tracking: the interface for issue tracking is improved to better support users in the tracking of their issues. It is now possible to create custom statuses for issues.
+#. FHIRPath: the functions ``hasValue()`` and ``resolve()`` are now implemented.
+#. YAMLGen: YAMLGen 7.0 is now implemented in Simplifier, this means:
+        - You can now include functions in YAMLGen
+        - Tree variables are  now allowed.
+
+#. FhirPath playground: The FHIRPath playground now has an improved user interface.
+
+
+Bugfixes
+^^^^^^^^
+
+#. Issue tab: When not logged in, the user would see a blank issue tab for a project even though issues are listed. Issues are now visible when user is not logged in.
+#. IG: The IG had some issues rendering trees. This is now fixed.
+#. Projects: When a Management team admin user created a project under their Organization, they ended up with a project where the project was owned by the Organizations license holder, but the project team was owned by the admin. This resulted in the user not being able to add more team members to the project. This is no longer the case.
+#. Issue: When the project URL key has the text “issue“ at the end, then upon opening the issue the user would see an ``Issue Not Found`` error. Thisis now fixed.
+#. Validation: After running a QC minimal rule, clicking on the by rules and by files links at the bottom of the console would crash validation until the pod is restarted. This is now fixed.
+#. GitHub integration: When a user would push with 2 commits, Simplifier would only refresh based on latest commit. Now, all commits are taken into account.
+#. GitHub Integration: An error would be displayed when cancelling Simplifier linking to GitHub. This has been fixed.
+#. Links: Links to project with Hebrew characters would not work. This is now fixed.
+
+Known issues
+^^^^^^^^^^^^
+
+As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
+simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
+
+If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
+It is also possible to raise an issue from here.
+
+All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
+and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
+
+HL7 is maintaining a `known issue list for the FHIR specifications on
+their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
+
+Previous releases
+~~~~~~~~~~~~~~~~~
+
 Release 29.5.0, December 15th, 2022
 -----------------------------------
 
@@ -28,23 +84,6 @@ Bugfixes
 #. Firely server: In the previous version of simplifier.net users with MAC OS experienced that after trying to download and run the project as a FHIR server in Docker, the CapabilityStatement of Firely server was not loading correctly on first try. This issue was caused by the Windows OS specific seperators in the Powershell scripts that are downloaded when pressing the yellow download button. This issue is now fixed and users should be able to succesfully try out Firely server via this route on MAC OS, with the CapabilityStatement loeding correctly on first try.
 #. IG: the use of multiple pagelinks within one sentence in the IG previously led to rendering issues. This has been fixed and it is now possible to use multiple pagelinks within one sentence without breakage or error.
 
-Known issues
-^^^^^^^^^^^^
-
-As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
-simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
-
-If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
-It is also possible to raise an issue from here.
-
-All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
-and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
-
-HL7 is maintaining a `known issue list for the FHIR specifications on
-their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
-
-Previous releases
-~~~~~~~~~~~~~~~~~
 
 Release 29.4.0, October 5th, 2022
 ---------------------------------

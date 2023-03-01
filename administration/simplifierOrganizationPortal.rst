@@ -9,14 +9,14 @@ Organizations
 
 For our members with an Enterprise plan there is the functionality to create and manage an organizational account within Simplifier. An Organization account allows you to create and share projects, resources, and Implementation Guides via your organization with others within and outside your organization. You can add members and adjust rights to the project.  
 
-Organization Settings
----------------------
-Once you have made your account you can create and organize organizational project lists, create custom workflows, manage members, and follow your organization’s newsfeed. These settings can be accessed via the ``Settings`` dropdown once you are on your organization’s page. The quickest way to visit your organization's page is to select it from the ``Organizations`` tab in your `personal portal <../administration/simplifierPersonalContent.html#personal-portal>`_
+Organization Management
+-----------------------
+Once you have made your account you can alter the properties of your organization, create custom workflows, manage members, and follow your organization’s newsfeed. These settings can be accessed via the ``Manage`` dropdown once you are on your organization’s page. The quickest way to visit your organization's page is to select it from the ``Organizations`` tab in your `personal portal <../administration/simplifierPersonalContent.html#personal-portal>`_
 
 .. image:: ../images/OrganizationSettings.PNG
     :align: center
-    :scale: 50 %
-    
+    :scale: 75 %
+
 .. _Organization_Portal:
 
 Organization Portal
@@ -28,7 +28,7 @@ Your organization portal is a landing page for your organization that is visible
 
 Custom Workflow
 -----------------
-Custom workflows allows you to create statuses for your resources that fit your needs. You can use this to communicate to your organization team, in your own language, the progress of any given resource. This is in addition to the standard FHIR workflows of “Draft”, “Active”, and “Retired”. The FHIR workflows cover the following statues:
+Custom workflows allow you to create statuses for your resources that fit your needs. You can use this to communicate to your organization team, in your own language, the progress of any given resource. This is in addition to the standard FHIR workflows of “Draft”, “Active”, and “Retired”. The FHIR workflows cover the following statues:
 
 * Draft: This resource is still under development.
 * Active: This resource is ready for normal use.
@@ -41,15 +41,23 @@ To create a Custom Workflow select ``Custom Workflow`` from the ``Settings`` dro
 
 When you search for resources in Simplifier, the page with search results shows the Custom Workflow status next to the resource. You can click on the status to obtain an overview with the possible statuses and their explanations.
 
-Organization Project Lists
---------------------------
-Members with an Enterprise account have the ability to endorse others projects by creating ``Project Lists``. This list is not necessarily a list of your own projects but of interesting projects that you would like to endorse within the Simplifier community. This list, once created, will show up on your organization’s page within Simplifier. To create this list, select ``Endorsed projects`` in the ``Settings`` menu on your organization's page and click on ``Create``. In the form you are shown you can customeze the title and description for your list. After customization click on ``Save``. To select the projects you want to add to your list, you click on your created list, toggle to the ``Projects`` tab and click ``Create``, this will show you a page where you can search and select the projects you want to endorse. 
+Organization Projects
+----------------------
+Your organization projects are a compilation of the projects that are owned by the organization. This section of your project maintenance is where you need to create and maintain organization projects. You can manage your organization projects by navigating to the  ``Projects`` tab on your organization's page. You can create new projects here by clicking on the ``Create`` button.
 
-On the other hand your Organization projects are a compilation of the projects that are owned by the organization. This section of your project maintenance is where you need to create and maintain organization projects. A list of these projects will also display on your organizations page. You can manage your Organization projects by selecting ``Projects`` from the ``Settings`` menu.
+.. image:: ../images/OrganizationProjects.PNG
+    :align: center
+
+You also have the ability to create ``Project Lists`` in the ``Endorsed projects`` tab. This list is not necessarily a list of your own projects but rather of interesting projects that you would like to endorse within the Simplifier community. This list, once created, will show up on your organization’s page within Simplifier. To create this list, navigate to the ``Endorsed projects`` tab on your organization's page and click on ``Create new project list`` in the hamburger menu. In the form you are shown you can customize the title and description for your list. After customization click on ``Save``. To select the projects you want to add to your list, you click on the hamburger menu of your created list and click ``Add projects``. This will show you a page where you can search and select the projects you want to endorse. 
+
+.. image:: ../images/OrganizationEndorsedProjects.PNG
+    :align: center
+
 
 Newsfeed
 --------
-The ``News`` section of your Organization can be used to communicate to the outside world about new developments within the project. Once you have finalized resources or finished an Implementation guide this is a great place to create an article announcing the changes.
+The ``News`` tab of your organization can be used to communicate to the outside world about new developments within the project. Your news items will also show on the main page of your organization. Once you have finalized resources or finished an implementation guide this is a great place to add an article announcing the changes. You can add news items by clicking the ``Add News Item`` icon in the top right of organization's page.
 
-
+.. image:: ../images/OrganizationAddNewsItem.PNG
+    :align: center
 
