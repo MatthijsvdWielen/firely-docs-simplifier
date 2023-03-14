@@ -45,12 +45,12 @@ Organization Projects
 ----------------------
 Your organization projects are a compilation of the projects that are owned by the organization. This section of your project maintenance is where you need to create and maintain organization projects. You can manage your organization projects by navigating to the  ``Projects`` tab on your organization's page. You can create new projects here by clicking on the ``Create`` button.
 
-.. image:: ../images/OrganizationProjects.PNG
+.. image:: ../images/CreateOrganizationProject.png
     :align: center
 
 You also have the ability to create ``Project Lists`` in the ``Endorsed projects`` tab. This list is not necessarily a list of your own projects but rather of interesting projects that you would like to endorse within the Simplifier community. This list, once created, will show up on your organization’s page within Simplifier. To create this list, navigate to the ``Endorsed projects`` tab on your organization's page and click on ``Create new project list`` in the hamburger menu. In the form you are shown you can customize the title and description for your list. After customization click on ``Save``. To select the projects you want to add to your list, you click on the hamburger menu of your created list and click ``Add projects``. This will show you a page where you can search and select the projects you want to endorse. 
 
-.. image:: ../images/OrganizationEndorsedProjects.PNG
+.. image:: ../images/EndorsedProjects.png
     :align: center
 
 
