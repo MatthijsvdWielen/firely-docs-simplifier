@@ -21,16 +21,14 @@ Simplifier Quality Control Engine.
 engine, helping you to improve the quality of your FHIR projects. The QC
 engine performs a series of rule checks on selected files in your
 Simplifier.net projects, on your local computer or at every change of your
-source code repository.
+source code repository. The output of the Quality Control will be saved in your issues tab on a project level. You can filter on Quality Control and you will see the issues found by the Quality Control validation.
+
+.. image:: ../images/QualityControlIssues.png
+
 
 There are **two default rulesets** available, which run FHIR validation on all FHIR
 resources and a set of rules we at Firely recommend. Additionally, you can define
 any number of **custom business rules** to enforce your own custom profiling standards.
-
-.. figure:: ../images/Simplifier-rules-results.png
-    :alt: The results of running a ruleset
-
-    The results of running a ruleset in a Simplifier.net project
 
 
 Structure
@@ -112,7 +110,7 @@ another minimal requirement for a FHIR specification.
      filter: StructureDefinition
      unique: url 
 
-*Minimal ruleset snapshot 05-2021*
+*Minimal ruleset snapshot 03-2023*
 
 Recommended ruleset
 ###################
@@ -136,10 +134,10 @@ minimal rules checks are added to ensure:
 
    - include: minimal
   
-   - name: id-mandatory
-     status: "Checking if all resources have an id"
-     predicate: id.exists()
-     error-message: "Resource {{filepath}} must have an id"
+   - name: valid-ids
+     status: Check for valid ids
+     predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
+     error: The resource must have a valid id
 
    - name: no-snapshot
      status: "Checking that structure definitions do not have a pre-generated snapshot"
@@ -147,7 +145,7 @@ minimal rules checks are added to ensure:
      predicate: snapshot.element.count() = 0
      error-message: You should not generate a snapshot in your source. Allow the tools to generate the snapshot.
 
-*Recommended ruleset snapshot 05-2021*
+*Recommended ruleset snapshot 03-2023*
 
 Custom rulesets
 ###############
