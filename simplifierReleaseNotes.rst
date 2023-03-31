@@ -14,16 +14,16 @@ Release 30.3.0, March 29th, 2023
 Features
 ^^^^^^^^
 
-#. R4B support: With this upgrade we make FHIR R4B available to our users for projects and packages.
-#. SDK: Simplifier is now upgraded to FHIR SDK 5.0
-#. .NET 7: We upgraded Simplifier to .NET 7. .NET 7 brings a lot of performance improvements and reduced memory consumption. 
+#. R4B support: With this upgrade we make FHIR R4B available to our users for projects and packages in Simplifier.
+#. SDK: Simplifier is now upgraded to FHIR SDK 5.0.
+#. .NET 7: We upgraded Simplifier to .NET 7. This upgrade comes with performance improvements and reduced memory consumption. 
 #. ASP .NET 7: We upgraded to ASP.NET 7, which has rate limiting built in. This helps us to protects Simplifier against DOS/DDOS attacks.
 #. EF 7.0: Simplifier is upgraded to EF 7.0 which brings additional performance improvements.
 
 Bugfixes
 ^^^^^^^^
 
-#. OperationDefinitions not rendering: OperationDefinitions with nested parameters did not render on Simplifier on Project level and in IGs. This is now fixed.
+#. OperationDefinitions not rendering: OperationDefinitions with nested parameters did not render on Project level and in IGs. This is now fixed.
 #. Cannot delete files with issues: Files with issues attached to them could not be deleted via GitHub or Forge. This is because the issues created for a file should not be deleted. We now have a ``Issue.Filepath`` property which we can use to track back for which file an issue was originally created. This allows files to be deleted without the issues to be removed.
 
 
