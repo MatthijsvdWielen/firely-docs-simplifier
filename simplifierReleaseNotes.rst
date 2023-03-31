@@ -8,6 +8,43 @@ This page contains the release notes of the current major version of simplifier.
 Current release
 ~~~~~~~~~~~~~~~
 
+Release 30.3.0, March 29th, 2023
+--------------------------------
+
+Features
+^^^^^^^^
+
+#. R4B support: With this upgrade we make FHIR R4B available to our users for projects and packages in Simplifier.
+#. SDK: Simplifier is now upgraded to FHIR SDK 5.0.
+#. .NET 7: We upgraded Simplifier to .NET 7. This upgrade comes with performance improvements and reduced memory consumption. 
+#. ASP .NET 7: We upgraded to ASP.NET 7, which has rate limiting built in. This helps us to protects Simplifier against DOS/DDOS attacks.
+#. EF 7.0: Simplifier is upgraded to EF 7.0 which brings additional performance improvements.
+
+Bugfixes
+^^^^^^^^
+
+#. OperationDefinitions not rendering: OperationDefinitions with nested parameters did not render on Project level and in IGs. This is now fixed.
+#. Cannot delete files with issues: Files with issues attached to them could not be deleted via GitHub or Forge. This is because the issues created for a file should not be deleted. We now have a ``Issue.Filepath`` property which we can use to track back for which file an issue was originally created. This allows files to be deleted without the issues to be removed.
+
+
+Known issues
+^^^^^^^^^^^^
+
+As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
+simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
+
+If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
+It is also possible to raise an issue from here.
+
+All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
+and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
+
+HL7 is maintaining a `known issue list for the FHIR specifications on
+their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
+
+Previous releases
+~~~~~~~~~~~~~~~~~
+
 Release 30.1.0, February 28th, 2023
 -----------------------------------
 
@@ -46,23 +83,6 @@ Bugfixes
 #. GitHub Integration: An error would be displayed when cancelling Simplifier linking to GitHub. This has been fixed.
 #. Links: Links to project with Hebrew characters would not work. This is now fixed.
 
-Known issues
-^^^^^^^^^^^^
-
-As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
-simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
-
-If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
-It is also possible to raise an issue from here.
-
-All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
-and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
-
-HL7 is maintaining a `known issue list for the FHIR specifications on
-their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
-
-Previous releases
-~~~~~~~~~~~~~~~~~
 
 Release 29.5.0, December 15th, 2022
 -----------------------------------
