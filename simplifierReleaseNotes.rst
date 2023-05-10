@@ -8,23 +8,25 @@ This page contains the release notes of the current major version of simplifier.
 Current release
 ~~~~~~~~~~~~~~~
 
-Release 30.3.0, March 29th, 2023
---------------------------------
+Release 30.4.0, May 4th, 2023
+-----------------------------
 
 Features
 ^^^^^^^^
 
-#. R4B support: With this upgrade we make FHIR R4B available to our users for projects and packages in Simplifier.
-#. SDK: Simplifier is now upgraded to FHIR SDK 5.0.
-#. .NET 7: We upgraded Simplifier to .NET 7. This upgrade comes with performance improvements and reduced memory consumption. 
-#. ASP .NET 7: We upgraded to ASP.NET 7, which has rate limiting built in. This helps us to protects Simplifier against DOS/DDOS attacks.
-#. EF 7.0: Simplifier is upgraded to EF 7.0 which brings additional performance improvements.
-
-Bugfixes
-^^^^^^^^
-
-#. OperationDefinitions not rendering: OperationDefinitions with nested parameters did not render on Project level and in IGs. This is now fixed.
-#. Cannot delete files with issues: Files with issues attached to them could not be deleted via GitHub or Forge. This is because the issues created for a file should not be deleted. We now have a ``Issue.Filepath`` property which we can use to track back for which file an issue was originally created. This allows files to be deleted without the issues to be removed.
+#. FHIR R5 support: Simplifier now supports FHIR R5. Users can now create R5 projects and packages and Simplifier provides an R5 FHIR API.
+#. News tab: You can now search through old published news on the organization's news tab.
+#. IG: Published public guides are now displayed under project's guides tab when the corresponding preview guide is private.
+#. YamlGen: YamlGen can now be used for example generation for all FHIR versions and you can now also create examples from specific profiles. For information on how to do this, please have a look at the `documentation on YamlGen <https://simplifier.net/docs/yamlgen>`_.
+#. Simplifier performance: Our cloud infrastructure was under pressure, since several data intensive tools are increasingly used by our users. We did an extensive analysis and listing of improvements to reduce the burden. Among these improvements are:
+      - A rate limiter on snapshot pages, preventing/limiting abuse of cloud computation
+      - We added more metadata to package files, this allows for faster resolving
+      - We now make use of a database table with save cached snapshots and expansions, serialized as compressed MsgPack
+      - Reduced the life time of snapshot grains, to reduce memory pressure on the cloud nodes
+      - Reduced memory footprint of FQL queries, by releasing data sooner
+      - We make use of .NET7 improvements and EF7 bulk features
+#. Packages: packages now have an administrative menu.
+#. Playgrounds: We have improved the playground user interface for FQL, PlantUML, YamlGen and FhirPath. Also, we have a new system for sharing playground scripts and results with shorter links that no longer break when scripts are too long.
 
 
 Known issues
@@ -44,6 +46,26 @@ their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+
 
 Previous releases
 ~~~~~~~~~~~~~~~~~
+
+Release 30.3.0, March 29th, 2023
+--------------------------------
+
+Features
+^^^^^^^^
+
+#. R4B support: With this upgrade we make FHIR R4B available to our users for projects and packages in Simplifier.
+#. SDK: Simplifier is now upgraded to FHIR SDK 5.0.
+#. .NET 7: We upgraded Simplifier to .NET 7. This upgrade comes with performance improvements and reduced memory consumption. 
+#. ASP .NET 7: We upgraded to ASP.NET 7, which has rate limiting built in. This helps us to protects Simplifier against DOS/DDOS attacks.
+#. EF 7.0: Simplifier is upgraded to EF 7.0 which brings additional performance improvements.
+
+Bugfixes
+^^^^^^^^
+
+#. OperationDefinitions not rendering: OperationDefinitions with nested parameters did not render on Project level and in IGs. This is now fixed.
+#. Cannot delete files with issues: Files with issues attached to them could not be deleted via GitHub or Forge. This is because the issues created for a file should not be deleted. We now have a ``Issue.Filepath`` property which we can use to track back for which file an issue was originally created. This allows files to be deleted without the issues to be removed.
+
+
 
 Release 30.1.0, February 28th, 2023
 -----------------------------------
