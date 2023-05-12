@@ -43,6 +43,10 @@ In the IG rendering, when using a custom balottable IG design, it looks like thi
 
 The information on the ``index`` node is rendered on the Home, Subsections folder or Subsection pages. When more pages are added below the index file, these will be rendered as paragraphs for that page. If you want to use this, make sure the first page in a folder is named ``index``.
 
+.. Tip::
+
+    In the bottom left of the IG editor you will find the help tab with examples, tips, and tricks.
+
 Markdown 
 ^^^^^^^^
 In the middle section is a Markdown based editor used to compose your IG content. 
@@ -121,7 +125,13 @@ You can also save your FQL statements in order to re-use them on different pages
 Pagelink using page topic
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With the `pagelink` command you can create a link to a different page in your Implementation Guide: `{{pagelink:<url key for the markdown resource describing the page>} }` (without the space). You can find the url key for the markdown resource describing the page you want to link to with the help from the pagelink autocomplete, or by looking at the address bar when opening the resource describing the page from your project's Resources tab.
+With the `pagelink` command you can create a link to a different page in your Implementation Guide: 
+
+.. code-block:: 
+
+    {{pagelink:<url key for the markdown resource describing the page>}}
+    
+You can find the url key for the markdown resource describing the page you want to link to with the help from the pagelink autocomplete, or by looking at the address bar when opening the resource describing the page from your project's Resources tab.
 
 When a URLkey for a page that is referred to or one of the folders it is in changes, the pagelink might break. For that reason, we created a more robust way of linking to pages within a guide with the use of ``topic``. 
 
@@ -136,4 +146,27 @@ In an Implementation Guide page you can set the ``topic`` by starting the page w
 
 Using the topic in you pagelink ``{{pagelink:yourpagename}}``, this will prevent the links from breaking even when creating copies of your guide. 
 
+
+Linking examples
+^^^^^^^^^^^^^^^^^
+
+The recommended way to link to examples or other resources is by resource id. This will ensure that the links will keep working even when the guide is exported or duplicated. 
+The rendering will work with Link, xml and json. Make sure to always provide a ResourceType when linking: 
+
+.. code-block::
+
+    {{Link/xml/json: ResourceType/id}}
+
+
+For example:
+
+.. code-block::
+
+    {{link: Patient/child-example}}
+
+Or the json rendering of the example resource:
+
+.. code-block::
+
+    {{json: Patient/child-example}}
 
