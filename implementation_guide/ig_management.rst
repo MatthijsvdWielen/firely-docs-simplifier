@@ -1,5 +1,9 @@
+.. _implementation_guide_management:
+
 Implementation Guide management
 ===============================
+
+.. _ig_storage:
 
 IG Storage
 ----------
@@ -15,6 +19,8 @@ To Save your IG as a Resource, click on the ``Generate IG resource`` button in t
 
 .. image:: ../images/CreateIGResource.png
 
+.. _ig_export:
+
 Export your IG
 --------------
 
@@ -25,6 +31,8 @@ Export your IG
 To use your IG outside of Simplifier, click on the Export button next to your IG in the Guides section of your project. 
 
 .. image:: ../images/ExportIG.png
+
+.. _ig_copy:
 
 Create a copy of your IG
 ------------------------
@@ -39,6 +47,8 @@ A guide can be copied to the same project or to another project. The ``Target pr
 
 You can now have multiple version of your Implementation Guide live in the same project (or different projects). You could have one IG use a release package as the scope while the development version uses the live developement version of your project. 
 
+.. _ig_migration:
+
 Migrating your legacy Guide
 ---------------------------
 
@@ -49,6 +59,8 @@ Guides created before Simplifier 28.0 are still stored in the legacy way as sepa
 This functionality is also a beta release so please follow the warning and migration steps in the Migrate Guide window. In the Migrate Guide window a different target project can also be selected. Migrating a guide **does not** delete the legacy guide. 
 
 After a guide is migrated or copied, please make sure all your internal page links and references are still working. 
+
+.. _ig_convert:
 
 Convert guide.yaml to a Simplifier webbased IG.
 -----------------------------------------------
@@ -92,8 +104,10 @@ An ImplementationGuide resource can be converted to a Simplifier webbased IG. Th
 
 **Note**: If you want to export and import a project through a .zip you have to make sure that the folder structure is the same as in the project, to make sure links between IG resources are still in tact. Zipping a containing folder will include the folder in the zip-file. To make sure no extra layer of folders is added, directly zip the resources within a folder instead.
 
+.. _ig_GitHub:
+
 Manage your IG using GitHub
 ---------------------------
 
-The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the `GitHub integration documentation <../data_governance_and_quality_control/simplifierGithub>`.
+The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the `GitHub integration documentation <../data_governance_and_quality_control/simplifierGithub.html#github-webhook-to-manage-implementation-guides>`_.
 

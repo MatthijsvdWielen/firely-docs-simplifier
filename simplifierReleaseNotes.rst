@@ -8,6 +8,74 @@ This page contains the release notes of the current major version of simplifier.
 Current release
 ~~~~~~~~~~~~~~~
 
+Release 30.5.0, June 28th, 2023
+-------------------------------
+
+Features
+^^^^^^^^
+
+#. Translations: The main and original focus for this release was to have Simplifier offer possibilities for translations. With this release you now have the opportunity to
+   have translations in profile trees. If a profile has translation extensions, the available languages will show up as buttons on the top left, so that you can switch between them.
+#. Implementation Guide: We have added several extra components that you can use in the implementation guide, as well as some improvements:
+
+      - Expand: The ``tree`` and ``render`` commands now have an ``expand`` property. You can use expand for full expansion, or give a number for the level of expansion.
+            
+            ::
+
+                  {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand}}
+                  {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand: 2}}
+      - Buttons: The ``tree`` and ``render`` commands now have a ``buttons`` flag that will show the diff, snap, and hybrid buttons for the tree in on a guide page.
+      - Language: The ``tree`` and ``render`` commands now have a ``lang`` property that allows you to switch the language of the rendering to the provided language, if it is available.
+
+            ::
+
+                  {{tree:http://hl7.be/fhir/be/StructuurDefinities/Patient, lang: fr-BE}}
+
+      - DocProperties: DocProperties is the technical name of the framework that we implemented this release. In our Implementation Guides, the yaml header of a markdown page may now contain any property that can also be used in the ``render`` commands. The effect is that you can now provide configuration for all their commands in one go. Take for example the ``lang`` property, you can place this in the yaml header of your IG and this will automatically affect all renderers who understand the language property.
+
+            ::
+
+                  ---
+                  lang: nl-BE
+                  ---
+        
+        Other properties you might consider are the ``expand``, ``buttons``, ``diff``, and ``hybrid`` flags.
+      - File rendering: Our ``render`` command can now also render any file.
+      - Source rendering: In the past, we implemented both parsed rendering and unparsed rendering on the ``render`` command. But we have now made this more explicit by adding a new command: ``source``. This latter command will always render the unparsed file. In case of a profile, it will render the xml or json, and for an FQL file, it will render the script text.
+#. Metadata expressions: You can now run the Meta Data Expressions from the editor, without having to re-import your resources. This allows you to gather direct feedback on changes you made. 
+#. Upgrade SDK: With this release, we have upgraded to Firelt SDK 5.1.
+#. Upgrade TLS: We have upgraded Simplifier to use TLS 1.2
+#. Yellow Button: You can now test your simplifier projects in Firely Server for R5 projects.
+
+Bugfixes
+^^^^^^^^
+
+#. Uploading files: When a file was renamed (file deleted + file added) but the changes only involved changing the case of the filename then uploading would fail. This is now fixed.
+#. IG: If links used in the IG would contain dots in the filename, these links would not resolve as the part after the dot would be seen as a file extension. For instance the link ``guide/LogicalModels/EN.AbilityToDressOneself`` would not resolve as ``AbilityToDressOneself`` would be seen as the file extension. This is now fixed and these links will get the correct file extension automatically.
+#. Validator: Validator results would run off the screen, this has been improved.
+#. FQL: Syntax highlighting was not working properly causing for example "select" in the word "selection" to be highlighted. This is now fixed.
+#. FQL: When FQL results would be viewed via a link, it was not possible to scroll in the results. This has been fixed.
+#. FQL documentation: The documentation link on the FQL playground was pointing to the wrong link. This has been fixed.
+
+
+Known issues
+^^^^^^^^^^^^
+
+As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
+simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
+
+If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
+It is also possible to raise an issue from here.
+
+All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
+and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
+
+HL7 is maintaining a `known issue list for the FHIR specifications on
+their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
+
+Previous releases
+~~~~~~~~~~~~~~~~~
+
 Release 30.4.0, May 4th, 2023
 -----------------------------
 
@@ -28,24 +96,6 @@ Features
 #. Packages: packages now have an administrative menu.
 #. Playgrounds: We have improved the playground user interface for FQL, PlantUML, YamlGen and FhirPath. Also, we have a new system for sharing playground scripts and results with shorter links that no longer break when scripts are too long.
 
-
-Known issues
-^^^^^^^^^^^^
-
-As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
-simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
-
-If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
-It is also possible to raise an issue from here.
-
-All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
-and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
-
-HL7 is maintaining a `known issue list for the FHIR specifications on
-their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
-
-Previous releases
-~~~~~~~~~~~~~~~~~
 
 Release 30.3.0, March 29th, 2023
 --------------------------------
