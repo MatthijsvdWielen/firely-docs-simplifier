@@ -1,3 +1,5 @@
+.. _GitHub:
+
 GitHub integration
 ==================
 
@@ -7,6 +9,8 @@ GitHub integration
 
 The GitHub integration enables you to link Simplier projects to GitHub repositories. When linking the project with the repository, the
 resources from the repository are fetched and added to your Simplifier project. The GitHub integration is part of the paid account plans of Simplifier. This page will elaborate further on how to perform the linking.
+
+.. _gh_linking:
 
 GitHub Linking
 --------------
@@ -19,13 +23,19 @@ Once this step is complete, you will be directed back to Simplifier, where Simpl
 
 To link an Organization GitHub repository after an already made link, you should edit your Organization settings in GitHub. Log in to GitHub and go to the Settings tab in your Organization. Press the ``Remove Restrictions`` button under third-party access. Now you should see the repositories from that organization when you try to link a GitHub Repository.
 
+.. _gh_settings:
+
 Settings
 --------
 When connecting a GitHub repository you will be asked to choose a strategy about how to deal with resources that fail to import (most likely because they are not valid FHIR resources) and whether to remove resources from your project when they are removed from your repository.
 
+.. _gh_updates:
+
 Fetch Updates
 -------------
 After the linking is performed, any updates to your resources in the GitHub repository will be sent automatically to Simplifier. Based on the the linking settings, resources in your Simplifier project will be updated, added or deleted. 
+
+.. _gh_sync:
 
 GitHub Sync
 -----------
@@ -34,6 +44,8 @@ GitHub Sync enables you to synchronize your Simplifier project with the linked G
 GitHub UpSync
 -------------
 It is not possible to upsync to Github directly. A workaround would be to sync your Simplifier work with your local folder using Forge or Firely Terminal and then commit that to Github. 
+
+.. _gh_include:
 
 GitHub Include/Exclude
 ----------------------
@@ -57,6 +69,7 @@ The syntax is the following:
     !FHIR/examples/*
 
 
+.. _gh_webhook:
 
 Gitwebhook per Branch
 ---------------------
@@ -82,9 +95,13 @@ Note that if you only use exclude patterns (starting with a exclamation mark !),
 
 You can use the same globbing patterns you are used to in a .gitignore file.
 
+.. _gh_multibranch:
+
 GitHub multiple branch linking
 ------------------------------
 We have created a way of allowing multiple branches from the same repository in GitHub to link to different projects in Simplifier. The GitHub API only allows one link per repository, so we created a multiplexer on our side to handle this.
+
+.. _gh_ig:
 
 GitHub webhook to manage Implementation Guides
 ----------------------------------------------
@@ -92,20 +109,22 @@ The GitHub webhook allows you to edit your Implementation Guide without using th
 
 To get started, you create a project and `establish a webhook <#github-linking>`_ to your GitHub repository.
 
--	Create an ImplementationGuide resource, or download an ImplementationGuide resource from a Simplifier project together with all the belonging content (.md pages, images, etc.)
+-	Create an `Implementation Guide <../implementation_guide/create_your_first_ig.html>`_ and download this guide,  or download an Implementation Guide from a Simplifier project together with all the belonging content (guide.yaml, .md pages, images, etc.)
 
-- Push the resources to your GitHub repository.
+-	Push the resources to your GitHub repository. If you do not yet see your IG files in your Simplifier project you can go to the GitHub menu in Simplifier and click ``Reimport``.
 
--	Your Simplifier project will now contain all these files. Locate the ImplementationGuide resource.
+- Your Simplifier project will now contain all IG files. Locate the guide.yaml file and open it in Simplifier.
 
--	Click on ``Update`` followed by ``Edit: Update by editing in IG editor``. This will convert the ImplementationGuide resource to a Simplifier IG.
+-	Click on the ``Update`` menu followed by ``Edit: Create IG and start updating in IG Editor``. This will convert the guide.yaml to a Simplifier IG.
 
  .. image:: ../images/ConvertIG.png
  
 -	Choose the desired conversion settings of your IG.
 -	The Implementation Guide editor will now open with your IG - leave it as-is. You will also find the IG in the Guides tab of your project.
 
-From now on, you can edit the ImplementationGuide resource and its pages from within your GitHub repository. Your changes will be automatically pushed to Simplifier and your online Implementation Guide.
+From now on, you can edit the guide.yaml and the IG pages from within your GitHub repository. Your changes will be automatically pushed to Simplifier and your online Implementation Guide.
+
+.. _gh_rights:
 
 Github Rights explanation
 -------------------------
