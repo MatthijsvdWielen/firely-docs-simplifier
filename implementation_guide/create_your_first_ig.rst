@@ -62,25 +62,104 @@ A short summary of frequently used features are as follows:
 - Adding Combined emphasis with ``**asterisks``` and ``_underscores_**``
 - Strikethrough uses two tildes. ``~~Scratch this.~~``
 
-
+IG editor features
+^^^^^^^^^^^^^^^^^^
 The IG editor has features which allow you to include Simplifier content in your IG. 
 These features work by using the statements written below in the editor. 
 After adding these statements in the editor refresh the page, by pressing Crtl + Enter or clicking the Refresh button, to make them visible in the preview section. 
 
 - ``{{tree:canonicalUrl}}``		                - renders a tree structure as seen in the resource overview tab
+- ``{{json:canonicalUrl}}``		                - renders a json of the resource
+- ``{{xml:canonicalUrl}}``		                - renders an xml of the resource
 - ``{{table:canonicalUrl}}``		            - renders a table as seen in the resource table tab
 - ``{{link:canonicalUrl}}``			            - provides a link to the specific resource page on Simplifier
 - ``{{namingsystems:ProjectName}}``				- lists all namespaces of a project in a table
-
-
-The location of the rendered resources is based on the scope of the IG as set in the settigns.  
-
+- ``{{render:canonicalUrl}}``                   - renders and parses any file type 
+- ``{{source:canonicalUrl}}``                   - renders any filetype unparsed. In case of a profile, it will render the xml or json, and for an FQL file, it will render the script text
 
 The following statements add an index within the IG. 
 
 - ``{{index:root}}``	- gives an index of the entire IG 
 - ``{{index:current}}`` - gives an index of the current selected element
 
+The location of the rendered resources is based on the scope of the IG as set in the settings. 
+You can find this scope when you navigate to the settings of the IG editor and click the "Scope" tab:
+
+.. image:: ../images/IG_Scope.png
+
+
+
+Tree and Render properties
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+The ``tree`` and ``render`` widgets have properties that you can set, allowing you to specify how these widgets should render files. These properties are listed below:
+
+    - The ``tree`` widget has the option to show either the ``diff``, ``snap``, or ``hybrid`` form of your resource.
+
+            ::
+
+                {{tree:http://hl7.org/fhir/StructureDefinition/Patient, diff}}
+                {{tree:http://hl7.org/fhir/StructureDefinition/Patient, snap}}
+                {{tree:http://hl7.org/fhir/StructureDefinition/Patient, hybrid}}
+
+    - Buttons: Rather than showing only one of the above renderings, the ``buttons`` property will show the three ``diff``, ``snap``, and ``hybrid`` buttons for the tree on a guide page.
+
+            ::
+
+                {{tree:http://hl7.org/fhir/StructuurDefinities/Patient, buttons}}
+
+    - Expand: You can use the ``expand`` property for full expansion of your resource tree, or you can give a number for the level of expansion:
+            
+        ::
+
+            {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand}}
+            {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand: 2}}
+
+    - Language: The ``lang`` property allows you to switch the language of the rendering to the provided language, if it is available:
+
+        ::
+
+            {{tree:http://hl7.be/fhir/be/StructuurDefinities/Patient, lang: fr-BE}}
+
+Page Headers
+^^^^^^^^^^^^
+
+The YAML header of a markdown page (the part between the ``---`` lines) is a place to set properties that should affect the entire page. 
+As is described below, you can set the ``topic`` of the page like this, but with the release of Simplifier 30.5 it is possible to set any properties here that can also be used in the rendering widgets.
+If you would for example place the ``subject`` property (the canonical of this page) in the page header, all ``tree``, ``xml`` and ``json`` widgets in the page will no longer need the canonical as their parameter, making it a lot easier to create and maintain.
+
+.. image:: ../images/IGHeaders.png
+
+If you set the ``lang`` property in the header this will automatically affect all renderers who understand the language property:
+
+    ::
+
+        ---
+        lang: nl-BE
+        ---
+
+
+
+Other properties you might consider to use here are the aforementioned properties, such as the ``expand``, ``buttons``, ``diff``, and ``hybrid`` properties.
+
+Creating tabs
+^^^^^^^^^^^^^
+You can create tabs in a guide page using the following syntax:
+
+    ::
+
+        <tabs>
+            <tab title="Overview">
+              {{tree:http://hl7.org/fhir/StructureDefinition/Patient}}
+            </tab>
+            <tab title="Xml" active="true">
+              {{xml:http://hl7.org/fhir/StructureDefinition/Patient}}
+            </tab>
+        </tabs>
+
+By default, the first tab in the above snippet will be active. If you would like the second tab to be active you can use the ``active="true"`` setting as shown above.
+An example of how these tabs will look like is given below:
+
+.. image:: ../images/IGtabs.png
 
 Formatting style
 ^^^^^^^^^^^^^^^^
@@ -120,12 +199,15 @@ With the introduction of FQL  it is now possible to create dynamic tables in you
 
 You can also save your FQL statements in order to re-use them on different pages and even in different projects. In the IG editor, the option for saving your custom snippets is available. This will save your statements in a .snippet.md file which is than usable within every IG page in that specific project. The .snippet.md file(s) can be downloaded and uploaded in different projects to use them across your organization. 
 
+
  .. image:: ../images/IGEditorSnippets.png
+
+It is also possible to use HTML style tags to embed FQL code in your page. For that you can use the following tags: ``<fql>``.
 
 Pagelink using page topic
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-With the `pagelink` command you can create a link to a different page in your Implementation Guide: 
+With the ``pagelink`` command you can create a link to a different page in your Implementation Guide: 
 
 .. code-block:: 
 
@@ -144,7 +226,7 @@ In an Implementation Guide page you can set the ``topic`` by starting the page w
     topic: yourpagename
     ---
 
-Using the topic in you pagelink ``{{pagelink:yourpagename}}``, this will prevent the links from breaking even when creating copies of your guide. 
+Using the topic in your pagelink ``{{pagelink:yourpagename}}``, this will prevent the links from breaking even when creating copies of your guide. 
 
 
 Linking examples

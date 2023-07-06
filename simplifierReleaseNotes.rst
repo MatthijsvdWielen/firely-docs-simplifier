@@ -18,20 +18,25 @@ Features
    have translations in profile trees. If a profile has translation extensions, the available languages will show up as buttons on the top left, so that you can switch between them.
 #. Implementation Guide: We have added several extra components that you can use in the implementation guide, as well as some improvements:
 
-      - Expand: The ``tree`` and ``render`` commands now have an ``expand`` property. You can use expand for full expansion, or give a number for the level of expansion.
+      - The ``tree`` and ``render`` commands now have some extra properties:
+
+            - Expand: You can use the ``expand`` property for full expansion, or give a number for the level of expansion:
             
-            ::
+                  ::
 
-                  {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand}}
-                  {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand: 2}}
-      - Buttons: The ``tree`` and ``render`` commands now have a ``buttons`` flag that will show the diff, snap, and hybrid buttons for the tree in on a guide page.
-      - Language: The ``tree`` and ``render`` commands now have a ``lang`` property that allows you to switch the language of the rendering to the provided language, if it is available.
+                        {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand}}
+                        {{tree:http://hl7.org/fhir/StructureDefinition/Patient, expand: 2}}
 
-            ::
+            - Buttons: The ``buttons`` property will show the ``diff``, ``snap``, and ``hybrid`` buttons for the tree on a guide page.
+            - Language: The ``lang`` property allows you to switch the language of the rendering to the provided language, if it is available:
 
-                  {{tree:http://hl7.be/fhir/be/StructuurDefinities/Patient, lang: fr-BE}}
+                  ::
 
-      - DocProperties: DocProperties is the technical name of the framework that we implemented this release. In our Implementation Guides, the yaml header of a markdown page may now contain any property that can also be used in the ``render`` commands. The effect is that you can now provide configuration for all their commands in one go. Take for example the ``lang`` property, you can place this in the yaml header of your IG and this will automatically affect all renderers who understand the language property.
+                        {{tree:http://hl7.be/fhir/be/StructuurDefinities/Patient, lang: fr-BE}}
+
+      - DocProperties: DocProperties is the technical name of the framework that we implemented this release. 
+        In our Implementation Guides, the yaml header of a markdown page may now contain any property that can also be used in the rendering widgets. 
+        The effect is that you can now provide configuration for all their commands in one go. Take for example the ``lang`` property, you can place this in the yaml header of your IG and this will automatically affect all renderers who understand the language property.
 
             ::
 
@@ -41,11 +46,25 @@ Features
         
         Other properties you might consider are the ``expand``, ``buttons``, ``diff``, and ``hybrid`` flags.
       - File rendering: Our ``render`` command can now also render any file.
+      - Tabs: It is now possible to create tabs in a guide page, you can use the ``active`` flag to set your default tab. See the example below:
+
+            ::
+
+                  <tabs>
+                        <tab title="Overview">
+                              {{tree:http://hl7.org/fhir/StructureDefinition/Patient}}
+                        </tab>
+                        <tab title="Xml" active="true">
+                              {{xml:http://hl7.org/fhir/StructureDefinition/Patient}}
+                        </tab>
+                  </tabs>
+
+
       - Source rendering: In the past, we implemented both parsed rendering and unparsed rendering on the ``render`` command. But we have now made this more explicit by adding a new command: ``source``. This latter command will always render the unparsed file. In case of a profile, it will render the xml or json, and for an FQL file, it will render the script text.
 #. Metadata expressions: You can now run the Meta Data Expressions from the editor, without having to re-import your resources. This allows you to gather direct feedback on changes you made. 
-#. Upgrade SDK: With this release, we have upgraded to Firelt SDK 5.1.
+#. Upgrade SDK: With this release, we have upgraded to Firely SDK 5.1.
 #. Upgrade TLS: We have upgraded Simplifier to use TLS 1.2
-#. Yellow Button: You can now test your simplifier projects in Firely Server for R5 projects.
+#. Yellow Button: You can now test your Simplifier projects in Firely Server for R5 projects.
 
 Bugfixes
 ^^^^^^^^
