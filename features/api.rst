@@ -116,7 +116,7 @@ Besides the regular package endpoint, there is also a more limited NPM compatibl
 
 ::
   
-  https://packages.simplifier.net/<name>/-/<package-name>-<package-version>.tgz
+  https://packages.simplifier.net/<package-name>/-/<package-name>-<package-version>.tgz
 
 
 The above example, then becomes:
