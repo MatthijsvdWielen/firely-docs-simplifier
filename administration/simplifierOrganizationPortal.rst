@@ -25,6 +25,7 @@ Your organization portal is a landing page for your organization that is visible
 
 .. image:: ../images/OrganizationPortal.PNG
     :align: center
+    :width: 700px
 
 Custom Workflow
 -----------------

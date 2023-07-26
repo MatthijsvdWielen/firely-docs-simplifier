@@ -86,6 +86,7 @@ The location of the rendered resources is based on the scope of the IG as set in
 You can find this scope when you navigate to the settings of the IG editor and click the "Scope" tab:
 
 .. image:: ../images/IG_Scope.png
+    :width: 760px
 
 
 
@@ -169,17 +170,19 @@ An IG can be rendered in one of three formats: a Tree table, Two Level Menu or H
 A Tree table rendering will display your IG with the elements in a format similar to the tree table with the elements and their hierarchy along the left side of the page.
 
 .. image:: ../images/IGTreeNavigation.png
+    :width: 900px
 
 A Two Level Menu rendering will display your IG with the elements in tabs along the top of the page.
 
 .. image:: ../images/IGHorizontalNavigation.png
+    :width: 900px
 
 A HL7 format rendering will display your IG with the elements in tabs along the top of the page similar to the Two Level Menu rendering, but in the style of a HL7 IG.
 
 Every folder contains an index file which will be displayed as the folders homepage. Every folder can have child pages which can be added with the ``+`` icon. In the image below you can see the folder structure on the left and on the right de rendering of the Implementation Guide: 
 
 .. image:: ../images/FolderStructure.png
-
+    :width: 760px
 
 FQL table generation
 ^^^^^^^^^^^^^^^^^^^^
