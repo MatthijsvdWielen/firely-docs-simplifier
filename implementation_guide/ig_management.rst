@@ -10,9 +10,12 @@ IG Storage
 
 Since release 28.0 IG's all files belonging to an IG are saved in the same folder. No longer in the root of the project and not in different folders. The folder name will be the same as the IG name. 
 
-To illustrate how this works, see the screen picture of an example IG containing three topics with one or more pages for each topic. In the project's filemanager you can see the different folder structures for each guide. 
+To illustrate how this works, see the screen picture of an example IG containing three topics with one or more pages for each topic. 
 
 .. image:: ../images/IGEditorStructure.png
+
+In the project's filemanager you can see the different folder structures for each guide. 
+
 .. image:: ../images/IGFileStorage.png
 
 To Save your IG as a Resource, click on the ``Generate IG resource`` button in the left pane of the IG-editor. Note that it is the tree structure that is saved. Textual changes are save automatically.
