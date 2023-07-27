@@ -14,11 +14,13 @@ Open your project
 For an overview of your projects, go to your `personal portal <../administration/simplifierPersonalContent.html>`_ by clicking on your avatar in the top right corner.
 
 .. image:: ../images/UserMenu.PNG 
-
+   :scale: 75%
+      
 The Projects tabs lists all projects you are involved in, either because you created the project yourself (making you the owner of the project) or because you are invited to the project as a project member.
 
 .. image:: ../images/PersonalPortal.PNG
-   :width: 900px
+   :scale: 75%
+      
 
 Click on the title of a project to open its project page.
 
@@ -29,7 +31,8 @@ Project page
 Each project contains a couple of tabs depending on the settings of the project and your role in the project. The tabs described below are visible for each user in each Simplifier project.
 
 .. image:: ../images/ProjectTabs.PNG
-   :width: 900px
+   :scale: 75%
+      
    
 Introduction
 ------------
@@ -86,28 +89,33 @@ Subscriptions
 To stay informed in real time click the ``Subscribe`` button in the top right. You do not have to be a member of a project to stay up to date on the latest developments. 
 
 .. image:: ../images/Subscribe.PNG
-
+   :scale: 75%
+      
 You can find your current subscriptions in your user portal under the ``Subscriptions`` tab:
 
 .. image:: ../images/Subscriptions.PNG
-
+   :scale: 75%
+      
 Create a project
 """"""""""""""""
 In the Projects tabs on your Portal page you can find the button labeled ``Create``. 
 
 .. image:: ../images/PersonalPortal.PNG
-   :width: 900px
+   :scale: 75%
+      
 
 Clicking this button will allow you to create a new project by entering a Display Name, Description, and Scope. Once the project has been created you can then customize project information, add resources, add members, and follow changes that are occurring in that project.
 
 .. image:: ../images/CreateProject.PNG 
-
+   :scale: 75%
+      
 Project Management
 """"""""""""""""""
 You can always change your project settings by clicking on the ``Manage`` button in the right upper corner. There are a couple of options in the Manage menu, which will be explained below.
 
 .. image:: ../images/ProjectSettings.PNG
-
+   :scale: 75%
+      
 Properties
 ----------
 Here you can edit the following properties: 
@@ -206,7 +214,8 @@ The ``Teams`` tab displays a list of all the members with rights to that project
 Along the top of the ``Teams`` tab you will find a summary of User information for your project. The number of users, the max users allowed for this project (in accordance with the type of plan you have), and the number of invitations you have pending (the number of users who have a not yet accepted an invitation).  
 
 .. image:: ../images/Numberofmembers.png
-
+   :scale: 75%
+      
 Track Project Changes
 """""""""""""""""""""
 On the ``Log`` tab you will find event tracking of a project. This log keeps a list of all changes made to resources within the project, along with the name of the person that made changes and the time the changes were made. 
@@ -214,7 +223,8 @@ On the ``Log`` tab you will find event tracking of a project. This log keeps a l
 At the top of the screen you will find the Atom feed button. This allows you to subscribe to stay informed about any changes being made within your projects. To utilize this feature, navigate to a project on Simplifier.net that you are interested in following. Once there click on the ``Subscribe`` button in the upper right hand corner and copy the link into a feed reader of your choice. You are then ready to start receiving updates. 
 
 .. image:: ../images/SimplifierProjectLog.png
-   :width: 900px	
+   :scale: 50%
+      
 
 Issue Tracker
 """""""""""""
@@ -226,7 +236,8 @@ Issue Tracker
 Would you like to capture feedback about your resources from users? The Issue tracker option is a great way to do this. If you go to the ``Settings`` dropdown menu and then select ``Properties``. You will see the option to Enable Issues at the bottom of your screen. By selecting the On option, you enable the issue tracking feature of your project.
 
 .. image:: ../images/SimplifierIssueTracker.png
-   :width: 900px
+   :scale: 50%
+      
 
 There are two additional options that display once you have turned Issue tracking on. You have the option to limit Issue visibility to project members only or make them publicly visible. The issues that are reported by the community can also be limited to be visable to your project members only or visible to the public.
 

@@ -39,6 +39,7 @@ When using the TreeTable:
 * **tree-navigation** - Adds a rendering of the tree to the left side of the IG page. 
 
 .. image:: ../images/TreeIg.png
+   :scale: 75%
 
 When using the Two Level Menu:
 """"""""""""""""""""""""""""""
@@ -47,6 +48,7 @@ When using the Two Level Menu:
 * **dropdown-navigation-with-title** - Creates a navigation bar similar to **dropdown-navigation** and adds the IG title as a 'home' button to the left of the navigation bar as seen in the image below. 
 
 .. image:: ../images/TwoLevelIg.png
+   :scale: 75%
 
 Stylesheet specific placeholders: 
 """"""""""""""""""""""""""""""""""
@@ -62,6 +64,7 @@ CSS-editor
 For our Enterprise Licenses the feature "Custom Layout" is available. Here you can create your own custom master template (HTML) and choose your own layout (CSS). When you click on the dorpdown icon in the IG-editor, the CSS-editor will be opened. 
 
 .. image:: ../images/IGEditorSettings.png   
+   :scale: 75%
 
 With this editor you can edit your Style Sheet to make overall changes in the overall look and feel of your IG. For example, you may change the color of the navigation bar to blue or add your own logo to it. It is also possible to reset your changes by going back to the original CSS or download the original CSS as a seperate file, so you can compare the differences with your own code.
 

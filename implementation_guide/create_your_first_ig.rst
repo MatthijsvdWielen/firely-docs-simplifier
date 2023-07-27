@@ -4,6 +4,7 @@ Create your first IG
 You can access the IG editor via the ``Guides`` tab in your project. Use the ``Create`` button to create a new Implementation Guide and provide a title for the IG. Simplifier will automatically generate a URL Key, but you can choose your own URL Key.
 
 .. image:: ../images/ImplementationGuideCreate.png  
+   :scale: 75%
 
 Click on ``Browse`` or the Implementation Guide itself for a preview of the guide. Click on the ``Edit`` button to open the Implementation Guide in the IG editor. In the left bottom a help section is available to get started with adding images and tree renderings etc.
 
@@ -14,6 +15,7 @@ The IG editor opens on the page of the root folder. Simplifier stores newly crea
 To adjust the settings of your IG click on the Settings icon (the middle icon representing a gear wheel). This brings you to a section that allows you to adjust the title and privacy on the Settings tab, or select an IG rendering format and Stylesheet file on the Style tab. In the settings you are also able to select a ``scope`` for your guide. The scope determines where the rendered resources in your guide come from. You can set the scope to released packages or you live development project. 
 
 .. image:: ../images/IGEditorSettings.png   
+   :scale: 75%
 
 The IG Editor consist of three sections. On the left is the IG's tree table which is used to define the outline of your IG and navigate between the pages of the IG. The middle section is the actual editor. The right section provides a preview of the actual IG page.   
 
@@ -31,15 +33,13 @@ The IG folders work as follows:
 
 In the IG Editor this looks like this: 
 
-
 .. image:: ../images/IGeditorTreeHierarchy.png
-
-
+   :scale: 75%
 
 In the IG rendering, when using a custom balottable IG design, it looks like this:
 
-
 .. image:: ../images/IGPageHierarchy.png
+   :scale: 75%
 
 The information on the ``index`` node is rendered on the Home, Subsections folder or Subsection pages. When more pages are added below the index file, these will be rendered as paragraphs for that page. If you want to use this, make sure the first page in a folder is named ``index``.
 
@@ -86,9 +86,7 @@ The location of the rendered resources is based on the scope of the IG as set in
 You can find this scope when you navigate to the settings of the IG editor and click the "Scope" tab:
 
 .. image:: ../images/IG_Scope.png
-    :width: 760px
-
-
+   :scale: 75%
 
 Tree and Render properties
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -129,6 +127,7 @@ As is described below, you can set the ``topic`` of the page like this, but with
 If you would for example place the ``subject`` property (the canonical of this page) in the page header, all ``tree``, ``xml`` and ``json`` widgets in the page will no longer need the canonical as their parameter, making it a lot easier to create and maintain.
 
 .. image:: ../images/IGHeaders.png
+   :scale: 75%
 
 If you set the ``lang`` property in the header this will automatically affect all renderers who understand the language property:
 
@@ -161,6 +160,7 @@ By default, the first tab in the above snippet will be active. If you would like
 An example of how these tabs will look like is given below:
 
 .. image:: ../images/IGtabs.png
+   :scale: 75%
 
 Formatting style
 ^^^^^^^^^^^^^^^^
@@ -170,19 +170,21 @@ An IG can be rendered in one of three formats: a Tree table, Two Level Menu or H
 A Tree table rendering will display your IG with the elements in a format similar to the tree table with the elements and their hierarchy along the left side of the page.
 
 .. image:: ../images/IGTreeNavigation.png
-    :width: 900px
+   :scale: 75%
+
 
 A Two Level Menu rendering will display your IG with the elements in tabs along the top of the page.
 
 .. image:: ../images/IGHorizontalNavigation.png
-    :width: 900px
+   :scale: 75%
 
 A HL7 format rendering will display your IG with the elements in tabs along the top of the page similar to the Two Level Menu rendering, but in the style of a HL7 IG.
 
 Every folder contains an index file which will be displayed as the folders homepage. Every folder can have child pages which can be added with the ``+`` icon. In the image below you can see the folder structure on the left and on the right de rendering of the Implementation Guide: 
 
 .. image:: ../images/FolderStructure.png
-    :width: 760px
+   :scale: 75%
+
 
 FQL table generation
 ^^^^^^^^^^^^^^^^^^^^
@@ -204,6 +206,7 @@ You can also save your FQL statements in order to re-use them on different pages
 
 
  .. image:: ../images/IGEditorSnippets.png
+   :scale: 75%
 
 It is also possible to use HTML style tags to embed FQL code in your page. For that you can use the following tags: ``<fql>``.
 

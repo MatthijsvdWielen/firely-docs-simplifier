@@ -9,7 +9,7 @@ Resolving canonicals in FHIR R4 requires the use of a package (or project) scope
 
 .. image::../images/CanonicalScope.png
   :align: center
-
+  :scale: 75%
 
 You can set the documentation URL of a single resource, but you can also set the the documentation URLs of all 
 resources in the project, because Simplifier works with templates for the documentation URL.  

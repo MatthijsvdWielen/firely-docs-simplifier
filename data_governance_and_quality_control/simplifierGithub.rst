@@ -118,7 +118,8 @@ To get started, you create a project and `establish a webhook <#github-linking>`
 -	Click on the ``Update`` menu followed by ``Edit: Create IG and start updating in IG Editor``. This will convert the guide.yaml to a Simplifier IG.
 
  .. image:: ../images/ConvertIG.png
- 
+    :scale: 75%
+
 -	Choose the desired conversion settings of your IG.
 -	The Implementation Guide editor will now open with your IG - leave it as-is. You will also find the IG in the Guides tab of your project.
 
