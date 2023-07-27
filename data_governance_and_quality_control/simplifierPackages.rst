@@ -18,13 +18,11 @@ The ``Introduction`` page will give you an overview of the package:
 * Info; shows information about when the package was created, a link to the project it is part of and a download button to download the package.
 
 .. image:: ../images/PackageView.png
-   :align: center
    :scale: 75%
 
 Switch to the ``Files`` tab to see the content of the package. 
 
 .. image:: ../images/PackageFiles.png
-   :align: center
    :scale: 75%
 
 
@@ -38,7 +36,6 @@ To create a new version of an existing package, click on ``Create`` and select `
 Packages can be created as private packages or public packages. Private packages are only visible for the team members inside the project from where the package is created and public packages will be visible to all of Simplifier. 
 
 .. image:: ../images/PackageRelease.png
-   :align: center
    :scale: 75%
   
 
@@ -54,13 +51,11 @@ Once a package is created it can be used by other implementers to build their pr
 In some cases you might want new implementers to no longer find a specific version of a package. For these cases you can ``unlist`` a package. This can be done by the package owner in the package Administration. 
 
 .. image:: ../images/UnlistPackage.png
-   :align: center
    :scale: 75%
 
 When a package is unlisted, it will no longer show up for implementers on the Registry or on Simplifier. As a creator of the package you will still be able to see the package with an unlisted label added.  
 
 .. image:: ../images/UnlistedPackage.png
-   :align: center
    :scale: 75%
 
 
@@ -148,7 +143,6 @@ View dependencies
 Visit the ``Dependencies`` tab of any Simplifier project to see a list of its package dependencies as well as indirect dependencies. Click on the name of one of the listed packages to see the details of this package. This will show the information as explained in the View Packages section.
 
 .. image:: ../images/PackageAddDependencies.png
-   :align: center
    :scale: 75%
 
 Add dependencies
@@ -158,7 +152,6 @@ Visit the ``Dependencies`` tab to add dependencies to your project. There are tw
 Click ``Manage`` to search for existing dependencies. Type a search string in the search box and select a package and its version from the search results. Click ``Add`` to add the package to your project. When you are finished adding packages click ``Save`` to save the changes to your project.
 
 .. image:: ../images/PackageDependenciesTab.png
-   :align: center
    :scale: 75%
 
 Click ``Edit`` to directly edit the JSON code and add the packages and their version to ``dependencies``.
