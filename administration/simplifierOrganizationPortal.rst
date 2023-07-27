@@ -25,7 +25,7 @@ Your organization portal is a landing page for your organization that is visible
 
 .. image:: ../images/OrganizationPortal.PNG
     :align: center
-    :width: 700px
+    :scale: 75%
 
 Custom Workflow
 -----------------
@@ -39,6 +39,7 @@ To create a Custom Workflow select ``Custom Workflow`` from the ``Settings`` dro
 
 .. image:: ../images/CustomWorkflow.PNG
     :align: center
+    :scale: 75%
 
 When you search for resources in Simplifier, the page with search results shows the Custom Workflow status next to the resource. You can click on the status to obtain an overview with the possible statuses and their explanations.
 
@@ -48,12 +49,13 @@ Your organization projects are a compilation of the projects that are owned by t
 
 .. image:: ../images/CreateOrganizationProject.png
     :align: center
+    :scale: 75%
 
 You also have the ability to create ``Project Lists`` in the ``Endorsed projects`` tab. This list is not necessarily a list of your own projects but rather of interesting projects that you would like to endorse within the Simplifier community. This list, once created, will show up on your organization’s page within Simplifier. To create this list, navigate to the ``Endorsed projects`` tab on your organization's page and click on ``Create new project list`` in the hamburger menu. In the form you are shown you can customize the title and description for your list. After customization click on ``Save``. To select the projects you want to add to your list, you click on the hamburger menu of your created list and click ``Add projects``. This will show you a page where you can search and select the projects you want to endorse. 
 
 .. image:: ../images/EndorsedProjects.png
     :align: center
-
+    :scale: 75%
 
 Newsfeed
 --------
@@ -61,4 +63,4 @@ The ``News`` tab of your organization can be used to communicate to the outside 
 
 .. image:: ../images/OrganizationAddNewsItem.PNG
     :align: center
-
+    :scale: 75%

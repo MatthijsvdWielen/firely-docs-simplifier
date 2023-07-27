@@ -6,7 +6,8 @@ Your user portal provides you with an overview of your work in Simplifier.net an
 Click on your avatar in the top right corner to access your personal menu. From here you can access your personal portal, invites page, user profile, snippets page, organization portal(s) and account settings.
 
 .. image:: ../images/UserMenu.PNG 
-
+   :scale: 75%
+      
 Personal Portal
 """""""""""""""
 All your personal content is accessible through your personal portal. The following tabs are available:
@@ -22,14 +23,16 @@ Invites Page
 On the invites page you see an overview of the projects that you were invited to. You can either accept or decline the invite.
 
 .. image:: ../images/PendingInvites.PNG 
-   :width: 900px
+   :scale: 75%
+      
 
 User Profile
 """"""""""""
 This page shows your user profile as visible to other Simplifier users. It shows your personal details, user activity and a list of projects that you are member of. Other users that visit your profile may contact you by clicking the ``Contact User`` button on the right. This message will be sent to the email address that you provided during registration.
 
 .. image:: ../images/UserProfile.PNG 
-   
+   :scale: 75%
+        
 
 You can now add your usual social media handles, like Facebook, Twitter, LinkedIn etc. to your user profile. We provide this for users that want to have the option of having other users contact them about their work on Simplifier.
 
@@ -40,7 +43,7 @@ Snippets
 Your Snippets page shows a list of all your personal `Snippets <../getting_started/simplifierResources.html#sharing-resources-with-snippet>`_. From here you can also make a new Snippet by clicking on the ``+New`` button on the right.
 
 .. image:: ../images/MySnippets.PNG 
-   :width: 900px
+   :scale: 75%
 
 Account Settings
 """"""""""""""""""""""""""""""""
@@ -55,7 +58,8 @@ Here you can edit your account settings. You can also visit your User Profile fr
 * **Features**: Shows which Simplifier features are active based on your account and license.
 
 .. image:: ../images/AccountSettings.PNG
-   :width: 900px
+   :scale: 75%
+      
 
 Reaching out to other users
 """""""""""""""""""""""""""

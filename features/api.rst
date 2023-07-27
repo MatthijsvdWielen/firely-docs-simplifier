@@ -137,6 +137,7 @@ click on ``API`` in the top right menu when visiting either the
 The below image shows the location.
 
 .. image:: ../images/ProjectApiLocation.png
+   :scale: 75%
 
 It supports all the API operations like reading, creating or deleting a resource and search.
 
@@ -153,6 +154,7 @@ GET or PUT on https://api.simplifier.net/<yourproject>/zip to retrieve or
 update your project in zipped form.
 
 .. image:: ../images/ProjectApiLocation.png
+   :scale: 75%
 
 Global FHIR API
 """""""""""""""
@@ -162,7 +164,7 @@ Global FHIR API
 Using the global Simplifier FHIR API, users can search for all resources in Simplifier. For example, the request ``GET https://stu3.simplifier.net/open/Patient`` can be used to retrieve all (STU3) Patient resources from Simplifier. The global Simplifier endpoint of your resource is available at the resource page beneath the API icon. All resources have a globally unique GUID.
 
 .. image:: ../images/ResourceGlobalEndpoint.PNG
-
+   :scale: 75%
 
 Search Parameters 
 =================

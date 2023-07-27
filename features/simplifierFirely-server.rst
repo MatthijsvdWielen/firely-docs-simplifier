@@ -20,6 +20,7 @@ Currently we only enabled this for Windows 10, using PowerShell. Later we will a
 #. Under shared drives, share your local drive.
    
    .. image:: ../images/YellowButton_ShareDrive.png 
+      :scale: 75%
 
 #. Now in Simplifier, go to the project page of your project, drop down the Download button and click 'demo FHIR Server'
 
@@ -29,6 +30,7 @@ Currently we only enabled this for Windows 10, using PowerShell. Later we will a
 #. Click the 'Download' button
 
    .. image:: ../images/YellowButton_DownloadZip.png
+      :scale: 75%
 
 #. Unzip the downloaded file. For this explanation we choose to unzip to ``c:\programs\demo-VonkDockerServer``
 #. Open a PowerShell window
@@ -40,7 +42,8 @@ Currently we only enabled this for Windows 10, using PowerShell. Later we will a
 #. Then run the script .\\start-vonk-server.ps1
 
    .. image:: ../images/YellowButton_RunStart.png
-
+      :scale: 75%
+      
 #. The script will:
 
    * pull the neccessary images from the Docker hub (vonk-web and vonk-mongo-db)
@@ -76,7 +79,8 @@ Solution: The problem is exactly as stated -- your Docker for Windows is probabl
 ``ERROR: for vonk-web  Cannot start service vonk-web: error while creating mount source path '/host_mnt/c/data/yellowbutton/us-core-VonkDockerServer/license': mkdir /host_mnt/c: file exists``
 
 .. image:: ../images/DockerMountError.png
-
+   :scale: 75%
+      
 Solution: This may happen at subsequent starts of the Firely Server container. It appears to be an error in Docker for Windows. But it may be fixed by resetting the credentials for Drive Sharing in Docker for Windows (even if you did not change your password). 
 
 3. Network failed
@@ -84,7 +88,8 @@ Solution: This may happen at subsequent starts of the Firely Server container. I
 ``ERROR: for vonk-web  Cannot start service vonk-web: driver failed programming external connectivity on endpoint ...``
 
 .. image:: ../images/Simplifier-PortmappingError.png
-
+   :scale: 75%
+      
 Solution: This is an issue reported as `Issue 1967 on Docker for Windows`_. It can be solved by restarting Docker on Windows. 
 
 Configuration checks

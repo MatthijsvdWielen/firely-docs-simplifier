@@ -10,12 +10,12 @@ Team Management
 In your project, the license holder and Admin users can add more Team members. Under the ``Team`` tab you can add more Team members by inviting them by entering a valid emailaddress. 
 
 .. image:: ../images/addTeamMembers.png
-
+   :scale: 75%
 
 
 .. image:: ../images/Invites.png
    :align: right
-   :width: 200px
+   :scale: 75%
     
 The invited Team member will receive an email informing them they have been invited to join a project. Under the ``Invites`` tab the user can accept the invite.
 
@@ -92,6 +92,7 @@ Enterprise license
 Enterprise licenses allow you to create an :ref:`Organization <Organization_page>`. Inside your Organization project teams can be managed the same as with the Team license. 
 
 .. image:: ../images/teams-simplifier-overview.png
+   :scale: 75%
 
 Additionaly, for Enterprise licenses the Team managament feature is available. You can acces this through the ``Teams`` tab in your Organization portal. 
 
@@ -100,7 +101,8 @@ Create Teams
 In the Teams section Multiple teams can be created and managed. There are two types of teams available, the managing team and project teams. You can create multiple project teams, but only one managment team. The managing team members with Admin rights are given the same rights as the license owner. They will be allowed to create projects under the Organization and manage the Organizations project teams. One more benefit of adding people to the Managing team is that you can easily add them to other teams in the Organization. They are shown in the dropdown for adding members and don't even need to accept the invite anymore.
 
 .. image:: ../images/OrganizationTeams.png
-   :width: 600px
+   :scale: 75%
+
 
 
 Team projects
@@ -109,12 +111,14 @@ If you click on a create Team you will see the team portal. This gives an overvi
 In existing projects, the created project teams can be assigned as a whole to a project. 
 
 .. image:: ../images/createProjectFromTeam.png
-   :width: 600px
+   :scale: 75%
+
 
 Team assignment can be done in the project page. Navigate to ``Change team`` and in the next screen select the Team you want to have assinged to the project. 
 
 .. image:: ../images/changeTeams.png
-   :width: 250px 
+   :scale: 75%
+
 
 
 

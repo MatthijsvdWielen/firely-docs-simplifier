@@ -14,6 +14,7 @@ Simplifier Quality Control Engine.
 
 .. figure:: ../images/simplifier-quality-control.gif
     :alt: Simplifier.net Quality Control progress bar
+    :scale: 75%
 
     Example of Quality Control being executed on a project
 
@@ -24,6 +25,7 @@ Simplifier.net projects, on your local computer or at every change of your
 source code repository. The output of the Quality Control will be saved in your issues tab on a project level. You can filter on Quality Control and you will see the issues found by the Quality Control validation.
 
 .. image:: ../images/QualityControlIssues.png
+   :scale: 75%
 
 
 There are **two default rulesets** available, which run FHIR validation on all FHIR
@@ -61,6 +63,7 @@ not part of the entry, just an description how to read it.
 .. figure:: ../images/run-quality-control.png
     :alt: Simplifier.net project drop-down for running rulesets
     :align: right
+    :scale: 75%
 
     Executing a ruleset in Simplifier.net
 
