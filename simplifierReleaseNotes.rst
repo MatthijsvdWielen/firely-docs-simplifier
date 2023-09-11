@@ -3,10 +3,95 @@
 Release Notes
 =============
 
-This page contains the release notes of the current major version of simplifier.net (29.5.0), as well as release notes from previous releases.
+This page contains the release notes of the current major version of simplifier.net (30.6.0), as well as release notes from previous releases.
 
 Current release
 ~~~~~~~~~~~~~~~
+
+Release 30.6.0, September 1st, 2023
+-----------------------------------
+
+Features
+^^^^^^^^
+
+#. Canonical Claim analysis improvements: Simplifier improved comparison of claim subsets and supersets. If you have chosen this canonical base claim ``http://healthit.gov/onc/fhir`` as representative then the following three bases are no longer seen as candidates:
+   
+   - http://healthit.gov/onc/
+   - http://healthit.gov/onc/fhir
+   - http://healthit.gov/onc/fhir/StructureDefinition
+
+   Note that for URL bases that are shorter this only applies when it does not have a match with more canonicals than the chosen base claim.
+#. Canonical Claim Analysis Insights: We have opened up the FQL playground to the rest of Simplifier. You can now generate a link with a querying and a scope. 
+   This produces a table that shows insights we want to provide to our users on their data, without us having to do any UI or backend work, other than putting writing a single line FQL query in a link. 
+   In this case, users can see which group of canonicals match a base claim.
+#. Invite improvements: 
+
+   - Guests: You can now invite users under a "Guest" account, which allows them to see private projects, guides, and packages, without being listed as a team member.
+   - Group/bulk invites: We have added an option to add a list of email addresses when inviting, so these invites no longer need to be sent separately.
+   - Personalized invite message: You can now add a personal message to a team invite. 
+
+#. Guide Page Templating: resource names: Simplifier IG's can now reference resources by their name. This is makes it much easier to read and maintain pages:
+   Compare this::
+
+      {{{tree:Patient}}}
+
+   To one of these::
+      
+      {{{tree:/main/resources/StructureDefinitions/organization-patient.json}}}
+
+      {{{tree:http://acme.org/fhir/StructureDefinition/Patient}}}
+   
+   As a bonus, you now also set the subject of your rendering this way in the yaml front matter::
+
+      ---
+      name: Patient
+      ---
+
+      {{render}}
+   
+   See also DocProperties in the last release notes.
+
+#. Guide Page Templating: page placeholder: There is now a specific command to render pages inside pages. With the new ``{{page:...}`` placeholder, you can render the content of another page, that respects the current context.
+#. IG Breadcrums: Simplifier now has a new placeholder that allows users to add breadcrum trails to their pages: ``{{breadcrumbs}}``. You can add this placeholder in your master template to show the hierarchy of your IG pages.
+
+      
+
+
+Bugfixes
+^^^^^^^^
+
+#. IG editor: Clicking the Preview button would take you to a different url compared to clicking the hyperlink just below it. This is now fixed.
+#. IG editor: The keyboard shortcut crtl+f2 to ``Change All Occurences`` was not working. This is now fixed.
+#. IG editor: The expand option would result in an empty tab when working with custom tabs in your IG. It is now possible to use the expand option again and render your trees as expected.
+#. IG editor: Rendering a page using ``{{page:`` or ``{{render:`` that contains a ``{{pagelink:`` gets converted correctly now into an anchor.
+#. IG editor: When copying content from the IG Help pages the content of the original page would be updated with all information of the help page. This is now fixed.
+#. IG: editor: Items between curly brackets are now always highlighted.
+#. Java validator: Simplifier used an older version of the Java validator, causing validation to fail on R5 resources. The validator has since been updated to mitigate this issue.
+#. Issues tab: The issues tab would only show one Error, one Warning and one Info per file outputted by the Java validator. This is now fixed.
+#. Bake: it is now possible to add snapshots for only the extensions in packages with the extension category.
+#. Packages: The package importer in simplifier had issues with range dependencies. This is now fixed.
+#. Inviting members: Simplifier now checks if you reached your member limit when inviting multiple users. It is now no longer possible to send invites if you have reached your member limit.
+#. Pricing page: The entry subscription information was misalligned with Professional, Team and Enterprise subscriptions columns. This together with a typo is now fixed.
+#. QC: The QC files filter was not taken into account when running QC. This is now fixed.
+
+
+Known issues
+^^^^^^^^^^^^
+
+As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
+simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
+
+If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
+It is also possible to raise an issue from here.
+
+All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
+and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
+
+HL7 is maintaining a `known issue list for the FHIR specifications on
+their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
+
+Previous releases
+~~~~~~~~~~~~~~~~~
 
 Release 30.5.0, June 28th, 2023
 -------------------------------
@@ -75,25 +160,6 @@ Bugfixes
 #. FQL: Syntax highlighting was not working properly causing for example "select" in the word "selection" to be highlighted. This is now fixed.
 #. FQL: When FQL results would be viewed via a link, it was not possible to scroll in the results. This has been fixed.
 #. FQL documentation: The documentation link on the FQL playground was pointing to the wrong link. This has been fixed.
-
-
-Known issues
-^^^^^^^^^^^^
-
-As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
-simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
-
-If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
-It is also possible to raise an issue from here.
-
-All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
-and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
-
-HL7 is maintaining a `known issue list for the FHIR specifications on
-their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
-
-Previous releases
-~~~~~~~~~~~~~~~~~
 
 Release 30.4.0, May 4th, 2023
 -----------------------------
