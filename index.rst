@@ -28,11 +28,13 @@ In addition to the release notes on `the Release notes page <https://docs.fire.l
   :maxdepth: 1
   :caption: Simplifier.net Docs:
   
+  Simplifier Overview <simplifierIntro>
   Starting with Simplifier <getting_started/getting_started>
   Team and Organization management <administration/administration>
   Data Governance and Quality Control <data_governance_and_quality_control/data_governance_and_quality_control>
   Implementation Guide <implementation_guide/implementation_guide>
   Additional features and playgrounds<features/features>
   Release notes <simplifierReleaseNotes>
+  FAQs <FAQs>
   Contact <simplifierContact>  
   Accessibility <accessibility>

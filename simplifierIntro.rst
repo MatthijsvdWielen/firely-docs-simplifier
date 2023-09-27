@@ -1,7 +1,7 @@
-Introduction to Simplifier.net
-==============================
+Overview of Simplifier.net
+==========================
 
-.. image:: ../images/Illustrations_Firely-03.png
+.. image:: ./images/Illustrations_Firely-03.png
   :align: right
   :width: 250px
   :alt: Collaborating on a FHIR project
@@ -18,7 +18,7 @@ Simplifier is the backbone for the FHIR registry. The `FHIR registry <https://re
 
 Below you can download a quick guide to the FHIR registry, which was made for the HL7 Working Group Meeting in New Orleans (Jan, 2018).
 
-:download:`Quick guide to the FHIR registry (pdf) <../QuickGuideFHIRregistry.pdf>`
+:download:`Quick guide to the FHIR registry (pdf) <./QuickGuideFHIRregistry.pdf>`
 
 Simplifier accounts
 -------------------
@@ -38,3 +38,27 @@ Simplifier content
 ------------------
 
 Simplifier is specially created for Data Modelers, Developers and Clinical Informatics Specialists. The available FHIR content is organized at four levels: Users, Resources, Projects and Organizations. You can import your FHIR resources and make use of the seamless integration between Forge and Simplifier.  
+
+Learning more
+-------------
+
+Firely offers trainings if you would like to get more familiar with `Simplifier <https://fire.ly/training/simplifier-suite-workshop/>`_ and/or `Data Modeling <https://fire.ly/training/hl7-fhir-profiling-course/>`_.
+You can pick a timeslot that fits your schedule, and these trainings can be tailored to the needs of you and your team. In addition to the Simplifier and Modeling trainings there is also a wide range of `other courses <https://fire.ly/training/>`_ available to get acquainted or more experienced with FHIR and the FHIR tooling provided by Firely. 
+Additional information, such as eBooks and Case Studies, can be found on `Firely's resource page <https://fire.ly/resources/>`_. Also, don't forget to take a look at our interesting `blogposts <https://fire.ly/blog/>`_.
+
+.. image:: ./images/Illustrations_Firely-01.png
+  :align: right
+  :width: 250px
+  :alt: Working with Simplifier
+
+
+Quick Navigation
+----------------
+
+- `I want to create a project in Simplifier <./getting_started/simplifierProjects.html>`_
+- `I want to create a package using Simplifier <./data_governance_and_quality_control/simplifierPackages.html>`_
+- `I want to use Simplifier in combination with Github <./data_governance_and_quality_control/simplifierGithub.html>`_
+- `I want to load my Simplifier resources in Firely Server <./features/simplifierFirely-server.html>`_
+- `I want to query FHIR resources <./features/simplifierFQL.html>`_
+- `I want to create an implementation guide for my project <./implementation_guide/implementation_guide.html>`_
+
