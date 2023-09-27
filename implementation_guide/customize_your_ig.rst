@@ -21,8 +21,12 @@ Information retrieved from the IG settings:
 * **guide-version** - Renders the guide version.
 * **guide-fhir-version** - Renders the FHIR version of the IG.
 
+Customizable placeholders:
+""""""""""""""""""""""""""
+* **breadcrumbs** - Adds a site-wide table of contents
 
-Internal IG content placholders:
+
+Internal IG content placeholders:
 """"""""""""""""""""""""""""""""
 
 * **page-title** - Renders page title as specified in the IG's tree table. 
