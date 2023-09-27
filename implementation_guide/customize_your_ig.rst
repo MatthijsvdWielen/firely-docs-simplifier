@@ -23,11 +23,12 @@ Information retrieved from the IG settings:
 
 Customizable placeholders:
 """"""""""""""""""""""""""
-* **breadcrumbs** - Adds a site-wide table of contents
+* **breadcrumbs** - Adds a site-wide table of contents. You can add this in the HTML template on the level of your choice. 
 
 
 Internal IG content placeholders:
-""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""
+
 
 * **page-title** - Renders page title as specified in the IG's tree table. 
 * **page** - Renders the navigation index on the right side.
