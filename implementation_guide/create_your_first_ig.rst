@@ -121,15 +121,31 @@ The ``tree`` and ``render`` widgets have properties that you can set, allowing y
 
 Page Headers
 ^^^^^^^^^^^^
+The YAML header of a markdown page (the part between the ``---`` lines) is a place to set properties that should affect the entire page. This is an example of how a YAML header can be configured:
 
-The YAML header of a markdown page (the part between the ``---`` lines) is a place to set properties that should affect the entire page. 
+
+    ::
+
+        ---
+        topic: MyPatientPage
+        name: ACMEbasePatient
+        expand: 2
+        ---
+
+
+
+
+**Topic**
+
 As is described below, you can set the ``topic`` of the page like this, but with the release of Simplifier 30.5 it is possible to set any properties here that can also be used in the rendering widgets.
-If you would for example place the ``subject`` property (the canonical of this page) in the page header, all ``tree``, ``xml`` and ``json`` widgets in the page will no longer need the canonical as their parameter, making it a lot easier to create and maintain.
 
-.. image:: ../images/IGHeaders.png
-   :scale: 75%
+**Subject**
 
-If you set the ``lang`` property in the header this will automatically affect all renderers who understand the language property:
+If you would for example place the ``canonical`` or ``name`` property (the canonical or name of the resource) in the page header, all ``tree``, ``xml`` and ``json`` widgets in the page will no longer need the canonical as their parameter, making it a lot easier to create and maintain.
+
+**Language**
+
+If you are using the language extension, you can set the ``lang`` property in the header this will automatically affect all renderers who understand the language property:
 
     ::
 
@@ -138,8 +154,13 @@ If you set the ``lang`` property in the header this will automatically affect al
         ---
 
 
+**Other properties**
 
-Other properties you might consider to use here are the aforementioned properties, such as the ``expand``, ``buttons``, ``diff``, and ``hybrid`` properties.
+``expand`` This option can be set to ``1``, ``2`` etc. and will expand the tree view to the requested depth. Setting this to ``yes`` will fully expand the tree view. This works for both StructureDefinitions and Example instances.
+
+Other properties you might consider to use here are the aforementioned properties, such as the ``buttons``, ``diff``, and ``hybrid`` properties.
+
+
 
 Creating tabs
 ^^^^^^^^^^^^^
@@ -213,6 +234,7 @@ It is also possible to use HTML style tags to embed FQL code in your page. For t
 Pagelink using page topic
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
+
 With the ``pagelink`` command you can create a link to a different page in your Implementation Guide: 
 
 .. code-block:: 
@@ -223,7 +245,7 @@ You can find the url key for the markdown resource describing the page you want 
 
 When a URLkey for a page that is referred to or one of the folders it is in changes, the pagelink might break. For that reason, we created a more robust way of linking to pages within a guide with the use of ``topic``. 
 
-In an Implementation Guide page you can set the ``topic`` by starting the page with a topic header:
+In an Implementation Guide page you can set the ``topic`` by starting the page with a topic in the yaml header:
 
 
 .. code-block:: yaml
@@ -233,6 +255,8 @@ In an Implementation Guide page you can set the ``topic`` by starting the page w
     ---
 
 Using the topic in your pagelink ``{{pagelink:yourpagename}}``, this will prevent the links from breaking even when creating copies of your guide. 
+
+
 
 
 Linking examples
