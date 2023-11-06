@@ -39,6 +39,16 @@ Simplifier content
 
 Simplifier is specially created for Data Modelers, Developers and Clinical Informatics Specialists. The available FHIR content is organized at four levels: Users, Resources, Projects and Organizations. You can import your FHIR resources and make use of the seamless integration between Forge and Simplifier.  
 
+In the video below you will see a tutorial of how all our tools work together and how to start with creating your own FHIR Implementation Guide.
+
+
+.. raw:: html
+
+    <div style="position: relative; margin-bottom: 2em; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nF3DZ26ckVI?si=1jmSvmxbkZBq4y2n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+
 Learning more
 -------------
 
