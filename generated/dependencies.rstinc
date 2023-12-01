@@ -1,0 +1,205 @@
+﻿.. list-table::
+   :header-rows: 1
+
+   * - Package
+     - License
+   * - `Dapper <https://www.nuget.org/packages/Dapper>`__
+     - Apache-2.0
+   * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
+     - BSD 3-Clause
+   * - `Hl7.DSTU2.FhirPath <https://www.nuget.org/packages/Hl7.DSTU2.FhirPath>`__
+     - BSD 3-Clause
+   * - `Hl7.Fhir.Base <https://www.nuget.org/packages/Hl7.Fhir.Base>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.DSTU2 <https://www.nuget.org/packages/Hl7.Fhir.DSTU2>`__
+     - BSD 3-Clause
+   * - `Hl7.Fhir.DSTU2.Support <https://www.nuget.org/packages/Hl7.Fhir.DSTU2.Support>`__
+     - BSD 3-Clause
+   * - `Hl7.Fhir.R4 <https://www.nuget.org/packages/Hl7.Fhir.R4>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.R4B <https://www.nuget.org/packages/Hl7.Fhir.R4B>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.R5 <https://www.nuget.org/packages/Hl7.Fhir.R5>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.R4 <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.R4>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.R4B <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.R4B>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.R5 <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.R5>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.Data.STU3 <https://www.nuget.org/packages/Hl7.Fhir.Specification.Data.STU3>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Specification.DSTU2 <https://www.nuget.org/packages/Hl7.Fhir.Specification.DSTU2>`__
+     - BSD 3-Clause
+   * - `Hl7.Fhir.STU3 <https://www.nuget.org/packages/Hl7.Fhir.STU3>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.R4 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R4>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.R4B <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R4B>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.R5 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.R5>`__
+     - BSD-3-Clause
+   * - `Hl7.Fhir.Validation.Legacy.STU3 <https://www.nuget.org/packages/Hl7.Fhir.Validation.Legacy.STU3>`__
+     - BSD-3-Clause
+   * - `HtmlAgilityPack <https://www.nuget.org/packages/HtmlAgilityPack>`__
+     - MIT
+   * - `ISO3166 <https://www.nuget.org/packages/ISO3166>`__
+     - MIT
+   * - `Markdig <https://www.nuget.org/packages/Markdig>`__
+     - BSD-2-Clause
+   * - `Markdig.SyntaxHighlighting <https://www.nuget.org/packages/Markdig.SyntaxHighlighting>`__
+     - Apache-2.0
+   * - `Microsoft.ApplicationInsights.AspNetCore <https://www.nuget.org/packages/Microsoft.ApplicationInsights.AspNetCore>`__
+     - MIT
+   * - `Microsoft.AspNetCore.Authentication.Cookies <https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.Cookies>`__
+     - Apache-2.0
+   * - `Microsoft.AspNetCore.Authentication.JwtBearer <https://www.nuget.org/packages/Microsoft.AspNetCore.Authentication.JwtBearer>`__
+     - MIT
+   * - `Microsoft.AspNetCore.DataProtection.StackExchangeRedis <https://www.nuget.org/packages/Microsoft.AspNetCore.DataProtection.StackExchangeRedis>`__
+     - MIT
+   * - `Microsoft.AspNetCore.Identity <https://www.nuget.org/packages/Microsoft.AspNetCore.Identity>`__
+     - Apache-2.0
+   * - `Microsoft.AspNetCore.Identity.EntityFrameworkCore <https://www.nuget.org/packages/Microsoft.AspNetCore.Identity.EntityFrameworkCore>`__
+     - MIT
+   * - `Microsoft.AspNetCore.Mvc.NewtonsoftJson <https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.NewtonsoftJson>`__
+     - MIT
+   * - `Microsoft.AspNetCore.Mvc.Razor <https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor>`__
+     - Apache-2.0
+   * - `Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation <https://www.nuget.org/packages/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation>`__
+     - MIT
+   * - `Microsoft.AspNetCore.SignalR.Core <https://www.nuget.org/packages/Microsoft.AspNetCore.SignalR.Core>`__
+     - Apache-2.0
+   * - `Microsoft.Bcl.HashCode <https://www.nuget.org/packages/Microsoft.Bcl.HashCode>`__
+     - MIT
+   * - `Microsoft.CodeAnalysis.Analyzers <https://www.nuget.org/packages/Microsoft.CodeAnalysis.Analyzers>`__
+     - MIT
+   * - `Microsoft.EntityFrameworkCore.Abstractions <https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Abstractions>`__
+     - MIT
+   * - `Microsoft.EntityFrameworkCore.Proxies <https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Proxies>`__
+     - MIT
+   * - `Microsoft.EntityFrameworkCore.SqlServer <https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer>`__
+     - MIT
+   * - `Microsoft.EntityFrameworkCore.Tools <https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools>`__
+     - MIT
+   * - `Microsoft.Extensions.Caching.StackExchangeRedis <https://www.nuget.org/packages/Microsoft.Extensions.Caching.StackExchangeRedis>`__
+     - MIT
+   * - `Microsoft.Extensions.Configuration <https://www.nuget.org/packages/Microsoft.Extensions.Configuration>`__
+     - MIT
+   * - `Microsoft.Extensions.Configuration.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Abstractions>`__
+     - MIT
+   * - `Microsoft.Extensions.Configuration.Binder <https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Binder>`__
+     - MIT
+   * - `Microsoft.Extensions.Configuration.EnvironmentVariables <https://www.nuget.org/packages/Microsoft.Extensions.Configuration.EnvironmentVariables>`__
+     - MIT
+   * - `Microsoft.Extensions.Configuration.FileExtensions <https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions>`__
+     - MIT
+   * - `Microsoft.Extensions.Configuration.Json <https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json>`__
+     - MIT
+   * - `Microsoft.Extensions.DependencyInjection <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection>`__
+     - MIT
+   * - `Microsoft.Extensions.DependencyInjection.Abstractions <https://www.nuget.org/packages/Microsoft.Extensions.DependencyInjection.Abstractions>`__
+     - MIT
+   * - `Microsoft.Extensions.Hosting <https://www.nuget.org/packages/Microsoft.Extensions.Hosting>`__
+     - MIT
+   * - `Microsoft.Extensions.Http <https://www.nuget.org/packages/Microsoft.Extensions.Http>`__
+     - MIT
+   * - `Microsoft.Extensions.Identity.Core <https://www.nuget.org/packages/Microsoft.Extensions.Identity.Core>`__
+     - MIT
+   * - `Microsoft.Extensions.Logging <https://www.nuget.org/packages/Microsoft.Extensions.Logging>`__
+     - MIT
+   * - `Microsoft.Extensions.Logging.Console <https://www.nuget.org/packages/Microsoft.Extensions.Logging.Console>`__
+     - MIT
+   * - `Microsoft.Extensions.Logging.Debug <https://www.nuget.org/packages/Microsoft.Extensions.Logging.Debug>`__
+     - MIT
+   * - `Microsoft.Extensions.Primitives <https://www.nuget.org/packages/Microsoft.Extensions.Primitives>`__
+     - MIT
+   * - `Microsoft.Orleans.Client <https://www.nuget.org/packages/Microsoft.Orleans.Client>`__
+     - MIT
+   * - `Microsoft.Orleans.Clustering.AzureStorage <https://www.nuget.org/packages/Microsoft.Orleans.Clustering.AzureStorage>`__
+     - MIT
+   * - `Microsoft.Orleans.CodeGenerator.MSBuild <https://www.nuget.org/packages/Microsoft.Orleans.CodeGenerator.MSBuild>`__
+     - MIT
+   * - `Microsoft.Orleans.Core.Abstractions <https://www.nuget.org/packages/Microsoft.Orleans.Core.Abstractions>`__
+     - MIT
+   * - `Microsoft.Orleans.OrleansProviders <https://www.nuget.org/packages/Microsoft.Orleans.OrleansProviders>`__
+     - MIT
+   * - `Microsoft.Orleans.OrleansRuntime <https://www.nuget.org/packages/Microsoft.Orleans.OrleansRuntime>`__
+     - MIT
+   * - `Microsoft.Orleans.OrleansTelemetryConsumers.Linux <https://www.nuget.org/packages/Microsoft.Orleans.OrleansTelemetryConsumers.Linux>`__
+     - MIT
+   * - `Microsoft.Orleans.Runtime.Abstractions <https://www.nuget.org/packages/Microsoft.Orleans.Runtime.Abstractions>`__
+     - MIT
+   * - `Microsoft.TypeScript.MSBuild <https://www.nuget.org/packages/Microsoft.TypeScript.MSBuild>`__
+     - Custom
+   * - `Microsoft.VisualStudio.Azure.Containers.Tools.Targets <https://www.nuget.org/packages/Microsoft.VisualStudio.Azure.Containers.Tools.Targets>`__
+     - Custom
+   * - `MiniProfiler.AspNetCore.Mvc <https://www.nuget.org/packages/MiniProfiler.AspNetCore.Mvc>`__
+     - MIT
+   * - `MiniProfiler.EntityFrameworkCore <https://www.nuget.org/packages/MiniProfiler.EntityFrameworkCore>`__
+     - MIT
+   * - `NEST <https://www.nuget.org/packages/NEST>`__
+     - Apache-2.0
+   * - `Newtonsoft.Json <https://www.nuget.org/packages/Newtonsoft.Json>`__
+     - MIT
+   * - `Octokit <https://www.nuget.org/packages/Octokit>`__
+     - MIT
+   * - `OrleansDashboard <https://www.nuget.org/packages/OrleansDashboard>`__
+     - MIT
+   * - `Serilog <https://www.nuget.org/packages/Serilog>`__
+     - Apache-2.0
+   * - `Serilog.Extensions.Logging <https://www.nuget.org/packages/Serilog.Extensions.Logging>`__
+     - Apache-2.0
+   * - `Serilog.Extensions.Logging.ApplicationInsights <https://www.nuget.org/packages/Serilog.Extensions.Logging.ApplicationInsights>`__
+     - Apache-2.0
+   * - `Serilog.Sinks.ApplicationInsights <https://www.nuget.org/packages/Serilog.Sinks.ApplicationInsights>`__
+     - Apache-2.0
+   * - `Serilog.Sinks.AzureTableStorage <https://www.nuget.org/packages/Serilog.Sinks.AzureTableStorage>`__
+     - Apache-2.0
+   * - `Serilog.Sinks.Console <https://www.nuget.org/packages/Serilog.Sinks.Console>`__
+     - Apache-2.0
+   * - `Serilog.Sinks.Literate <https://www.nuget.org/packages/Serilog.Sinks.Literate>`__
+     - Apache-2.0
+   * - `StackExchange.Redis <https://www.nuget.org/packages/StackExchange.Redis>`__
+     - MIT
+   * - `Stripe.net <https://www.nuget.org/packages/Stripe.net>`__
+     - Apache-2.0
+   * - `System.ComponentModel.Annotations <https://www.nuget.org/packages/System.ComponentModel.Annotations>`__
+     - MIT
+   * - `System.ServiceModel.Primitives <https://www.nuget.org/packages/System.ServiceModel.Primitives>`__
+     - MIT
+   * - `System.ServiceModel.Syndication <https://www.nuget.org/packages/System.ServiceModel.Syndication>`__
+     - MIT
+   * - `System.Threading.Tasks.Dataflow <https://www.nuget.org/packages/System.Threading.Tasks.Dataflow>`__
+     - MIT
+   * - `System.ValueTuple <https://www.nuget.org/packages/System.ValueTuple>`__
+     - MIT
+   * - `Vonk.Core <https://www.nuget.org/packages/Vonk.Core>`__
+     - Custom
+   * - `Vonk.Facade.Relational <https://www.nuget.org/packages/Vonk.Facade.Relational>`__
+     - Custom
+   * - `Vonk.Fhir.R3 <https://www.nuget.org/packages/Vonk.Fhir.R3>`__
+     - Custom
+   * - `Vonk.Fhir.R4 <https://www.nuget.org/packages/Vonk.Fhir.R4>`__
+     - Custom
+   * - `Vonk.Fhir.R5 <https://www.nuget.org/packages/Vonk.Fhir.R5>`__
+     - Custom
+   * - `YamlDotNet <https://www.nuget.org/packages/YamlDotNet>`__
+     - MIT
+
+For unit testing:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Package
+     - License
+   * - `Microsoft.NET.Test.Sdk <https://www.nuget.org/packages/Microsoft.NET.Test.Sdk>`__
+     - MIT
+   * - `MockQueryable.Moq <https://www.nuget.org/packages/MockQueryable.Moq>`__
+     - MIT
+   * - `Moq <https://www.nuget.org/packages/Moq>`__
+     - BSD-3-Clause
+   * - `xunit <https://www.nuget.org/packages/xunit>`__
+     - Apache-2.0
+   * - `xunit.runner.visualstudio <https://www.nuget.org/packages/xunit.runner.visualstudio>`__
+     - Apache-2.0
