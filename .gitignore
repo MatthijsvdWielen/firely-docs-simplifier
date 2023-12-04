@@ -1,10 +1,6 @@
 
 _build/
 .vscode/
-/.vs/slnx.sqlite
-/.vs/slnx.sqlite-journal
-/.vs/firely-docs/v16/.suo
-/.vs/firely-docs/config/applicationhost.config
-/.vs/VSWorkspaceState.json
+/.vs/*
 venv
 develop/

@@ -34,6 +34,7 @@ In addition to the release notes on `the Release notes page <https://docs.fire.l
   Data Governance and Quality Control <data_governance_and_quality_control/data_governance_and_quality_control>
   Implementation Guide <implementation_guide/implementation_guide>
   Additional features and playgrounds<features/features>
+  Dependencies
   Release notes <simplifierReleaseNotes>
   FAQs <FAQs>
   Contact <simplifierContact>  
