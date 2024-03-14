@@ -3,6 +3,8 @@
 
    * - Package
      - License
+   * - `AngleSharp <https://www.nuget.org/packages/AngleSharp>`__
+     - MIT
    * - `Dapper <https://www.nuget.org/packages/Dapper>`__
      - Apache-2.0
    * - `Firely.Fhir.Packages <https://www.nuget.org/packages/Firely.Fhir.Packages>`__
@@ -43,7 +45,11 @@
      - BSD-3-Clause
    * - `HtmlAgilityPack <https://www.nuget.org/packages/HtmlAgilityPack>`__
      - MIT
+   * - `HtmlSanitizer <https://www.nuget.org/packages/HtmlSanitizer>`__
+     - MIT
    * - `ISO3166 <https://www.nuget.org/packages/ISO3166>`__
+     - MIT
+   * - `MailKit <https://www.nuget.org/packages/MailKit>`__
      - MIT
    * - `Markdig <https://www.nuget.org/packages/Markdig>`__
      - BSD-2-Clause
