@@ -20,7 +20,7 @@ Below you will find the documentation for the platform.
 
 Release notes
 -------------
-In addition to the release notes on `the Release notes page <https://docs.fire.ly/projects/Simplifier/simplifierReleaseNotes.html>`_ the release notes for Simplifier can also be found `here. <https://simplifier.net/organization/firely/~news>`_
+In addition to the release notes in the :ref:`release notes <release_notes>`. A shorter summary and other announcements can be found on the `Simplifier news page <https://simplifier.net/organization/firely/~news>`_.
 
 
 

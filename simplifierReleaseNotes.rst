@@ -8,6 +8,53 @@ This page contains the release notes of the current major version of simplifier.
 Current release
 ~~~~~~~~~~~~~~~
 
+Release 31.2, March 14th, 2024
+------------------------------
+
+See `🔍 Simplifier 31.2: Search based on popularity and many rendering improvements - SIMPLIFIER.NET <https://simplifier.net/organization/firely/news/158>`_
+
+Known issues
+^^^^^^^^^^^^
+
+As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
+simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
+
+If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
+It is also possible to raise an issue from here.
+
+All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
+and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
+
+HL7 is maintaining a `known issue list for the FHIR specifications on
+their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
+
+Previous releases
+~~~~~~~~~~~~~~~~~
+
+Release 31.1, January 9th, 2024
+-----------------------------------
+
+See `🖨️ Simplifier 31.1: Templating completed with variables in FQL - SIMPLIFIER.NET <https://simplifier.net/organization/firely/news/155>`_
+
+
+Release 31.0, October 20th, 2023
+-----------------------------------
+
+**Counters**:
+We now count page visits and downloads of important entities.
+We also update our (Elastic) search index with these numbers. We plan to
+start them for ranking when we have gathered sufficient data.
+
+**Rate limiting**:
+We have redefined and implemented our rate-limiting policies. If you run into any of these limits with normal use, please let us know.
+
+**Simplifier Package RSS feed**:
+We now have a public RSS-feed listing of all packages in Simplifier: https://packages.simplifier.net/rssfeed
+
+**Rendering**:
+We would default back to markdown if we did not the rendering engine did not know the file. The rendering engine now uses the same register as the rest of Simplifier. And it makes sure we render all non-resource code files as code. Like .json, .xml, .yaml, .fsh. etc.
+
+
 Release 30.6.0, September 1st, 2023
 -----------------------------------
 
@@ -74,24 +121,6 @@ Bugfixes
 #. Pricing page: The entry subscription information was misalligned with Professional, Team and Enterprise subscriptions columns. This together with a typo is now fixed.
 #. QC: The QC files filter was not taken into account when running QC. This is now fixed.
 
-
-Known issues
-^^^^^^^^^^^^
-
-As of this moment no issues are listed for this version of simplifier yet. If you come across an issue and it is not listed here, please contact us at
-simplifier@fire.ly or (for customers) `our premium support desk <https://firely.atlassian.net/servicedesk/customer/portals>`_. 
-
-If you experience service lags in Simplifier.net, it could be that services are offline. You can check if this is the case on `Simplifier.net's status website <https://status.simplifier.net/>`_.
-It is also possible to raise an issue from here.
-
-All our tooling is built on top of the official Firely .NET SDK developed and managed by Firely. The `SDK is open source
-and maintained on Github <https://github.com/FirelyTeam/firely-net-sdk/>`_ and `issues are publicly tracked there <https://github.com/FirelyTeam/firely-net-sdk/issues>`_.
-
-HL7 is maintaining a `known issue list for the FHIR specifications on
-their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+published+FHIR+Specifications>`_.
-
-Previous releases
-~~~~~~~~~~~~~~~~~
 
 Release 30.5.0, June 28th, 2023
 -------------------------------
@@ -355,8 +384,8 @@ Features
 #. Rendering: Simplifier's rendering machine has been improved and the rendering library has been made fully asynchronous for better performance.
 #. New placeholders: For a long time we've had a ``{{render}}`` placeholder in the guide editor, that chooses the most typical style of rendering given a resource. 
    This used to be a tree for StructureDefinitions, and a narrative for examples. We have now added two more placeholders:
-      - The ``{{tree}}``` placeholder now also renders instance tree for examples.
-      - The  ``{{narrative}}`` placeholder now always renders the narrative, even if it's empty.
+   - The ``{{tree}}``` placeholder now also renders instance tree for examples.
+   - The  ``{{narrative}}`` placeholder now always renders the narrative, even if it's empty.
 #. FSH playground: We have added a FSH playground. This was live before as an alfa release, but it's now generally available as a beta release. You can find the FSH playground here: simplifier.net/fsh
 #. Plant-UML Playground: Plant UML is now available as a playground, you can find it here: simplifier.net/plantuml
 #. YAMLGen Playground: With YAML gen you can write standard YAML to generate FHIR resources. Our YAMLgen playground is the first (alfa) release in our effort to enable our users in writing examples. You can try it out here: https://simplifier.net/yamlgen.

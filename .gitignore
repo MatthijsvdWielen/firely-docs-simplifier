@@ -1,6 +1,6 @@
-
 _build/
 .vscode/
+._buildhtml/
 /.vs/*
 venv
 develop/
