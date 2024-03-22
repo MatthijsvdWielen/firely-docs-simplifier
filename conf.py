@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Simplifier.net'
-copyright = '2023, Firely'
+copyright = '2024, Firely'
 author = 'Firely'
 
 # -- General configuration ---------------------------------------------------
