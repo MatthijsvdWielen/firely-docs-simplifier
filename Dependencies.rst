@@ -1,3 +1,5 @@
+.. _Dependencies:
+
 Dependencies of Simplifier and their licenses
 =============================================
 
