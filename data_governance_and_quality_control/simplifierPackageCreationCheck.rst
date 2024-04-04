@@ -9,7 +9,7 @@ At Simplifier, we frequently receive requests from users who have published a pa
 The Impact of Deleting or Modifying Packages and Why We Never Delete Packages.
 ------------------------------------------------------------------------------
 
-Once a FHIR (Fast Healthcare Interoperability Resources) package is published, it becomes an integral part of the healthcare IT ecosystem, essential for the interoperability of healthcare applications and systems. This ecosystem depends on the consistent availability of packages for functionality, compliance, and development processes. Removing or altering a FHIR package post-publication can lead to significant disruptions. Even if a package was released recently, it is possibly already integrated into other systems or indexed, making any changes problematic. 
+Once a FHIR package is published, it becomes an integral part of the healthcare IT ecosystem, essential for the interoperability of healthcare applications and systems. This ecosystem depends on the consistent availability of packages for functionality, compliance, and development processes. Removing or altering a FHIR package post-publication can lead to significant disruptions. Even if a package was released recently, it is possibly already integrated into other systems or indexed, making any changes problematic. 
 
 Altering a package's name or version post-release can break dependencies and builds that rely on the original identifiers. Thus, any modifications to a published FHIR package necessitate careful consideration of their extensive implications.
 
@@ -19,7 +19,7 @@ Altering a package's name or version post-release can break dependencies and bui
 Best Practices for Package Publishing
 -------------------------------------
 
-Embracing `Semantic Versioning <https://semver.org/>`_ (SemVer) in the release cycles of FHIR (Fast Healthcare Interoperability Resources) packages is highly recommended for several reasons, particularly due to the nature of healthcare IT systems which demand high reliability, predictability, and compatibility.
+Embracing `Semantic Versioning <https://semver.org/>`_ (SemVer) in the release cycles of FHIR packages is highly recommended for several reasons, particularly due to the nature of healthcare IT systems which demand high reliability, predictability, and compatibility.
 
 Embracing SemVer
 ^^^^^^^^^^^^^^^^
@@ -66,6 +66,6 @@ If necessary, republishing the package under a different name is an option, thou
 Exceptions to the Rule
 ----------------------
 
-Despite our stringent policies, exceptions exist for the removal of packages containing abuse, malware, or illegal content, prioritizing the community's safety and legal obligations. For reporting these kinds of packages please reach out to us at simplifier@fire.ly. 
+Despite our stringent policies, exceptions exist for the removal of packages containing abuse, malware, or illegal content, prioritizing the community's safety and legal obligations. For reporting these kinds of packages please `reach out to us <https://docs.fire.ly/projects/Simplifier/simplifierContact.html>`_. 
 
 
