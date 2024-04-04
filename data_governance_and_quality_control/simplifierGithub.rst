@@ -147,6 +147,3 @@ The only available Oauth scope to be able to read a private GitHub repository is
 
 
 
-
-
-

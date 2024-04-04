@@ -15,3 +15,6 @@ Here you will find the documentation of Simplifier's Data Governance and Quality
    simplifierPackages
    simplifierForgeIntegration
    simplifierGithub
+   simplifierPackageCreationCheck
+
+   

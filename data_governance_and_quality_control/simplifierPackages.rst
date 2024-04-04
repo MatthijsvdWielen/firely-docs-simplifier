@@ -1,5 +1,14 @@
 Package management
 ========================
+
+
+.. important::
+
+    Before publishing a package, please make sure you read our :ref:`Package Policy <PackageCreationCheck>`.
+
+
+
+
 Simplifier.net offers functionality to handle packages and dependencies. This functionality allows you to publish packages based on your project resources, which can be immediately installed and used by people implementing your profiles. The Simplifier FHIR package server is NPM compatible. You may either connect to this server using a NPM client or use our cross platform FHIR command line tool called Firely Terminal. On this page we will explain how to manage packages and dependencies in Simplifier, how to use Firely Terminal to install packages for validation, how to manage packages and how to create your own packages in Firely Terminal.
 
 Packages
