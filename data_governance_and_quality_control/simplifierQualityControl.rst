@@ -71,84 +71,10 @@ Default rulesets
 ^^^^^^^^^^^^^^^^
 
 Simplifier will provide a few default rulesets, accessible to every project:
-``minimal.rules.yaml`` and ``recommended.rules.yaml``.
+``minimal.rules.yaml`` and ``recommended.rules.yaml``. `You can find the most recent version of these rulesets here. <https://simplifier.net/docs/QualityControl/Home/DefaultRules.page.md>`_
 
-Minimal ruleset
-###############
 
-The minimal series a very small set of rules that we know everyone
-aggrees on. This minimal series include the bulk validation rule, 
-validating all resources against the FHIR specification and your profiles.
 
-Additionally it validates whether all your canonical URLs are unique, 
-another minimal requirement for a FHIR specification.
-
-.. warning::
-
-  The rules below are a snapshot in time of the QC minimal rules and are subject to change.
-
-.. code-block:: yaml
-
-   # This is the minimal rule series
-
-   - action: parse
-     name: parse-fhir-resources 
-     status: "Checking if all FHIR Resource files can be parsed"
-     files:
-       - /**/*.xml
-       - /**/*.json
-       - "!package.json"
-
-   - name: resource-validation
-     status: "Validating resources against the FHIR standard and their profiles"  
-     action: validate
-     category: Resource
-     suppress: 
-       - 6005
-       - eld-16
-  
-   - action: unique
-     name: unique-canonicals
-     status: "Checking if all StructureDefinitions have a unique canonical"
-     filter: StructureDefinition
-     unique: url 
-
-*Minimal ruleset snapshot 03-2023*
-
-Recommended ruleset
-###################
-
-The recommended series is a more opiniated set of rules that we defined,
-including what we believe a FHIR project should conform too. On top of the
-minimal rules checks are added to ensure:
-
-- All your resources have an `id`, which is not required but good practice.
-  This will allow you to refer to any resource uniquely, even if it does not
-  have a canonical URL.
-- That the snapshot of the resource is not provided in your source models.
-  While providing a snapshot is surely allowed, it makes your resources larger 
-  than necessary and snapshots will be computed again by many tools anyway. 
-
-.. warning::
-
-  The rules below are a snapshot in time of the QC recommended rules and are subject to change.
-
-.. code-block:: yaml
-
-   - include: minimal
-  
-   - name: valid-ids
-     status: Check for valid ids
-     predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
-     error: The resource must have a valid id
-
-   - name: no-snapshot
-     status: "Checking that structure definitions do not have a pre-generated snapshot"
-     filter: StructureDefinition
-     predicate: snapshot.element.count() = 0
-     error-message: You should not generate a snapshot in your source. Allow the tools to generate the snapshot.
-
-*Recommended ruleset snapshot 03-2023*
 
 Custom rulesets
 ###############
