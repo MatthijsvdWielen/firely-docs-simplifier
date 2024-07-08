@@ -8,10 +8,50 @@ This page contains the release notes of the current major version of simplifier.
 Current release
 ~~~~~~~~~~~~~~~
 
-Release 31.2, March 14th, 2024
-------------------------------
+Release Simplifier 31.4, June 5th, 2024
+----------------------------------------
 
-See `🔍 Simplifier 31.2: Search based on popularity and many rendering improvements - SIMPLIFIER.NET <https://simplifier.net/organization/firely/news/158>`_
+The Simplifier 31.4 update focuses on technical improvements and maintenance, ensuring a smoother and more efficient experience for our users. Here are the key highlights:
+
+Quality Control Enhancements
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+We've introduced new rules and filters to improve quality control:
+
+-  **unique-filename**: Checks for duplicate files in package builds.
+-  **assert**: Can now check for any issue, or issues of specified severity (warning, error, or info).
+-  New predicates: **exists, min, max, count, and cardinality**.
+-  **manifest**: Evaluates the correctness of ``package.json``.
+-  **dependency**: Provides a full analysis of your dependency closure, including upgrade suggestions.
+
+Here is an example of the new rules for chekcing the package manifest and package dependencies, as part of the minimal validation rules:
+
+.. image:: ./images/DependencyChecking.png
+      :alt: Dependency Checking
+      :align: center
+
+We've also made all rulesets used by Simplifier publicly visible in our Assets project, like these `minimal rules <https://simplifier.net/assets/qualitycontrol-minimal>`_. (Note that it is not yet guaranteed that Forge and Firely Terminal use the exact same version of the rules.)
+
+Rendering Improvements
+^^^^^^^^^^^^^^^^^^^^^^^
+
+-  **Markdown Rendering**: Now available in all rendering components.
+-  Enhanced rendering of pattern elements: When a pattern was set on a parent element, child elements were mistakenly rendered as being `fixed` instead of being affected by a `pattern`.
+
+Other Enhancements
+^^^^^^^^^^^^^^^^^^^
+
+-  **YamlGen**: Now generates random content for backbone elements.
+-  **FQL**: Can now filter on categories "Profile", "Example", "Extension".
+-  FQL syntax update: Correctly parses the FhirPath expression ``(<expression>).not()``.
+-  Numerous textual improvements and fixes.
+-  Guides markdown frontmatter (YAML) IntelliSense: Typing `canonical:` will trigger autocomplete for the canonical URLs in scope.
+-  Improved package publication, allowing users to upload/publish packages directly through the Simplifier API.
+
+Versioning Update
+^^^^^^^^^^^^^^^^^
+
+Starting from the next release, our versioning will follow the current year followed by the release number. The next release will be 2024.5.
 
 Known issues
 ^^^^^^^^^^^^
@@ -30,6 +70,47 @@ their Confluence <https://confluence.hl7.org/display/FHIR/Known+Issues+with+the+
 
 Previous releases
 ~~~~~~~~~~~~~~~~~
+
+Release 31.3, April 29th, 2024
+------------------------------
+
+We are excited to announce the release of Simplifier 31.3, featuring the new "Products" functionality! This update brings a range of new capabilities designed to enhance your experience and streamline your workflow.
+
+Products (Alpha Release)
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The highlight of this release is the introduction of the "Products" feature, which allows organizations to advertise private FHIR content products directly through the Simplifier marketplace for FHIR. In this initial alpha release, you can add Published Guides and private Packages as product components. This feature includes several new pages to support the product lifecycle:
+
+-  **Marketplace**: Browse available products.
+-  **Product Cart**: Manage items you wish to purchase.
+-  **Checkout**: Complete your purchase securely.
+-  **Purchased Products**: View and manage your purchased items.
+-  **Product Creation/Edit Page**: Create and edit your products.
+-  **Product Page**: Detailed view of individual products.
+
+Please see the below demo for a full overview:
+
+.. raw:: html
+
+    <div style="position: relative; margin-bottom: 2em; overflow: hidden; max-width: 100%; height: auto;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AE-sytb1MWY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+Jurisdictions
+^^^^^^^^^^^^^
+
+We have introduced jurisdiction pages to provide relevant information based on geographic location. By clicking on a country on the `homepage map <https://simplifier.net>`_, you will be directed to a page with specific information for that country. This feature is in its initial release and will be expanded based on user feedback.
+
+The source for the jurisdiction information is the `Simplifier jurisdictions GitHub repository <https://github.com/FirelyTeam/simplifier-jurisdictions>`_, so feel free to send a pull request if you have any updates or corrections!
+
+We look forward to hearing your thoughts on these new features and continuing to improve Simplifier to meet your needs. Thank you for your continued support!
+
+
+Release 31.2, March 14th, 2024
+------------------------------
+
+See `🔍 Simplifier 31.2: Search based on popularity and many rendering improvements - SIMPLIFIER.NET <https://simplifier.net/organization/firely/news/158>`_
+
 
 Release 31.1, January 9th, 2024
 -----------------------------------

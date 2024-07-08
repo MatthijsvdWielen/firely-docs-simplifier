@@ -4,3 +4,4 @@ _build/
 /.vs/*
 venv
 develop/
+.DS_Store
