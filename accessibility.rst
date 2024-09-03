@@ -171,7 +171,14 @@ Tests were executed with the following pages, taken as representative for the fu
     - https://simplifier.net/accessibilitytestingproject/upload
   * - 13
     - Upload snippet page
-    - https://simplifier.net/snippet    
+    - https://simplifier.net/snippet
+  * - 14
+    - Jurisdiction page
+    - https://simplifier.net/jurisdictions/nl
+  * - 15
+    - News page
+    - https://simplifier.net/organization/firely/news/158
+  
    
 
 WCAG 2.x Report
@@ -196,32 +203,38 @@ Table 1: Success Criteria, Level A
   * - `1.1.1 Non-text Content`_
       
       (Level A)
-    - Supports
-    - Video is used
+    - Partially supports
+    - Known issues
+      
+       * [SIM-4057] Alt text missing for image in homepage
+       * [SIM-4058] Alt text missing for Avatars in news section in Organization home page
+       * [SIM-4053] Alt text missing for images in news pages
+       * [SIM-4048] Multiple accessibility issues with Captcha-image in Sign up page
   
   * - `1.2.1 Audio-only and Video-only`_
       
       (Level A)
     - Supports
-    - Video is used
+    - No pre recorded audio. Video from youtube.com contains subtitles that is a text alternative.
 
   * - `1.2.2 Captions`_
       
       (Level A)
     - Supports
-    - Video is used
+    - Video from youtube.com contains subtitles.
 
   * - `1.2.3 Audio Description or Media Alternative`_
       
       (Level A)
     - Supports
-    - Video is used
+    - Video from youtube.com contains subtitles.
 
   * - `1.3.1 Info and Relationships`_
       
       (Level A)
     - Supports
     - Sections are labeled with relevant ARIA tags.
+      To be tested
 
   * - `1.3.2 Meaningful Sequence`_
       
@@ -247,7 +260,7 @@ Table 1: Success Criteria, Level A
   
       (Level A)
     - Supports
-    - No audio is used.
+    - Audio of videos from youtube.com can be controlled 
 
   * - `2.1.1 Keyboard`_
   
@@ -257,8 +270,8 @@ Table 1: Success Criteria, Level A
 
       Known issues
 
-      * [SIM-1382] Edit button for canonical base URLs on project not accessible with keyboard only
-      * [SIM-1384] Can't activate the checkmarks on the Create a new package page
+       * [SIM-1382] Edit button for canonical base URLs on project not accessible with keyboard only
+       * [SIM-1384] Can't activate the checkmarks on the Create a new package page
 
   * - `2.1.2 No Keyboard Trap`_
   
@@ -268,8 +281,8 @@ Table 1: Success Criteria, Level A
 
       Known issues
 
-      * [SIM-1378] keyboard trap: create issue on project / add comment on issue
-      * [SIM-1381] keyboard trap: create script connector
+       * [SIM-1378] keyboard trap: create issue on project / add comment on issue
+       * [SIM-1381] keyboard trap: create script connector
 
   * - `2.1.4 Character Key Shortcuts`_
   
@@ -300,7 +313,10 @@ Table 1: Success Criteria, Level A
       
       (Level A)
     - Supports
-    -
+    - Known issues
+    
+       * [SIM-4054] Contact Sales Button and contact button is not easily accessible through Keyboard
+      
 
   * - `2.4.2 Page Titled`_
       
@@ -308,19 +324,22 @@ Table 1: Success Criteria, Level A
     - Supports
     - Known issues
 
-      * [SIM-1367] Consider using different page title per resource/project/package tab
+       * [SIM-1367] Consider using different page title per resource/project/package tab
 
   * - `2.4.3 Focus Order`_
       
       (Level A)
     - Supports
-    - 
+    - Known issues
+
+       * [SIM-1476] Keyboard navigation order in file management page is incorrect
 
   * - `2.4.4 Link Purpose (In Context)`_
       
       (Level A)
     - Supports
-    -
+    - To be tested
+
 
   * - `2.5.1 Pointer Gestures`_
       
@@ -328,8 +347,8 @@ Table 1: Success Criteria, Level A
     - Partially Supports
     - Known issues:
     
-      * [SIM-1371] Drag and drop for page reordering in IG editor has no keyboard/button alternative
-      * [SIM-1387] Unable to succesfully navigate account avatar with keyboard only
+       * [SIM-1371] Drag and drop for page reordering in IG editor has no keyboard/button alternative
+       * [SIM-1387] Unable to succesfully navigate account avatar with keyboard only
 
   * - `2.5.2 Pointer Cancellation`_
       
@@ -353,7 +372,7 @@ Table 1: Success Criteria, Level A
       
       (Level A)
     - Supports
-    - 
+    - The default human language is identified by the lang attribute on the html element.
 
   * - `3.2.1 On Focus`_
       
@@ -386,9 +405,9 @@ Table 1: Success Criteria, Level A
     - Partially Supports
     - Known issues
       
-      * [SIM-1373] Error message on deleting team with packages/project linked is time based
-      * [SIM-1413] Incorrect URL message on Account settings page is time based
-      * Confirmation of copied canonical or resource is time based popup
+       * [SIM-1373] Error message on deleting team with packages/project linked is time based
+       * [SIM-1413] Incorrect URL message on Account settings page is time based
+       * Confirmation of copied canonical or resource is time based popup
 
   * - `3.3.2 Labels or Instructions`_
       
@@ -402,7 +421,7 @@ Table 1: Success Criteria, Level A
     - Partially Supports
     - Known issues
 
-      * [SIM-1389] Tree rendering HTML errors
+       * [SIM-1389] Tree rendering HTML errors
       
   * - `4.1.2 Name, Role, Value`_
       
@@ -410,7 +429,7 @@ Table 1: Success Criteria, Level A
     - Partially Supports
     - Known issues
     
-      * [SIM-1384] Check boxes on package creation third tab are not tab accessible.
+       * [SIM-1384] Check boxes on package creation third tab are not tab accessible.
 
 
 Table 2: Success Criteria, Level AA
@@ -434,7 +453,7 @@ Table 2: Success Criteria, Level AA
     
       (Level AA)
     - Supports
-    - Video is used
+    - Videos from youtube.com have subtitles that can be used as audio description.
 
   * - `1.3.4 Orientation`_
     
@@ -448,7 +467,7 @@ Table 2: Success Criteria, Level AA
     - Partially Supports
     - Known issues
     
-      * [SIM-1376] Use standard input type on Signup, Login and Account Settings (eg type=name)
+       * [SIM-1376] Use standard input type on Signup, Login and Account Settings (eg type=name)
 
   * - `1.4.3 Contrast (Minimum)`_
     
@@ -513,13 +532,13 @@ Table 2: Success Criteria, Level AA
     
       (Level AA)
     - Supports
-    - 
+    - When a user interface component receives keyboard focus, the component is not entirely hidden due to author-created content.
 
   * - `2.4.11 Focus Not Obscured (Minimum)`_
     
       (Level AA 2.2 only)
+    - Supports
     - 
-    -
 
   * - `2.5.7 Dragging Movements`_
     
@@ -527,11 +546,9 @@ Table 2: Success Criteria, Level AA
     - Partially Supports
     - Known Issues:
 
-      * [SIM-4048] Captcha-image in Sign up page cannot be accessed with a keyboard/ completely relies on mouse drag
-      * [SIM-4048] Drag and drop for page reordering in IG editor has no keyboard/button alternative
+       * [SIM-4048] Captcha-image in Sign up page cannot be accessed with a keyboard/ completely relies on mouse drag
+       * [SIM-1371] Drag and drop for page reordering in IG editor has no keyboard/button alternative
       
-
-
   * - `2.5.8 Target Size (Minimum)`_
     
       (Level AA 2.2 only)
@@ -559,7 +576,7 @@ Table 2: Success Criteria, Level AA
     
       (Level AA)
     - Supports
-    - 
+    - Components that have the same functionality within a set of Web pages are identified consistently.
 
   * - `3.3.3 Error Suggestion`_
     
