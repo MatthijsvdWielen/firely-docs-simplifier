@@ -121,4 +121,97 @@ Manage your IG using GitHub
 
 The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the `GitHub integration documentation <../data_governance_and_quality_control/simplifierGithub.html#github-webhook-to-manage-implementation-guides>`_.
 
-Test
+Pre-Requisites
+--------------
+
+Below are the necessary pre-requisites needed for managing an implementation guide in Github
+
+- Create An account on Simplifier.net with the ability to create an Implementation Guide
+
+- Create a Github account
+
+- Install Git on your local computer
+
+----------------------------------------------------------------------------------------------
+
+1. Introduction
+---------------
+
+This guide will provide step by step instructions on managing your implementation Guide using Github.
+
+2. Setting up a Github Repository
+---------------------------------
+
+2.1 Create a Repository
+
+   1. Log into your Github account.
+
+   2. Click on the + icon in the top right corner and select New repository
+
+   3. Enter a repository name, description, and choose visibility (Public or Private)
+
+   4. Optionally, you can add a README file, a .gitignore file as well as the ability to choose a license.
+
+   5. Click Create Repository
+
+   .. image:: ../images/GithubNewRepository.png
+      :scale: 75%
+
+   .. image:: ../images/GithubCreateNewRepository.png
+      :scale: 75%
+
+2.2 Clone the Repository on your Local computer
+
+   - Copy your clone using the web URL from your Github Repository
+
+   .. image:: ../images/GithubCloneWebURL.png
+      :scale: 75%
+
+   - Open Git Bash
+
+   - CD to whichever directory you want to clone your repository into
+
+   - Clone the repository using the commands: 
+
+   .. image:: ../images/cmdtoclonerepository.png
+      :scale: 75%
+
+3. Export your Implementation Guide from Simplifier
+
+   1. Export the Implementation Guide
+      
+      - Navigate to your project on Simplifier.net and go to the Guide tab
+
+      - Click the three elipses on the right hand side of your project and choose the export option, your project will begin downloading as a zip file
+
+      - Unzip the contents of the Implementation Guide into your cloned repository and organize accordingly
+
+4. Utilizing Visual Studio
+
+   - View and Edit files
+
+      - Navitage to the Explorer Icon on the upper left hand corner of the application
+
+   .. image:: ../images/ExploreiconVS.png
+      :scale: 75%
+
+      - Enter into the repository and within that repository find the Implementation Guide folder. From here you can make changes to the
+      resources, profiles, etc.
+
+   - Stage Changes
+
+      - Once you have made the necessary changes, navigate to the Source control icon on the upper left hand corner of the application. Here you will
+      see the list of changes made to each file. 
+
+   .. image:: ../images/sourcecontrolVS.png
+      :scale: 75%
+
+      - Stage the changes by select the files and clicking the "+" icon or right clicking and selecting "stage"
+
+   - Commit Changes
+
+      - After staging the changes, write a note with a short description of the changes you have made. Click "Commit Staged"
+
+   - Push Changes
+
+      - After you commit, click the "Push" to upload your changes to your Github repository.
