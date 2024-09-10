@@ -160,60 +160,53 @@ This guide will provide step by step instructions on managing your implementatio
    .. image:: ../images/GithubCreateNewRepository.png
       :scale: 75%
 
-2.2 Clone the Repository on your Local computer
+3. Syncing A Simplifier Project with Github
+-----------------------------------------
 
-   - Copy your clone using the web URL from your Github Repository
+3.1 Download the Project
 
-   .. image:: ../images/GithubCloneWebURL.png
+   - On your Simplifier project page, look for the Download icon and choose the option "zip project"
+
+   - Download your project as a .zip file
+
+   - Unzip your project and move it to directory of the locally cloned repository on your workstation
+
+
+3.2 Commit Changes to Github
+
+   - CD to the folder of the Cloned Repository
+
+      Example: cd C:\Temp\Simplifier Docs Clone 2
+
+   - Add files to the repository using Git Bash
+
+   .. image:: ../images/addfilestoGitrepository.png
       :scale: 75%
 
-   - Open Git Bash
+   - Commit the Changes (add a note for the changes made)
 
-   - CD to whichever directory you want to clone your repository into
-
-   - Clone the repository using the commands: 
-
-   .. image:: ../images/cmdtoclonerepository.png
+.. image:: ../commitfilestoGitrepository.png
       :scale: 75%
 
-3. Export your Implementation Guide from Simplifier
+   - Push the file changes to Github
 
-   1. Export the Implementation Guide
-      
-      - Navigate to your project on Simplifier.net and go to the Guide tab
-
-      - Click the three elipses on the right hand side of your project and choose the export option, your project will begin downloading as a zip file
-
-      - Unzip the contents of the Implementation Guide into your cloned repository and organize accordingly
-
-4. Utilizing Visual Studio
-
-   - View and Edit files
-
-      - Navitage to the Explorer Icon on the upper left hand corner of the application
-
-   .. image:: ../images/ExploreiconVS.png
+.. image:: ../pushchangestoGitrepository.png
       :scale: 75%
 
-      - Enter into the repository and within that repository find the Implementation Guide folder. From here you can make changes to the
-      resources, profiles, etc.
 
-   - Stage Changes
+4. Link Github repository to Simplifier project
+-----------------------------------------------
 
-      - Once you have made the necessary changes, navigate to the Source control icon on the upper left hand corner of the application. Here you will
-      see the list of changes made to each file. 
+   - Navigate to a Simplifier project 
 
-   .. image:: ../images/sourcecontrolVS.png
+In the tool bar on the top of the page you will see a Github icon that allows you to link a Git repository
+
+.. image:: ../LinkGitrepositorytosimplifierproject.png
       :scale: 75%
 
-      - Stage the changes by select the files and clicking the "+" icon or right clicking and selecting "stage"
+You will then be prompted to Login with you Github account and grant Simplifier access to your repository
 
-   - Commit Changes
+.. image:: ../Linksimplifierprojecttorepository.png
+      :scale: 75%
 
-      - After staging the changes, write a note with a short description of the changes you have made. Click "Commit Staged"
-
-   - Push Changes
-
-      - After you commit, click the "Push" to upload your changes to your Github repository.
-
-      Test
+Fill out the Repository Owner, Repository, Branch, Webhook and Delete strategy
