@@ -10,7 +10,7 @@ Firely Accessibility Conformance Report - WCAG Edition
 
 **Name of Product/Version:** Simplifier.net  
 
-**Report Date:** 22-08-2022
+**Report Date:** 22-08-2024
 
 **Product Description:** Simplifier.net by Firely is an online platform for collaborating
 and publishing the artifacts from FHIR specifications.
