@@ -210,6 +210,7 @@ Table 1: Success Criteria, Level A
        * [SIM-4058] Alt text missing for Avatars in news section in Organization home page
        * [SIM-4053] Alt text missing for images in news pages
        * [SIM-4048] Multiple accessibility issues with Captcha-image in Sign up page
+       * [SIM-4080] Missing alternative text in multiple test pages
   
   * - `1.2.1 Audio-only and Video-only`_
       
@@ -232,9 +233,11 @@ Table 1: Success Criteria, Level A
   * - `1.3.1 Info and Relationships`_
       
       (Level A)
-    - Supports
-    - Sections are labeled with relevant ARIA tags.
-      To be tested
+    - Partially Supports
+    - Known issues
+      
+       * [SIM-4077] Broken ARIA reference in multiple test pages
+       * [SIM-4072] Empty Table header in multiple test pages
 
   * - `1.3.2 Meaningful Sequence`_
       
@@ -271,7 +274,7 @@ Table 1: Success Criteria, Level A
       Known issues
 
        * [SIM-1382] Edit button for canonical base URLs on project not accessible with keyboard only
-       * [SIM-1384] Can't activate the checkmarks on the Create a new package page
+       * [SIM-1384] Can't activate the check marks on the Create a new package page
 
   * - `2.1.2 No Keyboard Trap`_
   
@@ -337,8 +340,11 @@ Table 1: Success Criteria, Level A
   * - `2.4.4 Link Purpose (In Context)`_
       
       (Level A)
-    - Supports
-    - To be tested
+    - Partially Supports
+    - Known issues:
+    
+       * [SIM-4081] Empty link in snippet page
+       * [SIM-4079] Empty button in multiple test pages
 
 
   * - `2.5.1 Pointer Gestures`_
@@ -412,8 +418,10 @@ Table 1: Success Criteria, Level A
   * - `3.3.2 Labels or Instructions`_
       
       (Level A)
-    - Supports
-    - 
+    - Partially Supports
+    - Known issues:
+    
+       * [SIM-4078] Missing form label in multiple test pages
 
   * - `4.1.1 Parsing`_
       
@@ -525,8 +533,10 @@ Table 2: Success Criteria, Level AA
   * - `2.4.6 Headings and Labels`_
     
       (Level AA)
-    - Supports
-    - 
+    - Partially Supports
+    - Known issues
+    
+       * [SIM-4078] Missing form label in multiple test pages
   
   * - `2.4.7 Focus Visible`_
     
