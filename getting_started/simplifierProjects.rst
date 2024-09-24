@@ -143,7 +143,7 @@ Choose this option to add your company logo or just any cool picture you like!
 
 Workflow
 --------
-Here you can select one of the custom workflows of your organization to use it in your project. The workflows are configured and mapped to the FHIR workflow add the organizational level.
+Here you can select one of the custom workflows of your organization to use it in your project. The workflows are configured and mapped to the FHIR workflow at the organizational level.
 
 Metadata Expressions
 --------------------
