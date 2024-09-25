@@ -10,7 +10,7 @@ Firely Accessibility Conformance Report - WCAG Edition
 
 **Name of Product/Version:** Simplifier.net  
 
-**Report Date:** 22-08-2024
+**Report Date:** 25-09-2024
 
 **Product Description:** Simplifier.net by Firely is an online platform for collaborating
 and publishing the artifacts from FHIR specifications.
@@ -45,7 +45,7 @@ Changelog
 
 * Nov 30, 2020: First edition published.
 * Dec 22, 2020: Accessibility scan completed and major issues resolved.
-* Aug 22, 2024: Second edition published.
+* Sep 25, 2024: Second edition published.
 
 Evaluation Methods Used
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -547,8 +547,10 @@ Table 2: Success Criteria, Level AA
   * - `2.4.11 Focus Not Obscured (Minimum)`_
     
       (Level AA 2.2 only)
-    - Supports
-    - 
+    - Partially Supports
+    - Known issues
+    
+       * [SIM-4063] Delete confirmation box is hidden by the Completed successfully overlay
 
   * - `2.5.7 Dragging Movements`_
     
