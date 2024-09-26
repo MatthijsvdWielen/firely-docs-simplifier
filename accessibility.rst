@@ -365,8 +365,10 @@ Table 1: Success Criteria, Level A
   * - `2.5.3 Label in Name`_
       
       (Level A 2.1 only)
-    - Supports
-    - 
+    - Partially Supports
+    - Known issues:
+    
+       * [SIM-4078] Missing form label in multiple test pages
 
   * - `2.5.4 Motion Actuation`_
       
@@ -564,7 +566,7 @@ Table 2: Success Criteria, Level AA
   * - `2.5.8 Target Size (Minimum)`_
     
       (Level AA 2.2 only)
-    - 
+    - Supports
     - 
 
   * - `3.1.2 Language of Parts`_
