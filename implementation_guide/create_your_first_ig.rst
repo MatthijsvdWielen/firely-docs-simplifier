@@ -137,7 +137,7 @@ The YAML header of a markdown page (the part between the ``---`` lines) is a pla
 
 **Topic**
 
-As is described below, you can set the ``topic`` of the page like this, but with the release of Simplifier 30.5 it is possible to set any properties here that can also be used in the rendering widgets.
+As is :ref:`described below <_pagelinkingTopic>`, you can set the ``topic`` of the page like this, but with the release of Simplifier 30.5 it is possible to set any properties here that can also be used in the rendering widgets.
 
 **Subject**
 
@@ -231,6 +231,8 @@ You can also save your FQL statements in order to re-use them on different pages
 
 It is also possible to use HTML style tags to embed FQL code in your page. For that you can use the following tags: ``<fql>``.
 
+
+.. _pagelinkingTopic:
 Pagelink using page topic
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 

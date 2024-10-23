@@ -66,9 +66,11 @@ Guides created before Simplifier 28.0 are still stored in the legacy way as sepa
 .. image:: ../images/LegacyGuides.png
    :scale: 75%
 
-This functionality is also a beta release so please follow the warning and migration steps in the Migrate Guide window. In the Migrate Guide window a different target project can also be selected. Migrating a guide **does not** delete the legacy guide. 
+This functionality is a beta release so please follow the warning and migration steps in the Migrate Guide window. In the Migrate Guide window a different target project can also be selected. Migrating a guide **does not** delete the legacy guide. 
 
-After a guide is migrated or copied, please make sure all your internal page links and references are still working. 
+Migrating a legacy guide will re-create the guide with the correct folder structure and guide.yaml etc. a. The legacy guide urlkey will be re-named to <old-urlkey>-backup and use the previous urlkey for the newly created one.
+
+After a guide is migrated or copied, please make sure all your internal page links and references are still working. To be sure your pagelinks won't break, please use internal links using topics. <link to topics>
 
 .. _ig_convert:
 
@@ -119,94 +121,13 @@ An ImplementationGuide resource can be converted to a Simplifier webbased IG. Th
 Manage your IG using GitHub
 ---------------------------
 
-The GitHub webhook allows managing your Implementation Guide, without using the editor itself. You can find more information on how to set this up in the `GitHub integration documentation <../data_governance_and_quality_control/simplifierGithub.html#github-webhook-to-manage-implementation-guides>`_.
+The GitHub webhook enables you to manage your Implementation Guide (IG) without using the editor interface directly. Detailed instructions for setting this up can be found in the `GitHub integration documentation <../data_governance_and_quality_control/simplifierGithub.html#github-webhook-to-manage-implementation-guides>`_.
 
-Pre-Requisites
---------------
+Implementation Guides are now organized in a folder-based structure, providing greater flexibility for templating and editing. Each IG includes a configuration file called guide.yaml and requires a specific folder structure to function correctly. If you still have a legacy guide, we highly recommend :ref:`migrating to the new IG style <.. _ig_migration>`. 
 
-Below are the necessary pre-requisites needed for managing an implementation guide in Github
+When you create an IG using the Simplifier UI, an initial guide.yaml file and the required folders are automatically generated. It is advisable to add a few folders and empty pages to familiarize yourself with the required structure. Once this is done, you can move your IG to GitHub. 
 
-- Create An account on Simplifier.net with the ability to create an Implementation Guide
+To do this, download the project locally (extract it) and copy your IG to your GitHub repository. Make sure to maintain the same folder structure as in the downloaded project. This applies to both the guide folders and your resources. Any changes to the folder structure may result in duplicates or break the link to the guide.yaml file, causing issues with rendering. If this occurs, please contact Simplifier support through your `JIRA portal <../https://firely.atlassian.net/servicedesk/customer/portal/1>`_. or email us at simplifier@fire.ly and we will assist you. 
 
-- Create a Github account
+Once everything is set up, you can make changes locally using your preferred editor and sync them back to Simplifier.
 
-- Install Git on your local computer
-
-----------------------------------------------------------------------------------------------
-
-1. Introduction
----------------
-
-This guide will provide step by step instructions on managing your implementation Guide using Github.
-
-2. Setting up a Github Repository
----------------------------------
-
-2.1 Create a Repository
-
-   1. Log into your Github account.
-
-   2. Click on the + icon in the top right corner and select New repository
-
-   3. Enter a repository name, description, and choose visibility (Public or Private)
-
-   4. Optionally, you can add a README file, a .gitignore file as well as the ability to choose a license.
-
-   5. Click Create Repository
-
-   .. image:: ../images/GithubNewRepository.png
-      :scale: 75%
-
-   .. image:: ../images/GithubCreateNewRepository.png
-      :scale: 75%
-
-3. Syncing A Simplifier Project with Github
------------------------------------------
-
-3.1 Download the Project
-
-   - On your Simplifier project page, look for the Download icon and choose the option "zip project"
-
-   - Download your project as a .zip file
-
-   - Unzip your project and move it to directory of the locally cloned repository on your workstation
-
-
-3.2 Commit Changes to Github
-
-   - CD to the folder of the Cloned Repository
-
-      Example: cd C:\Temp\Simplifier Docs Clone 2
-
-   - Add files to the repository using Git Bash
-
-   .. image:: ../images/addfilestoGitrepository.png
-      :scale: 75%
-
-   - Commit the Changes (add a note for the changes made)
-
-.. image:: ../commitfilestoGitrepository.png
-      :scale: 75%
-
-   - Push the file changes to Github
-
-.. image:: ../pushchangestoGitrepository.png
-      :scale: 75%
-
-
-4. Link Github repository to Simplifier project
------------------------------------------------
-
-   - Navigate to a Simplifier project 
-
-In the tool bar on the top of the page you will see a Github icon that allows you to link a Git repository
-
-.. image:: ../LinkGitrepositorytosimplifierproject.png
-      :scale: 75%
-
-You will then be prompted to Login with you Github account and grant Simplifier access to your repository
-
-.. image:: ../Linksimplifierprojecttorepository.png
-      :scale: 75%
-
-Fill out the Repository Owner, Repository, Branch, Webhook and Delete strategy
