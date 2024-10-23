@@ -137,7 +137,7 @@ The YAML header of a markdown page (the part between the ``---`` lines) is a pla
 
 **Topic**
 
-As is :ref:`described below <_pagelinkingTopic>`, you can set the ``topic`` of the page like this, but with the release of Simplifier 30.5 it is possible to set any properties here that can also be used in the rendering widgets.
+As is :ref:`described below <pagelinkingTopic>`, you can set the ``topic`` of the page like this, but with the release of Simplifier 30.5 it is possible to set any properties here that can also be used in the rendering widgets.
 
 **Subject**
 
