@@ -11,13 +11,15 @@ When creating a package from you *private* project you will see a warning label 
 
 After going through the steps to create your private package feed:
 
-.. image:: ../images/ConfigureFeed.png
+.. image:: ../images/CreateFeed.png
 
 You will see the feed on your project page.
 
 .. image:: ../images/PackageFeed.png
 
 Simplifier will throw a warning if you need to do a restore of your dependencies after creating or changing your feed. 
+
+.. image:: ../images/PackageClosureError.png
 
 Current limitations and restrictions
 --------------------
