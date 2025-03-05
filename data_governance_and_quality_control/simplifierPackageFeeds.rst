@@ -19,6 +19,8 @@ You will see the feed on your project page.
 
 Simplifier will throw a warning if you need to do a restore of your dependencies after creating or changing your feed. 
 
+.. image:: ../images/PackageClosureError.png
+
 Current limitations and restrictions
 --------------------
 It is no longer possible to create private packages from public Simplifier projects. For non-sensitive packages for review we recommend using semver labels like `-alpha` and unlisting packages afterwards. 
