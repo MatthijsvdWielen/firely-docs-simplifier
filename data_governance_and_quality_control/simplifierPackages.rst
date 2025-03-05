@@ -16,7 +16,7 @@ Packages
 
 View packages
 ^^^^^^^^^^^^^
-Visit the ``Packages`` tab of any Simplifier project to see which packages are available in this project. For more information about a package and its content, click on the name of the package. 
+Visit the ``Releases`` tab of any Simplifier project to see which packages are published from this project. For more information about a package and its content, click on the name of the package. 
 
 The ``Introduction`` page will give you an overview of the package:
 
@@ -34,12 +34,22 @@ Switch to the ``Files`` tab to see the content of the package.
 .. image:: ../images/PackageFiles.png
    :scale: 75%
 
+If you have a combination of private and public packages in your feeds you can see a full overwiew of your packages in the ``Distribution`` view accessible for package team menbers through the package Administration. 
+
+
+.. image:: ../images/PackageDistribution.png
+   :scale: 75%
+
+
+
+
+
 
 
 Create packages
 ^^^^^^^^^^^^^^^^
 
-Visit the ``Packages`` tab of your project and click on ``Create`` > ``Create new package`` to create a new package. Provide a name, version number, description and release notes for your package. Note that the name of your package should include at least one dot. Indicate if your package is a prelease package or not and click ``Create`` to publish your package. 
+Visit the ``Releases`` tab of your project and click on ``Create`` > ``Create new package`` to create a new package. Provide a name, version number, description and release notes for your package. Note that the name of your package should include at least one dot. Indicate if your package is a prelease package or not and click ``Create`` to publish your package. 
 To create a new version of an existing package, click on ``Create`` and select ``Create new version for..`` followed by the name of your package. Add the required information and click ``Create`` to publish the new version of your package.
 
 Packages can be created as private packages or public packages. Private packages are only visible for the team members inside the project from where the package is created and public packages will be visible to all of Simplifier. 
@@ -179,6 +189,16 @@ If you directly edit the package.json or import an updated version of your packa
 
 Firely Terminal
 -----------------------
-Firely Terminal is our (free) command line tool for FHIR. Firely Terminal allows you to communicate with any FHIR server. With simple commands you can easily download, upload, validate and transform resources, zip them, bundle them or split bundles. Firely Terminal offers many features. One of them is to install, create and manage FHIR packages.
+
+
+.. important::
+
+    Packages published outside of the Simplifier projects no longer show up under the Releases tab.
+
+Firely Terminal is our (free) command line tool for FHIR. Firely Terminal allows you to communicate with any FHIR server. With simple commands you can easily download, upload, validate and transform resources, zip them, bundle them or split bundles. Firely Terminal offers many features. One of them is to install and create FHIR packages.
 
 Learn :ref:`more about Firely Terminal <firely_terminal_docs:firely_terminal_home>` and :ref:`managing FHIR packages on the command line in particular <firely_terminal_docs:Package_management>`.
+
+
+
+
