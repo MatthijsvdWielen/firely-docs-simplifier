@@ -11,7 +11,7 @@ When creating a package from you *private* project you will see a warning label 
 
 After going through the steps to create your private package feed:
 
-.. image:: ../images/ConfigureFeed.png
+.. image:: ../images/CreateFeed.png
 
 You will see the feed on your project page.
 
