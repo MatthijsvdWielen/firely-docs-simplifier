@@ -23,6 +23,7 @@ Simplifier will throw a warning if you need to do a restore of your dependencies
 
 Current limitations and restrictions
 --------------------
-It is no longer possible to create private packages from public Simplifier projects. For non-sensitive packages for review we recommend using semver labels like `-alpha` and unlisting packages afterwards. 
+It is not possible to create a private package from a public Simplifier project. You can either make your project private to create a private release. Or, if your release does not need to be private but you just want to signal to your users it is not a stable release, we recommend using semver labels like ``-alpha`` and potentially unlisting packages afterwards.
 
-Private package publication and installation with Firely Terminal is temporarily unavailable. 
+
+Private package publication and installation with Firely Terminal is temporarily unavailable, but will be brought back soon!
