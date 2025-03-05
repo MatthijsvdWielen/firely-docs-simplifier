@@ -13,8 +13,10 @@ Here you will find the documentation of Simplifier's Data Governance and Quality
    simplifierCanonicalClaims
    simplifierQualityControl
    simplifierPackages
+   simplifierPackageFeeds
+   simplifierPackageCreationCheck
    simplifierForgeIntegration
    simplifierGithub
-   simplifierPackageCreationCheck
+   
 
    

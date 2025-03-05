@@ -1,0 +1,26 @@
+Package Feeds
+=============
+Simplifier has always offered the option to create private projects for the development and validation of your data models. Now, these projects benefit from access to private package feeds. This feature is ideal whether you are still developing your FHIR project or simply wish to distribute your packages to a select group of users, as it enables the private publication and distribution of your data models. With the introduction of package feeds, implementers can publish private packages directly from their Simplifier projects, create Implementation Guides for these packages, and develop projects using their own private packages as dependencies.
+
+Setting up your feed
+---------------------
+
+When creating a package from you *private* project you will see a warning label asking if you want to publish you package publicly or if you want to create a private package feed.
+
+.. image:: ../images/ConfigureFeed.png
+
+After going through the steps to create your private package feed:
+
+.. image:: ../images/ConfigureFeed.png
+
+You will see the feed on your project page.
+
+.. image:: ../images/PackageFeed.png
+
+Simplifier will throw a warning if you need to do a restore of your dependencies after creating or changing your feed. 
+
+Current limitations and restrictions
+--------------------
+It is no longer possible to create private packages from public Simplifier projects. For non-sensitive packages for review we recommend using semver labels like `-alpha` and unlisting packages afterwards. 
+
+Private package publication and installation with Firely Terminal is temporarily unavailable. 
