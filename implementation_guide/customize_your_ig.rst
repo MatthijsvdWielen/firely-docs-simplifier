@@ -24,6 +24,7 @@ Information retrieved from the IG settings:
 Customizable placeholders:
 """"""""""""""""""""""""""
 * **breadcrumbs** - Adds a site-wide table of contents. You can add this in the HTML template on the level of your choice. 
+*  **index:root** - Adds the table of content, with the **levels:x** you can determine how much of the sub-sub folders and pages you want in your table. 
 
 
 Internal IG content placeholders:
