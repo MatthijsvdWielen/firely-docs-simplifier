@@ -233,9 +233,9 @@ It is also possible to use HTML style tags to embed FQL code in your page. For t
 
 
 .. _pagelinkingTopic:
+
 Pagelink using page topic
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
 
 With the ``pagelink`` command you can create a link to a different page in your Implementation Guide: 
 

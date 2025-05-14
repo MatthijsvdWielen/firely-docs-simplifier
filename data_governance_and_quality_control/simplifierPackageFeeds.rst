@@ -24,7 +24,8 @@ Simplifier will throw a warning if you need to do a restore of your dependencies
 .. image:: ../images/PackageClosureError.png
 
 Current limitations and restrictions
---------------------
+------------------------------------
+
 It is not possible to create a private package from a public Simplifier project. You can either make your project private to create a private release. Or, if your release does not need to be private but you just want to signal to your users it is not a stable release, we recommend using semver labels like ``-alpha`` and potentially unlisting packages afterwards.
 
 
