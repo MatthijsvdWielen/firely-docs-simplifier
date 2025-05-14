@@ -1,3 +1,5 @@
+.. _package_feeds:
+
 Package Feeds
 =============
 Simplifier has always offered the option to create private projects for the development and validation of your data models. Now, these projects benefit from access to private package feeds. This feature is ideal whether you are still developing your FHIR project or simply wish to distribute your packages to a select group of users, as it enables the private publication and distribution of your data models. With the introduction of package feeds, implementers can publish private packages directly from their Simplifier projects, create Implementation Guides for these packages, and develop projects using their own private packages as dependencies.

@@ -103,9 +103,11 @@ The currently supported calls include:
 Package Server API
 """"""""""""""""""
 
-Simplifier has an package server API, that is compliant to the FHIR NPM package standard. It serves all publicly published FHIR packages, both those created in Simplifier and beyond. The API is documented and can be tested directly on `SwaggerHub <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_.
+To get :ref:`FHIR Packages <package_management>` via the API, you can use the Simplifier package server API. It serves both publicly published packages, created in Simplifier or beyond, and privately published FHIR packages.
 
-The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
+The API for **public FHIR packages** is documented and can be tested directly on `SwaggerHub <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_. The API endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
+
+The API for **private FHIR packages** is exactly the same as the public API, but requires authentication. You can use the JWT token you retrieved in the previous section to authenticate your requests. Additionally, it uses the :ref:`package feed <package_feeds>` Urlkey as the base URL for the API, for example ``https://packages.simplifier.net/feeds/mySimplifierPackageFeedUrlkey/`` for a package feed with the URL key ``mySimplifierPackageFeedUrlkey``.
 
 **Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <../data_governance_and_quality_control/simplifierPackages.html#publish-packages>`_ on packages. 
 
