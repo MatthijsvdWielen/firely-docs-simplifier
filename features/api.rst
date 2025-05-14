@@ -9,7 +9,7 @@ Simplifier.net has multiple APIs available for interacting with the platform and
   :depth: 2
   :local:
 
-To test these APIs you can see `our Postman API documentation <https://documenter.getpostman.com/view/8381182/TW6xo8Yv>`_ 
+To test these APIs you can see `our Postman API documentation <https://www.postman.com/firelyteam/workspace/firely-server-public-test-collections/collection/19815841-0104b4f2-2cde-463c-b6c4-da3154458d41?action=share&creator=19815841&active-environment=19815841-1656f90a-6364-4084-af40-a865a95b98b1>`_ 
 or directly run the following Postman collection:
 
 |Run in Postman|
