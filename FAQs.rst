@@ -34,7 +34,7 @@ You can upload .txt, .json, .xml, .yaml, .md, and image files to Simplifier.
 Can I transfer projects to a different team?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-This is possible, please have a look at `our Team Management documentation </data_governance_and_quality_control/simplifierGithub.html>`_.
+This is possible, please have a look at `our Team Management documentation <./administration/simplifierTeamManagement.html>`_.
 
 How do I update package release notes after releasing a new package?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
