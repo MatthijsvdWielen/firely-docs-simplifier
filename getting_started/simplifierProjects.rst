@@ -70,7 +70,7 @@ On the ``Log`` tab you can see all the changes that have been made to this proje
 
 Issues
 ------
-On the ``Issues`` tab you can leave your issues regarding the project. Note that this tab is not visible in all projects. The `Issue Tracker <simplifierProjects.html#id2>`_ is a paid functionality that allows project members to collect feedback from other project members or (depending on the project settings) other Simplifier users.
+On the ``Issues`` tab you can leave your issues regarding the project. Note that this tab is not visible in all projects. The :ref:`Issue Tracker <issue_tracker>` is a paid functionality that allows project members to collect feedback from other project members or (depending on the project settings) other Simplifier users.
 
 Dependencies
 ------------
@@ -225,7 +225,7 @@ At the top of the screen you will find the Atom feed button. This allows you to 
 .. image:: ../images/SimplifierProjectLog.png
    :scale: 50%
       
-
+.. _issue_tracker:
 Issue Tracker
 """""""""""""
 

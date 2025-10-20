@@ -9,7 +9,7 @@ Simplifier.net has multiple APIs available for interacting with the platform and
   :depth: 2
   :local:
 
-To test these APIs you can see `our Postman API documentation <https://documenter.getpostman.com/view/8381182/TW6xo8Yv>`_ 
+To test these APIs you can see `our Postman API documentation <https://www.postman.com/firelyteam/workspace/firely-server-public-test-collections/collection/19815841-0104b4f2-2cde-463c-b6c4-da3154458d41?action=share&creator=19815841&active-environment=19815841-1656f90a-6364-4084-af40-a865a95b98b1>`_ 
 or directly run the following Postman collection:
 
 |Run in Postman|
@@ -103,9 +103,11 @@ The currently supported calls include:
 Package Server API
 """"""""""""""""""
 
-Simplifier has an package server API, that is compliant to the FHIR NPM package standard. It serves all publicly published FHIR packages, both those created in Simplifier and beyond. The API is documented and can be tested directly on `SwaggerHub <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_.
+To get :ref:`FHIR Packages <package_management>` via the API, you can use the Simplifier package server API. It serves both publicly published packages, created in Simplifier or beyond, and privately published FHIR packages.
 
-The api endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
+The API for **public FHIR packages** is documented and can be tested directly on `SwaggerHub <https://app.swaggerhub.com/apis-docs/firely/Simplifier.net_FHIR_Package_API>`_. The API endpoint of the Simplifier FHIR package Server is: https://packages.simplifier.net. The Simplifier package server is the backend for `the official FHIR Package Registry <https://registry.fhir.org/>`_ and is also available as https://packages.fhir.org.
+
+The API for **private FHIR packages** is exactly the same as the public API, but requires authentication. You can use the JWT token you retrieved in the previous section to authenticate your requests. Additionally, it uses the :ref:`package feed <package_feeds>` Urlkey as the base URL for the API, for example ``https://packages.simplifier.net/feeds/mySimplifierPackageFeedUrlkey/`` for a package feed with the URL key ``mySimplifierPackageFeedUrlkey``.
 
 **Note**: It is not possible to create a package using the API. For more information on how to create a package please read our `documentation <../data_governance_and_quality_control/simplifierPackages.html#publish-packages>`_ on packages. 
 
