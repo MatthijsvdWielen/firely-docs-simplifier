@@ -8,6 +8,24 @@ This page contains the release notes of the current major version of simplifier.
 Current release
 ~~~~~~~~~~~~~~~
 
+Release Simplifier 2025.4, September 2nd, 2025
+----------------------------------------
+You can find the full release notes on `Simplifier. <https://simplifier.net/organization/firely/news/184>`_ 
+
+Release Simplifier 2025.3, June 14th, 2025
+----------------------------------------
+You can find the full release notes on `Simplifier. <https://simplifier.net/organization/firely/news/178>`_
+The biggest change is the introduction of the 60-day trial for new users. Allowing users to experience the full set of features available in Simplifier's Professional plan.
+
+Release Simplifier 2025.2, March 20th, 2025
+----------------------------------------
+You can find the full release notes on `Simplifier. <https://simplifier.net/organization/firely/news/175>`_
+
+Release Simplifier 2025.1, February 21st, 2025
+----------------------------------------
+You can find the full release notes on `Simplifier. <https://simplifier.net/organization/firely/news/168>`_
+
+
 Release Simplifier 31.4, June 5th, 2024
 ----------------------------------------
 
