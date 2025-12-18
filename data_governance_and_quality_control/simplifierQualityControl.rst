@@ -180,3 +180,18 @@ Extensions.
     status: "Checking whether extension starts with Extension-UKCore"
     predicate: id.startsWith('Extension-UKCore')
     error-message: "Resource does not start with Extension-UKCore"
+
+
+Validating with different validators
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In Quality Control you can now choose which validator you want to use for your validation. You can choose between the built-in Simplifier.net .NET SDK validator, our Legacy .NET validator or the java based validator. 
+
+You can choose one of the following flavors:
+
+.. code-block:: yaml
+
+  - flavor: firely (this is the default)
+  - flavor: netsdk
+  - flavor: java
+
