@@ -184,14 +184,43 @@ Extensions.
 
 Validating with different validators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Quality Control now utilizes the Firely .NET SDK Validator as the default engine across Simplifier. This updated validator provides more comprehensive error detection and improved error messages.
 
-In Quality Control you can now choose which validator you want to use for your validation. You can choose between the built-in Simplifier.net .NET SDK validator, our Legacy .NET validator or the java based validator. 
+If you require specific validation behaviors, you can customize the validator engine using the optional flavor parameter in your Quality Control configuration.
 
-You can choose one of the following flavors:
+Available Flavors
+
+You can choose one of the following values:
+
+`firely` (Default): The new Firely .NET SDK Validator. Best for current standard validation and improved issue detection.
+
+`netsdk`: The Legacy .NET validator. Use this if you need to strictly match older validation logic.
+
+`java`: The HL7 Java Validator.
+
+
+To explicitly switch to a specific validator (for example, the legacy netsdk), add the flavor parameter to your validation action:
 
 .. code-block:: yaml
 
-  - flavor: firely (this is the default)
-  - flavor: netsdk
-  - flavor: java
+  - category: resource
+    action: validate
+    flavor: netsdk
 
+**Note**: You can also toggle between these validators in the Validator Playground using the drop-down menu to test specific resources before adding them to your Quality Control configuration.
+
+
+Suppression
+^^^^^^^^^^^
+
+Quality Control allows you to suppress specific validation errors when they are known to be irrelevant or incorrectly triggered. This can be useful, for example, to suppress an eld-1 error that does not apply to your use case.
+
+Suppression is configured by specifying the error code you want to suppress.
+
+.. code-block:: yaml
+
+ - suppress: eld-1
+
+
+
+Note: Suppression currently applies to the entire error code. More fine-grained suppression (for example, targeting a specific element or constraint) is not yet supported.
