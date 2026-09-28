@@ -9,7 +9,6 @@ Most FHIR specifications on Simplifier go through the same steps, from the first
 
    - `Forge <https://fire.ly/products/forge/>`_, Firely's visual profiling tool, which :doc:`syncs a local folder <adding_content/forge>` to your project.
    - FHIR Shorthand (FSH). Compile it with SUSHI and sync the generated resources, or add the ``.fsh`` files to your project and let a :ref:`bake pipeline <bake>` run SUSHI when you create a package.
-   - :ref:`YamlGen <yamlgen>`, to generate resources from compact YAML.
    - Any other tool that produces FHIR JSON or XML.
 
 #. **Sync them to Simplifier.** Get the resources into a :ref:`project <Project_Page>`, by hand or automatically from GitHub, Forge or Firely Terminal. :ref:`adding_content` helps you choose. If your profiles build on other specifications, add those packages as :doc:`dependencies <dependencies/managing-dependencies>`.
