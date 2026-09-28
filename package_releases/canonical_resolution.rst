@@ -35,7 +35,6 @@ resolved in this order:
    operation definitions, capability statements and compartment definitions, such as
    ``http://hl7.org/fhir/StructureDefinition/Patient``, come from the core package of your
    project's FHIR version, even when a core package of another FHIR version is also in scope.
-   This applies to R4 and later.
 #. **The most recent version in scope.** Otherwise, of all versions of the resource in the
    resolved dependencies, the most recent one is used.
 

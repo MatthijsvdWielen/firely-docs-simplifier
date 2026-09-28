@@ -15,14 +15,9 @@ Multiple versions of the same package in scope
 
 - Dependency restore now keeps every version of a package that the dependency tree brings in, instead of only the latest. The ``Dependencies`` tab shows the direct dependencies and all resolved dependencies, which can list the same package in several versions, and shows the FHIR version of each dependency. See :ref:`view_dependencies`.
 - Unpinned canonical references now resolve to the latest version of that resource in scope, while pinned references keep resolving to the version they name. "Latest" means by SemVer where all candidates are SemVer, by date where they are all dates, and alphabetically otherwise. References resolve in the project first. See :ref:`canonical_resolution`.
-- Unpinned references to core profiles, data types, logical models, operation definitions, capability statements and compartment definitions resolve to the core package of the project's FHIR version (R4 and later), even when a dependency brings the core package of another FHIR version into scope. Terminology, search parameters and the extensions published in the core package follow the latest-version rule.
-- Rendering or linking a resource by name, by type and id, or by filepath behaves as before.
-- The "extension used outside of context" validation check, switched off in the 2026.4.2 hotfix, is on again. Unpinned extension references now resolve to the latest version in scope instead of the older copy in the core package.
+- Unpinned references to core profiles, data types, logical models, operation definitions, capability statements and compartment definitions resolve to the core package of the project's FHIR version, even when a dependency brings the core package of another FHIR version into scope. Terminology, search parameters and the extensions published in the core package follow the latest-version rule.
 - Packages can now be resolved by SemVer range: a link to ``1.3.x`` resolves to the highest package in the 1.3 series, both on the package page and in the resolver.
 - The ``Dependencies`` tab of projects and packages now warns when dependencies could not be fully resolved, and explains when to restore.
-- The package database cache is rebuilt automatically when a restore changes the dependencies.
-- The packages Simplifier mirrors from the official HL7 feed have their dependencies restored, so they take every version into scope too.
-- Fixed package version metadata on existing packages whose resources carried a version in their content but not in their metadata. Pinned references to those resources did not resolve, and packages built from them with bake could have missing or broken snapshots.
 
 Guides
 ~~~~~~
@@ -38,7 +33,6 @@ Sunsetting DSTU2
 
 - DSTU2 is being retired. New projects can no longer be created as DSTU2, and for existing DSTU2 projects the Bake, File, Update and GitHub menus are disabled, import is blocked, and package creation is blocked.
 - The Query menu, covering FQL, YamlGen and FHIRPath, is hidden for DSTU2, where it was never available.
-- Restored DSTU2 rendering and download, which broke in 2026.4 with the Firely .NET SDK 6 migration.
 
 Other improvements & maintenance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
