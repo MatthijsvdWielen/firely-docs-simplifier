@@ -18,7 +18,7 @@ Pinned references
 A canonical reference that carries a version, such as
 ``http://example.org/fhir/StructureDefinition/bp|1.0.0``, resolves to exactly that version.
 
-The version after the ``|`` must be written out in full. Ranges such as ``|1.3.x`` are not
+The version after the ``|`` must be written out in full. Ranges such as ``|1.3.x`` are not yet
 supported in a canonical reference.
 
 To pin the references in a package when you publish it, see :ref:`pin_canonical_references`.
