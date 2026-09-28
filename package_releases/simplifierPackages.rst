@@ -68,6 +68,8 @@ Packages can be created as private packages or public packages. Private packages
 
 The package created with the highest semver will get the tag ``latest`` added to the package. Please `see how semver works with <https://semver.org>`_ regards to versioning and pre-release tags. 
 
+When a package is created, every resource in it that does not already have a version is given the package version in its ``version`` element.
+
 
 .. _pin_canonical_references:
 
@@ -81,10 +83,7 @@ You will find the option on the ``Content`` tab of the package creation wizard, 
 .. image:: ../images/PackageCanonicalPinning.png
    :scale: 75%
 
-With this option enabled, when the package is created:
-
-* Unversioned canonical references (for example ``baseDefinition`` or type profiles) are pinned to the version found in the dependency closure.
-* Every resource that does not already have a version is given the package version in its ``version`` element.
+With this option enabled, unversioned canonical references (for example ``baseDefinition`` or type profiles) are pinned to the version found in the dependency closure when the package is created.
 
 How pinned and unpinned references are resolved is explained in :ref:`canonical_resolution`.
 
