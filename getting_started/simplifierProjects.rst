@@ -149,47 +149,10 @@ Metadata Expressions
 --------------------
 Here you can define how to extract metadata, like title, URL key, filename/path from a resource using FHIRPath. For more information also take a look at :ref:`Metadata Expressions. <Metadata_Expressions>`
 
-.. _Canonical_Claims:
-
 Canonical claims
 ----------------
-Project owners can customize their base canonical URLs to brand their projects. Canonical claims are used and recognized as a certificate, or proof of origin, for your resources: a resource's canonical URL is only valid if it matches a canonical base claimed by the project. You can claim canonicals on a project, package, and resource level.
+Here you can claim the canonical base URLs of your project. See :ref:`Canonical_Claims`.
 
-**On project level**: claim a canonical under the ``Canonical claims`` option in the project Manage dropdown. The Canonical claims page shows the claimed canonicals and the status of each claim.
-
-.. image:: ../images/ClaimedBaseUrl.png
-   :scale: 75%
-
-Claiming a canonical declares ownership of it. If another user disputes your claim and has the legitimate claim, a site admin can set your claim as invalid. Reach out to us if you want to open a dispute about invalid canonical claims.
-
-.. image:: ../images/InvalidClaim.png
-   :scale: 75%
-
-If your project contains resources with a canonical base that is not claimed, Simplifier shows a warning on the Project page, and the ``Canonical claims`` option shows which claims you are missing. This could also indicate that some resources have an unintended canonical (base) URL. You can create custom bulk validation rules to validate your entire project using our :ref:`Quality Control <QC>` feature.
-
-.. image:: ../images/MissingClaims.png
-   :scale: 75%
-
-.. image:: ../images/SuggestedClaims.png
-   :scale: 75%
-
-**In packages**: after a package is created, its canonicals can be managed under the package Administration. The claim statuses are the same as on the project level.
-
-.. image:: ../images/PackageCanonicals.png
-   :scale: 75%
-
-**On a resource level**: every resource shows a status next to its canonical URL indicating whether the base was claimed by the project. The status can be valid, a warning that the base was not claimed, or an error stating the canonical is invalid (for example, when it is already claimed by another organization or user).
-
-.. image:: ../images/ValidResourceCanonical.png
-   :scale: 75%
-
-.. image:: ../images/CanonicalWarning.png
-   :scale: 75%
-
-.. image:: ../images/ResourceInvalid.png
-   :scale: 75%
-
-**Best practice**: when adding canonical claims, we recommend using the longest common denominator. For resources generated from the IG editor, the default canonical base is ``https://simplifier.net/guide``; everyone is allowed to claim this canonical in their projects and packages.
 
 Import log
 ----------
@@ -220,23 +183,3 @@ At the top of the screen you will find the Atom feed button. This allows you to 
 .. image:: ../images/SimplifierProjectLog.png
    :scale: 50%
       
-.. _issue_tracker:
-
-Issue Tracker
-"""""""""""""
-
-.. important::
-
-    Issue tracking is available from the Team plan and up; collecting public feedback comes with the Enterprise plan. `See the pricing page for details. <https://simplifier.net/pricing>`_
-
-Would you like to capture feedback about your resources from users? The Issue tracker option is a great way to do this. If you go to the ``Settings`` dropdown menu and then select ``Properties``. You will see the option to Enable Issues at the bottom of your screen. By selecting the On option, you enable the issue tracking feature of your project.
-
-.. image:: ../images/SimplifierIssueTracker.png
-   :scale: 50%
-      
-
-There are two additional options that display once you have turned Issue tracking on. You have the option to limit Issue visibility to project members only or make them publicly visible. The issues that are reported by the community can also be limited to be visible to your project members only or visible to the public.
-
-These issues can either be reported at resource level or at project level. At the project level you will see issues that are project specific and issues from all resources in that project on the ``Issues`` tab.
-
-You will automatically be subscribed to issues you have reported or commented on, but you can also subscribe or unsubscribe to updates on them by clicking their bell icon. If you want to be informed on new issues reported on a project, click the ``Subscribe`` button on the project level and ``Subscribe to new issues`` there.

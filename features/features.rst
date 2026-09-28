@@ -1,18 +1,13 @@
+:orphan:
+
 .. _features:
 
 Additional features and playgrounds
 ===================================
 
-Here you will find the documentation of Simplifier's additional features.
+The pages that were listed here have moved to the sections where you use them:
 
-.. toctree::
-  :maxdepth: 1
-  :titlesonly:
-  
-  simplifierFirely-server
-  simplifierBackupAndSynchronization
-  simplifierConnectors
-  simplifierEmbeddedRendering
-  simplifierDocumentationRedirection
-  fql/fql
-  yamlgen/yamlgen
+- **Languages**: :ref:`FQL <fql>` and :ref:`YamlGen <yamlgen>`, each with its playground.
+- **Integrations**: :doc:`simplifierEmbeddedRendering`, :doc:`simplifierConnectors` and :doc:`simplifierFirely-server`.
+- **Adding and syncing content**: :doc:`simplifierBackupAndSynchronization`.
+- **Dependencies and canonicals**: :doc:`simplifierDocumentationRedirection`.

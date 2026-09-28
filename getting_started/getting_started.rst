@@ -1,19 +1,20 @@
 .. _getting_started:
 
-Starting with Simplifier
-========================
+Projects and resources
+======================
 
-Here you will find some stepping stones in getting familiar with Simplifier.
+These pages describe your personal portal, your projects and the resources in them.
 
 .. toctree::
    :maxdepth: 1
    :titlesonly:
-   
+
    simplifierPersonalContent
    simplifierProjects
    simplifierResources
    simplifierResourceRendering
-   simplifierBrowse
+   snippets
+   issue-tracker
 
    
    
