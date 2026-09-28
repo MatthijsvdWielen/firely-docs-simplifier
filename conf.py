@@ -62,7 +62,7 @@ _redirect_moves = {
     # --- mapped by hand from content (LOWER confidence — review these) ---
     # Section landing page was dissolved; pointing at the closest successor.
     "data_governance_and_quality_control/data_governance_and_quality_control": "package_releases/package_releases",
-    "data_governance_and_quality_control/simplifierCanonicalClaims": "getting_started/simplifierProjects.html#canonical-claims",
+    "data_governance_and_quality_control/simplifierCanonicalClaims": "dependencies/canonical-claims",
 
 }
 

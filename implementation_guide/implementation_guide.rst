@@ -14,7 +14,7 @@ In the video below you will see a short tutorial of how to build your implementa
         <iframe width="560" height="315" src="https://www.youtube.com/embed/ESGPNwyXx_s?si=5nm-m8r0pHCcpuXK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 
-This pages below will elaborate further on getting started and how you can use the IG editor.
+The pages below will elaborate further on getting started and how you can use the IG editor. When you are ready to release a version of your guide, see :ref:`published_guides`.
 
 .. toctree::
   :maxdepth: 1
@@ -26,4 +26,3 @@ This pages below will elaborate further on getting started and how you can use t
   customize_your_ig
   simplifierPlantUML
   ig_management
-  simplifierPublishedGuides

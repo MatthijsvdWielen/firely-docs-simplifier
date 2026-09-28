@@ -20,21 +20,59 @@ Below you will find the documentation for the platform.
 
 .. toctree::
   :maxdepth: 1
-  :caption: Simplifier.net Docs:
-  
+  :caption: Get started
+
   Simplifier Overview <simplifierIntro>
-  Starting with Simplifier <getting_started/getting_started>
-  Adding and syncing content <adding_content/adding_content>
-  Team and Organization management <administration/administration>
-  Quality Control <quality_control/quality_control>
-  Package Releases <package_releases/package_releases>
-  Implementation Guide <implementation_guide/implementation_guide>
-  Additional features and playgrounds<features/features>
-  Dependencies
+  getting_started/simplifierBrowse
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Work in a project
+
+  getting_started/getting_started
+  adding_content/adding_content
+  dependencies/dependencies
+  quality_control/quality_control
+  implementation_guide/implementation_guide
+  administration/administration
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Publish
+
+  publishing
+  package_releases/package_releases
+  implementation_guide/simplifierPublishedGuides
+
+.. QC and Bake live under their own sections. They are linked here by URL, because listing
+   the pages in a second toctree would expand them in both places in the sidebar.
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Languages
+
+  features/fql/fql
+  features/yamlgen/yamlgen
+  Quality Control syntax <https://docs.fire.ly/projects/Simplifier/quality_control/quality_control.html>
+  Bake syntax <https://docs.fire.ly/projects/Simplifier/package_releases/bake/bake.html>
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Integrations
+
+  features/simplifierEmbeddedRendering
+  features/simplifierConnectors
+  features/simplifierFirely-server
+
+.. toctree::
+  :maxdepth: 1
+  :caption: About
+
   Release notes <simplifierReleaseNotes>
   FAQs <FAQs>
   Contact <simplifierContact>
   Accessibility <accessibility>
+  Third-party licenses <Dependencies>
 
 ----
 
