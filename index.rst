@@ -33,6 +33,7 @@ Below you will find the documentation for the platform.
   adding_content/adding_content
   dependencies/dependencies
   quality_control/quality_control
+  implementation_guide/implementation_guide
   administration/administration
 
 .. toctree::
@@ -41,7 +42,7 @@ Below you will find the documentation for the platform.
 
   publishing
   package_releases/package_releases
-  implementation_guide/implementation_guide
+  implementation_guide/simplifierPublishedGuides
 
 .. toctree::
   :maxdepth: 1
