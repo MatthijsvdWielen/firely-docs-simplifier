@@ -31,9 +31,11 @@ resolved in this order:
 
 #. **Your project's own resources.** If the project itself defines the canonical, that definition
    is used.
-#. **The core specification of your FHIR version.** Core profiles and data types, such as
+#. **The core specification of your FHIR version.** Core profiles, data types, logical models,
+   operation definitions, capability statements and compartment definitions, such as
    ``http://hl7.org/fhir/StructureDefinition/Patient``, come from the core package of your
    project's FHIR version, even when a core package of another FHIR version is also in scope.
+   This applies to R4 and later.
 #. **The most recent version in scope.** Otherwise, of all versions of the resource in the
    resolved dependencies, the most recent one is used.
 
@@ -57,6 +59,10 @@ an R4 guide, but through its own dependencies it also brings ``hl7.fhir.r5.core`
 Core profiles and data types still come from your project's FHIR version. Other resources that
 both FHIR versions define, such as value sets, code systems and search parameters, follow the
 "most recent version" rule, so they can resolve to the other FHIR version's definition.
+
+The same rule applies to the extensions published in the core package. When your project depends
+on the HL7 extensions package, an unpinned reference to a standard extension resolves to the
+definition in that package, not to the older copy in the core package.
 
 The ``Dependencies`` tab marks a package whose FHIR version differs from your project's with a
 ``Mismatch`` tag. When you see one, check whether you need that package, and pin the references

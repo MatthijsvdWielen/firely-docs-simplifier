@@ -28,7 +28,7 @@ A package page has these tabs:
 * ``Dependencies``: the dependencies to other packages, see :ref:`view_dependencies`.
 * ``History``: the other versions of the package. Click on a version name to see the details.
 
-Use ``Download`` in the menu at the top of the page to download the package, with or without snapshots.
+Use ``Download`` in the menu at the top of the page to download the package, with or without snapshots. You need to be logged in. The first time a package is downloaded with snapshots, ``Download snapshots`` opens a console that generates a snapshot for every profile in the package and reports the profiles it could not snapshot. After that, the download starts straight away.
 
 A package URL can name a version range instead of an exact version. ``https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/1.3.x`` opens the highest listed ``1.3`` version; ``1.3`` and ``1.x`` work the same way. Pre-release and unlisted versions are skipped. If no version matches, Simplifier opens the newest version and tells you the requested version was not found.
 
@@ -205,6 +205,7 @@ Each dependency shows its FHIR version. Tags point out packages that need attent
 * ``Pre-Release``: a pre-release package, which should not be used in an official package release.
 * ``Missing``: the dependency could not be found. Run a restore.
 * ``Uppercase`` and ``InvalidChars``: the package name contains uppercase letters or invalid characters.
+* ``Update``: a newer release of this package is available. Hover over the tag to see which.
 
 The ``Dependencies`` tab of a package lists its dependencies with their version, FHIR version and release date, and the same ``Unlisted`` and ``Missing`` tags.
 
