@@ -6,7 +6,7 @@ Release Notes
 This page contains the release notes of simplifier.net.
 
 
-Simplifier 2026.5, <release date>
+Simplifier 2026.5, September 29th, 2026
 -------------------------------------------
 You can find the related news article on `Simplifier. <https://simplifier.net/organization/firely/news/206>`_
 
