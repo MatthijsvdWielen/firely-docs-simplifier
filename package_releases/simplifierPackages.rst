@@ -11,7 +11,7 @@ Creating and publishing packages
 
 
 
-Simplifier.net offers functionality to handle packages and dependencies. This functionality allows you to publish packages based on your project resources, which can be immediately installed and used by people implementing your profiles. The Simplifier FHIR package server is NPM compatible. You may either connect to this server using a NPM client or use our cross platform FHIR command line tool called Firely Terminal. On this page we will explain how to manage packages and dependencies in Simplifier, how to use Firely Terminal to install packages for validation, how to manage packages and how to create your own packages in Firely Terminal.
+Simplifier.net offers functionality to handle packages and dependencies. This functionality allows you to publish packages based on your project resources, which can be immediately installed and used by people implementing your profiles. The Simplifier FHIR package server is NPM compatible. You may either connect to this server using a NPM client or use our cross platform FHIR command line tool called Firely Terminal. On this page we will explain how to create and manage packages in Simplifier, and where to learn about packages in Firely Terminal. The packages your project depends on are covered in :doc:`../dependencies/managing-dependencies`.
 
 Package Releases
 ----------------
@@ -20,13 +20,17 @@ View releases
 ^^^^^^^^^^^^^
 Visit the ``Releases`` tab of any Simplifier project to see which packages are published from this project. For more information about a package and its content, click on the name of the package. 
 
-The ``Introduction`` page will give you an overview of the package:
+A package page has these tabs:
 
-* Install instructions; shows the command you need to install the package, click on the blue copy icon to copy it to your clipboard. Click on Firely Terminal or NPM to switch to your preferred tooling.
-* Release notes; shows the release notes given by the author of the package.
-* Dependencies; shows the dependencies to other packages.
-* History; shows the previous versions of the package, click on a version name to see the details.
-* Info; shows information about when the package was created, a link to the project it is part of and a download button to download the package.
+* ``Introduction``: the release notes given by the author of the package, how many conformance resources and examples it contains, and information such as when it was created, the project it is part of, its documentation and the feeds it is in.
+* ``Files``: every file in the package. Search and filter them by resource category, core base type, example resource type and FHIR status, the same way as on the ``Resources`` tab of a project.
+* ``Install``: the command you need to install the package. Click on the blue copy icon to copy it to your clipboard. Click on Firely Terminal or NPM to switch to your preferred tooling.
+* ``Dependencies``: the dependencies to other packages, see :ref:`view_dependencies`.
+* ``History``: the other versions of the package. Click on a version name to see the details.
+
+Use ``Download`` in the menu at the top of the page to download the package, with or without snapshots. You need to be logged in. The first time a package is downloaded with snapshots, ``Download snapshots`` opens a console that generates a snapshot for every profile in the package and reports the profiles it could not snapshot. After that, the download starts straight away.
+
+A package URL can name a version range instead of an exact version. ``https://simplifier.net/packages/nictiz.fhir.nl.stu3.zib2017/1.3.x`` opens the highest listed ``1.3`` version; ``1.3`` and ``1.x`` work the same way. Pre-release and unlisted versions are skipped. If no version matches, Simplifier opens the newest version and tells you the requested version was not found.
 
 .. image:: ../images/PackageView.png
    :scale: 75%
@@ -64,6 +68,10 @@ Packages can be created as private packages or public packages. Private packages
 
 The package created with the highest semver will get the tag ``latest`` added to the package. Please `see how semver works with <https://semver.org>`_ regards to versioning and pre-release tags. 
 
+When a package is created, every resource in it that does not already have a version is given the package version in its ``version`` element.
+
+
+.. _pin_canonical_references:
 
 Pin canonical references
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -75,10 +83,9 @@ You will find the option on the ``Content`` tab of the package creation wizard, 
 .. image:: ../images/PackageCanonicalPinning.png
    :scale: 75%
 
-With this option enabled, when the package is created:
+With this option enabled, unversioned canonical references (for example ``baseDefinition`` or type profiles) are pinned to the version found in the dependency closure when the package is created.
 
-* Unversioned canonical references (for example ``baseDefinition`` or type profiles) are pinned to the version found in the dependency closure.
-* Every resource that does not already have a version is given the package version in its ``version`` element.
+How pinned and unpinned references are resolved is explained in :ref:`canonical_resolution`.
 
 .. note::
 
@@ -174,39 +181,6 @@ Below you can find an example of how to use the package.bake.yaml file in your o
 
 
 
-
-
-Dependencies
------------------------
-
-View dependencies
-^^^^^^^^^^^^^^^^^
-Visit the ``Dependencies`` tab of any Simplifier project to see a list of its package dependencies as well as indirect dependencies. Click on the name of one of the listed packages to see the details of this package. This will show the information as explained in the View Packages section.
-
-.. image:: ../images/PackageAddDependencies.png
-   :scale: 75%
-
-Add dependencies
-^^^^^^^^^^^^^^^^
-Visit the ``Dependencies`` tab to add dependencies to your project. There are two ways to do so. One way is to browse Simplifier for existing packages and add them to your project. The other way is to directly edit the JSON code.
-
-Click ``Manage`` to search for existing dependencies. Type a search string in the search box and select a package and its version from the search results. Click ``Add`` to add the package to your project. When you are finished adding packages click ``Save`` to save the changes to your project.
-
-.. image:: ../images/PackageDependenciesTab.png
-   :scale: 75%
-
-Click ``Edit`` to directly edit the JSON code and add the packages and their version to ``dependencies``.
-
-.. image:: ../images/PackageEdit.png
-   :scale: 75%
-
-Remove dependencies
-^^^^^^^^^^^^^^^^^^^
-To remove dependencies from your project, you could either select ``Manage`` and click on the recycle bin icon next to the package you want to remove or select ``Edit package.json`` to directly edit the JSON code.
-
-Restore dependencies
-^^^^^^^^^^^^^^^^^^^^
-If you directly edit the package.json or import an updated version of your package.json form Github you need to perform a package restore. Under ``Manage`` you will find the ``Restore (advanced)`` option. This will update your project dependencies according to the available PackageManifest in you project. 
 
 
 Firely Terminal

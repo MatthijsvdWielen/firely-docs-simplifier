@@ -55,4 +55,5 @@ Quick Navigation
 - `I want to load my Simplifier resources in Firely Server <./features/simplifierFirely-server.html>`_
 - `I want to query FHIR resources <./features/fql/simplifierFQLPlayground.html>`_
 - `I want to create an implementation guide for my project <./implementation_guide/implementation_guide.html>`_
+- `I want to publish my specification <./publishing.html>`_
 

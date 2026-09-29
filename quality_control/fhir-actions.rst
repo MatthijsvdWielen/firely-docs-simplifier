@@ -103,7 +103,7 @@ By default, all validation uses the Firely .NET SDK validator, which provides co
 Dependencies
 ------------
 
-The ``dependencies`` action evaluates all dependencies from your project, including deep dependencies (dependencies of dependencies). It gives errors if there is a problem with version matching, or if dependencies are not found (for example a typo in the name, or a version that does not exist). It also warns when you use multiple FHIR versions, when a newer version is available, or when a pre-release version is in your dependencies.
+The ``dependencies`` action evaluates all dependencies from your project, including deep dependencies (dependencies of dependencies). It gives errors if a dependency is not found (for example a typo in the name, or a version that does not exist) or causes a circular reference. It warns when a dependency has another FHIR version than your project, when a newer version is available, when a pre-release version is in your dependencies, or when a package name contains uppercase letters or invalid characters.
 
 ::
 

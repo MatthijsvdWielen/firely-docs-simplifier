@@ -30,3 +30,4 @@ However you add resources, you can control how Simplifier renders them: :doc:`me
    github
    other-git-repositories
    metadata-expressions
+   /features/simplifierBackupAndSynchronization

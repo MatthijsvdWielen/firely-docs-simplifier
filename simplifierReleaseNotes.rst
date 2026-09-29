@@ -6,6 +6,57 @@ Release Notes
 This page contains the release notes of simplifier.net.
 
 
+Simplifier 2026.5, <release date>
+-------------------------------------------
+You can find the related news article on `Simplifier. <https://simplifier.net/organization/firely/news/206>`_
+
+Multiple versions of the same package in scope
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Dependency restore now keeps every version of a package that the dependency tree brings in, instead of only the latest. The ``Dependencies`` tab shows the direct dependencies and all resolved dependencies, which can list the same package in several versions, and shows the FHIR version of each dependency. See :ref:`view_dependencies`.
+- Unpinned canonical references now resolve to the latest version of that resource in scope, while pinned references keep resolving to the version they name. "Latest" means by SemVer where all candidates are SemVer, by date where they are all dates, and alphabetically otherwise. References resolve in the project first. See :ref:`canonical_resolution`.
+- Unpinned references to core profiles, data types, logical models, operation definitions, capability statements and compartment definitions resolve to the core package of the project's FHIR version, even when a dependency brings the core package of another FHIR version into scope. Terminology, search parameters and the extensions published in the core package follow the latest-version rule.
+- ``package.json`` now accepts npm-style aliases, so a project can depend on two versions of the same package directly, for example ``"uscore610@npm:hl7.fhir.us.core": "6.1.0"``. Restore, bake with FSH, generating the ImplementationGuide resource and the IG Publisher take the alias into account. See :ref:`package_aliases`.
+- Packages can now be resolved by SemVer range: a link to ``1.3.x`` resolves to the highest package in the 1.3 series, both on the package page and in the resolver.
+- The ``Dependencies`` tab of projects and packages now warns when dependencies could not be fully resolved, and explains when to restore.
+
+Guides
+~~~~~~
+
+- The ``Guides`` tab has a new design, applied consistently to the project, organization, team and portal pages.
+- A guide row now shows its versions inline, and links to the versions page when there are more than it can list.
+- Publishing a guide now writes its pages in batches instead of holding the whole guide in memory, so large guides that ran out of memory now publish. A failed publish now reports on the console instead of leaving it open.
+- Guide pages with many FQL queries render faster.
+- The ``{{pagelink:`` placeholder now also works in the master template editor, not just when editing pages.
+
+Sunsetting DSTU2
+~~~~~~~~~~~~~~~~
+
+- DSTU2 is being retired. New projects can no longer be created as DSTU2, and for existing DSTU2 projects the Bake, File, Update and GitHub menus are disabled, import is blocked, and package creation is blocked.
+- The Query menu, covering FQL, YamlGen and FHIRPath, is hidden for DSTU2, where it was never available.
+
+Other improvements & maintenance
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Package contents can now be browsed and filtered the same way as a project, on the package overview and files tabs. This replaces the search tab, which only worked for public packages: searching within a package now works for private packages too.
+- Downloading a package with snapshots now generates them on a console page the first time, and reports the resources that could not be snapshotted instead of skipping them silently. Later downloads are served straight away.
+- FQL queries whose scope exceeds 10,000 resources now fail with a clear message instead of timing out.
+- Removed the ``/validate`` page; the playground validator supersedes it.
+- NuGet and NPM packages have been reviewed and updated to address known vulnerabilities.
+
+Bug fixes
+~~~~~~~~~
+
+- Fixed validation results in the file editor not updating after a project dependency changed.
+- Fixed the validator page reporting results as validated by the legacy validator when not logged in.
+- Fixed ``%resource`` resolving to the wrong resource in FQL when a page's front matter sets ``%canonical``.
+- Fixed FQL queries returning no results when a where clause combined a condition with a literal comparison, such as ``where name = id and url = '...'``.
+- Fixed bake failing with "Sequence contains more than one element" when a generated resource had more than one name.
+- Fixed the portal not listing a guide to its owner when the owner has no role on the managing team.
+- Fixed restoring the dependencies of a package taking you to the introduction tab instead of back to the dependencies tab.
+- Fixed dependency links on a package in a feed pointing outside that feed.
+- Fixed the ATOM feed of a non-existing project showing a processing error instead of a 404.
+
 Simplifier 2026.4, August 19th, 2026
 -------------------------------------------
 You can find the related news article on `Simplifier. <https://simplifier.net/organization/firely/news/204>`_
