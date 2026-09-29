@@ -14,10 +14,10 @@ Multiple versions of the same package in scope
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Dependency restore now keeps every version of a package that the dependency tree brings in, instead of only the latest. The ``Dependencies`` tab shows the direct dependencies and all resolved dependencies, which can list the same package in several versions, and shows the FHIR version of each dependency. See :ref:`view_dependencies`.
-- Unpinned canonical references now resolve to the latest version of that resource in scope, while pinned references keep resolving to the version they name. "Latest" means by SemVer where all candidates are SemVer, by date where they are all dates, and alphabetically otherwise. References resolve in the project first. See :ref:`canonical_resolution`.
+- Unpinned canonical references now resolve to the latest version of that resource in scope, while pinned references keep resolving to the version they name. "Latest" means by SemVer where all candidates are SemVer, by date where they are all dates, and alphabetically otherwise. References resolve in the project first. Rendering or linking a resource by name, by type and id, or by filepath behaves as before. See :ref:`canonical_resolution`.
 - Unpinned references to core profiles, data types, logical models, operation definitions, capability statements and compartment definitions resolve to the core package of the project's FHIR version, even when a dependency brings the core package of another FHIR version into scope. Terminology, search parameters and the extensions published in the core package follow the latest-version rule.
 - ``package.json`` now accepts npm-style aliases, so a project can depend on two versions of the same package directly, for example ``"uscore610@npm:hl7.fhir.us.core": "6.1.0"``. Restore, bake with FSH, generating the ImplementationGuide resource and the IG Publisher take the alias into account. See :ref:`package_aliases`.
-- Packages can now be resolved by SemVer range: a link to ``1.3.x`` resolves to the highest package in the 1.3 series, both on the package page and in the resolver.
+- Packages can now be resolved by SemVer range: a link to ``1.3.x`` resolves to the highest package in the 1.3 series, both on the package page and on the :ref:`resolve page <canonical_resolving>`.
 - The ``Dependencies`` tab of projects and packages now warns when dependencies could not be fully resolved, and explains when to restore.
 
 Guides
@@ -25,8 +25,9 @@ Guides
 
 - The ``Guides`` tab has a new design, applied consistently to the project, organization, team and portal pages.
 - A guide row now shows its versions inline, and links to the versions page when there are more than it can list.
-- Publishing a guide now writes its pages in batches instead of holding the whole guide in memory, so large guides that ran out of memory now publish. A failed publish now reports on the console instead of leaving it open.
-- Guide pages with many FQL queries render faster.
+- Improved memory usage during guide publishing.
+- Improved FQL query memory usage.
+- A failed guide publish now reports on the console instead of leaving it open.
 - The ``{{pagelink:`` placeholder now also works in the master template editor, not just when editing pages.
 
 Sunsetting DSTU2
@@ -34,6 +35,7 @@ Sunsetting DSTU2
 
 - DSTU2 is being retired. New projects can no longer be created as DSTU2, and for existing DSTU2 projects the Bake, File, Update and GitHub menus are disabled, import is blocked, and package creation is blocked.
 - The Query menu, covering FQL, YamlGen and FHIRPath, is hidden for DSTU2, where it was never available.
+- Existing DSTU2 resources can still be rendered and downloaded.
 
 Other improvements & maintenance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
