@@ -45,6 +45,25 @@ Click ``Edit`` to directly edit the JSON code and add the packages and their ver
 .. image:: ../images/PackageEdit.png
    :scale: 75%
 
+.. _package_aliases:
+
+Depend on two versions of the same package
+------------------------------------------
+``package.json`` has one entry per package name. To depend directly on a second version of a package, give it an npm-style alias: write the alias, ``@npm:`` and the real package name as the key, and the version as the value.
+
+.. code-block:: json
+
+   {
+     "dependencies": {
+       "hl7.fhir.us.core": "7.0.0",
+       "uscore610@npm:hl7.fhir.us.core": "6.1.0"
+     }
+   }
+
+After a restore both versions are in scope, and an aliased dependency stays in scope even when another version of the same package is present. Restore, bake with FSH, generating the ImplementationGuide resource and the IG Publisher all read the alias.
+
+The alias is only a local name. References still resolve by canonical URL, as explained in :ref:`canonical_resolution`, so pin a reference when it has to use one of the two versions.
+
 Remove dependencies
 -------------------
 To remove dependencies from your project, you could either select ``Manage`` and click on the recycle bin icon next to the package you want to remove or select ``Edit package.json`` to directly edit the JSON code.

@@ -16,6 +16,7 @@ Multiple versions of the same package in scope
 - Dependency restore now keeps every version of a package that the dependency tree brings in, instead of only the latest. The ``Dependencies`` tab shows the direct dependencies and all resolved dependencies, which can list the same package in several versions, and shows the FHIR version of each dependency. See :ref:`view_dependencies`.
 - Unpinned canonical references now resolve to the latest version of that resource in scope, while pinned references keep resolving to the version they name. "Latest" means by SemVer where all candidates are SemVer, by date where they are all dates, and alphabetically otherwise. References resolve in the project first. See :ref:`canonical_resolution`.
 - Unpinned references to core profiles, data types, logical models, operation definitions, capability statements and compartment definitions resolve to the core package of the project's FHIR version, even when a dependency brings the core package of another FHIR version into scope. Terminology, search parameters and the extensions published in the core package follow the latest-version rule.
+- ``package.json`` now accepts npm-style aliases, so a project can depend on two versions of the same package directly, for example ``"uscore610@npm:hl7.fhir.us.core": "6.1.0"``. Restore, bake with FSH, generating the ImplementationGuide resource and the IG Publisher take the alias into account. See :ref:`package_aliases`.
 - Packages can now be resolved by SemVer range: a link to ``1.3.x`` resolves to the highest package in the 1.3 series, both on the package page and in the resolver.
 - The ``Dependencies`` tab of projects and packages now warns when dependencies could not be fully resolved, and explains when to restore.
 
@@ -51,7 +52,6 @@ Bug fixes
 - Fixed ``%resource`` resolving to the wrong resource in FQL when a page's front matter sets ``%canonical``.
 - Fixed FQL queries returning no results when a where clause combined a condition with a literal comparison, such as ``where name = id and url = '...'``.
 - Fixed bake failing with "Sequence contains more than one element" when a generated resource had more than one name.
-- Fixed guide publishing, package creation and dependency deletion for projects whose ``package.json`` uses npm aliases.
 - Fixed the portal not listing a guide to its owner when the owner has no role on the managing team.
 - Fixed restoring the dependencies of a package taking you to the introduction tab instead of back to the dependencies tab.
 - Fixed dependency links on a package in a feed pointing outside that feed.
