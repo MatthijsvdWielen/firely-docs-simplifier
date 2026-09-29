@@ -37,7 +37,7 @@ Sunsetting DSTU2
 Other improvements & maintenance
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Package contents can now be browsed and filtered the same way as a project, on the package overview and files tabs. This replaces the search tab.
+- Package contents can now be browsed and filtered the same way as a project, on the package overview and files tabs. This replaces the search tab, which only worked for public packages: searching within a package now works for private packages too.
 - Downloading a package with snapshots now generates them on a console page the first time, and reports the resources that could not be snapshotted instead of skipping them silently. Later downloads are served straight away.
 - FQL queries whose scope exceeds 10,000 resources now fail with a clear message instead of timing out.
 - Removed the ``/validate`` page; the playground validator supersedes it.
